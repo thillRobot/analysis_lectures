@@ -1,0 +1,17 @@
+\beamer@sectionintoc {1}{Review and Motivation}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{What is a Differential Equation}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Analytical vs. Numerical Solutions}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Which one should you choose?}{5}{0}{1}
+\beamer@sectionintoc {2}{Integration in Time}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{The Initial Value Problem}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{The Taylor Series}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Euler's Method}{9}{0}{2}
+\beamer@subsectionintoc {2}{4}{The Slope Function}{10}{0}{2}
+\beamer@subsectionintoc {2}{5}{Forward Integration}{11}{0}{2}
+\beamer@sectionintoc {3}{A Simple Example}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{The Problem Statement}{13}{0}{3}
+\beamer@subsectionintoc {3}{2}{Execute Euler's Method}{15}{0}{3}
+\beamer@sectionintoc {4}{MATLAB Solution}{16}{0}{4}
+\beamer@subsectionintoc {4}{1}{Part 1 - Setup and Analytical Solution}{16}{0}{4}
+\beamer@subsectionintoc {4}{2}{Part 2 - Euler's Method}{17}{0}{4}
+\beamer@subsectionintoc {4}{3}{Part 3 - Graph the Solutions}{18}{0}{4}
