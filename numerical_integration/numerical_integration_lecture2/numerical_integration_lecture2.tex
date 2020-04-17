@@ -41,6 +41,7 @@
 \newcommand{\vspcc}{\vspace{4mm}\\}   % medium vertical space
 \newcommand{\vspc}{\vspace{2mm}\\}     % small vertical space
 
+\newcommand{\hspcccc}{\hspace{10mm}} % large horizontal space
 \newcommand{\hspccc}{\hspace{6mm}} % large horizontal space
 \newcommand{\hspcc}{\hspace{4mm}}   % medium horizontal space
 \newcommand{\hspc}{\hspace{2mm}}     % small horizontal space
@@ -198,143 +199,59 @@ There are two derivatives so there are two \underline{\hspace{15mm}}\hspace{3mm}
 
 {\it One} second order ODE can be {\bf decomposed} into {\it two} first order ODEs through a simple change of variables. This step can be confusing, but remember it is just an algebraic substitution!\vspccc
 
-	\scalebox{1}{$I_o\ddot{\theta}+k_T-\left( m\cdot g\cdot l\right) sin(\theta)=0$} \vspcc 
-
-
-}
-
-
-\subsection{The Slope Function}
-\frame{
-
-\frametitle{The Slope Function}
-
-The differential equation must be written as a function describing the first derivative or {\bf the slope} of the dependent variable.\vspc
-
-	\scalebox{1.25}{$f(x,y)=\frac{rise}{run}=\frac{dy}{dx}\neq y(x)$}\vspcc
-	or with subscript notation shown below\vspcc
-	\scalebox{1.25}{$f(x_i,y_i)$}\vspcc
-	
-
-\small Careful: The first argument $x$ is not always used and is often left out. However it is an important placeholder (ODE45()) and shows this method can be used for {\it non-linear} equations with generalized input functions. 
+	\scalebox{1}{$I_o\ddot{\theta}+k_T-\left( m\cdot g\cdot l\right) sin(\theta)=0$} \vspcc
 
 }
-
-\subsection{Forward Integration}
-\frame{
-
-\frametitle{Forward Integration}
-
-Using this concept to solve the initial value problem is called {\bf Euler's forward integration} or {\bf Euler's Method}. Most of the time, the independent variable is \underline{\hspace{30mm}}. \vspcc
-
-Compute the values of the solution one-by-one {\bf forward in time}. \vspcc
-\begin{multicols}{2}
-\scalebox{1}{$\underline{y(t_{i+1})=y(t_i)+f(t_i,y_i)\Delta t}$}\vspc
-\scalebox{1}{$y(\hspccc)=y(\hspccc)+f(\hspccc,\hspccc)\Delta t$}\vspc
-\scalebox{1}{$y(\hspccc)=y(\hspccc)+f(\hspccc,\hspccc)\Delta t$}\vspc
-\scalebox{1}{$y(\hspccc)=y(\hspccc)+f(\hspccc,\hspccc)\Delta t$}\vspc
-
-\hspace{5mm}\includegraphics[scale=0.25]{lecture1_fig3.png}
-\end{multicols}
-
-}
-% Section 4: A Simple Example
-
-\section{A Simple Example}
-\frame{
-
-\frametitle{The Previous Example - Radio Flyer}
-
-\begin{multicols}{2}
-If this is a valid technique we should be able to solve the problem we solved in the previous lecture. Ferrari anyone? Let's do a Radio Flyer instead. \\ 
-
-\hspace{10mm}\includegraphics[scale=0.15]{Radio-Flyer.jpg} \vspc
-
-\end{multicols}
-
-\scalebox{1.25}{$m\dot{v}+cv=0 \hspace{3mm} with \hspace{3mm}v(t=0)=v_0$} \vspcc
-\scalebox{1.25}{$\hspace{5mm}\implies\hspace{5mm}v(t)=v_0e^{-\frac{c}{m}t}$} \vspace{5mm}\\
-
-}
-
-
-\frame{
-
-\subsection{The Problem Statement}
-\frametitle{The Problem Statement}
-
-This method is not difficult {\it if} we setup  the problem correctly. Read the problem statement carefully.\vspcc
-
-\begin{framed}
-Approximate a solution to the differential equation using Euler's Method. Graph the solution from $0$ to $10$ seconds and use a stepsize of $\Delta t=\paramDTA,\hspc\paramDTA,\hspc$and$\hspc \paramDTA $ seconds.\vspcc
-\scalebox{1.25}{$m\dot{v}+cv=0 \hspace{3mm} with \hspace{3mm}v(t=0)=v_0$}\vspcc
-\scalebox{1.0}{$m=\paramM(kg), \hspc c=\paramC (\frac{n-m}{s}), v_0=\paramVO(\frac{m}{s})$}
-\end{framed}
-
-}
-
-\frame{
-
-
-\frametitle{Breakdown The Problem Statement}
-\begin{tabular}{cc}
-\underline{ODE:}&\scalebox{1.0}{$m\dot{v}+cv=0$}\vspcc
-\underline{Initial Condition:}&\scalebox{1.0}{$\hspace{3mm}v(t=0)=v_0$}\vspcc
-\underline{Parameters:}&\scalebox{1.0}{$m=100(kg), \hspc c=0.5 (\frac{n-m}{s}), v_0=5(\frac{m}{s})$}\vspcc
-\underline{Strategy:}& Euler's Method, $\Delta t=\paramDTA,\hspc\paramDTB,\hspc$and$\hspc \paramDTC (s) $  \vspccc
-\end{tabular}
-
-Look at the formula we derived. What goes where?\vspcc
-
-
-\scalebox{1.0}{$y_{i+1}=y_i + f(x_i,y_i)\Delta x$}\vspcc
-}
-
-
 
 
 \subsection{Execute Euler's Method}
-
 \frame{
+
 \frametitle{Execute Euler's Method}
-First, write the {\bf slope function}. \vspc
-\scalebox{1}{$f(t,y(t))=f(t,y)=$}\vspc
-Then, start with the initial condition and compute the values of the solution {\it one by one, forward in time}. \vspcc
+\scalebox{1.0}{$f_1=$}\vspc
+\scalebox{1.0}{$f_2=$}\vspc
+Use Euler's method just as before with both slope functions. Compute the values of the solution one-by-one {\bf forward in time} {\it for each variable}. \vspcc
+\begin{tabular}{|c|c|c|}\hline
+i&\scalebox{0.7}{$z_1(t_{i+1})=z_1(t_i)+f_1(t_i,z_{1i},z_{2i})\Delta t$}&\scalebox{0.7}{$z_2(t_{i+1})=z_2(t_i)+f_2(t_i,z_{1i},z_{2i})\Delta t$}\\ \hline
+1&\scalebox{0.7}{$z_1(\hspccc)=z_1(\hspccc)+f_1(\hspccc,\hspccc,\hspccc)\Delta t$}&\scalebox{0.7}{$z_2(\hspccc)=z_2(\hspccc)+f_2(\hspccc,\hspccc,\hspccc)\Delta t$}\\ \hline
+2&\scalebox{0.7}{$z_1(\hspccc)=z_1(\hspccc)+f_1(\hspccc,\hspccc,\hspccc)\Delta t$}&\scalebox{0.7}{$z_2(\hspccc)=z_2(\hspccc)+f_2(\hspccc,\hspccc,\hspccc)\Delta t$}\\ \hline
+3&\scalebox{0.7}{$z_1(\hspccc)=z_1(\hspccc)+f_1(\hspccc,\hspccc,\hspccc)\Delta t$}&\scalebox{0.7}{$z_2(\hspccc)=z_2(\hspccc)+f_3(\hspccc,\hspccc,\hspccc)\Delta t$}\\ \hline
+\end{tabular}
 
-\scalebox{1}{$\underline{v(t_{i+1})=v(t_i)+f(v(t_i))\Delta t}$}\vspc
-\scalebox{1}{$v(\hspccc)=v(\hspccc)+f(\hspccc)\Delta t$}\vspc
-\scalebox{1}{$v(\hspccc)=v(\hspccc)+f(\hspccc)\Delta t$}\vspc
-\scalebox{1}{$v(\hspccc)=v(\hspccc)+f(\hspccc)\Delta t$}\vspc
-\scalebox{1}{$v(\hspccc)=v(\hspccc)+f(\hspccc)\Delta t$}\vspc
+\vspace{5mm} As you can see this can get messy quickly. 
 
- This method is not suitable for manual computation. \vspace{0mm}\\
+
+
 
 }
+
 
 
 % Section 4: MATLAB Solution
 \section{MATLAB Solution}
 
-\subsection{Part 1 - Setup and Analytical Solution}
+\subsection{Part 1 - Program Setup}
 \frame[containsverbatim]{
   \frametitle{Part 1 - Setup and Analytical Solution}
 
 
 
 \begin{lstlisting}
-% ME 3001 - Mechanical Engineering Analysis
-% Tristan Hill - Spring 2020
-% Numerical Integration - Lecture 1 
+
 clear variables;close all;clc
 
 % define the constant parameters
-m=100;c=1.5;v0=2.0;
-dt=1.0;tstop=60;
+global m g l kt;
+m=2;g=9.8;
+l=42*(1/100);kt=6;
+
+% initial conditions
+theta0=15;
+omega0=0;
 
 % create an array of time values
+dt=.001;tstop=10;
 time=0:dt:tstop;
-% compute solution from derived equation
-v_exact=v0*exp(-c/m*time);
 \end{lstlisting}
 
 }
@@ -347,17 +264,21 @@ v_exact=v0*exp(-c/m*time);
 
  \begin{lstlisting}
 % approximate with Euler's forward integration
-v_eu(1)=v0;
+z1_eu(1)=theta0*pi/180; z2_eu(1)=0;  % initial conditions
+
 for j=1:length(time)-1
-    v_eu(j+1)=v_eu(j)+(f(time(j),v_eu(j),m,c))*dt;  
+    z1_eu(j+1)=z1_eu(j)+f1(time(j),z1_eu(j),z2_eu(j))*dt;  
+    z2_eu(j+1)=z2_eu(j)+f2(time(j),z1_eu(j),z2_eu(j))*dt;
 end
 
-% If this is an 'Inline Definition' of the function 
-% it MUST go at the bottom of the script
-function [dvdt]=f(t,v,M,C)
-    dvdt=-C/M*v;
+function [dz1dt]=f1(t,z1,z2)
+    global m g l kt;
+    dz1dt=z2;
 end
-
+function [dz2dt]=f2(t,z1,z2)
+    global m g l kt;
+    dz2dt=(m*g*l*sin(z1)-kt*z1)/(m*l^2);
+end
   \end{lstlisting}
 
 }

@@ -6,12 +6,8 @@
 \beamer@sectionintoc {3}{Equation Decomposition}{7}{0}{3}
 \beamer@subsectionintoc {3}{1}{Equation Decomposition}{7}{0}{3}
 \beamer@subsectionintoc {3}{2}{x2 First Order from x1 Second Order}{8}{0}{3}
-\beamer@subsectionintoc {3}{3}{The Slope Function}{9}{0}{3}
-\beamer@subsectionintoc {3}{4}{Forward Integration}{10}{0}{3}
-\beamer@sectionintoc {4}{A Simple Example}{11}{0}{4}
-\beamer@subsectionintoc {4}{1}{The Problem Statement}{12}{0}{4}
-\beamer@subsectionintoc {4}{2}{Execute Euler's Method}{14}{0}{4}
-\beamer@sectionintoc {5}{MATLAB Solution}{15}{0}{5}
-\beamer@subsectionintoc {5}{1}{Part 1 - Setup and Analytical Solution}{15}{0}{5}
-\beamer@subsectionintoc {5}{2}{Part 2 - Euler's Method}{16}{0}{5}
-\beamer@subsectionintoc {5}{3}{Part 3 - Graph the Solutions}{17}{0}{5}
+\beamer@subsectionintoc {3}{3}{Execute Euler's Method}{9}{0}{3}
+\beamer@sectionintoc {4}{MATLAB Solution}{10}{0}{4}
+\beamer@subsectionintoc {4}{1}{Part 1 - Program Setup}{10}{0}{4}
+\beamer@subsectionintoc {4}{2}{Part 2 - Euler's Method}{11}{0}{4}
+\beamer@subsectionintoc {4}{3}{Part 3 - Graph the Solutions}{12}{0}{4}

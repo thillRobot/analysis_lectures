@@ -1,6 +1,6 @@
 % ME 3001 - Mechanical Engineering Analysis
 % Tristan Hill - Spring 2020
-% Numerical Integration - Lecture 1 
+% Numerical Integration - Lecture 2 
 clear variables;close all;clc
 
 % define the constant parameters
