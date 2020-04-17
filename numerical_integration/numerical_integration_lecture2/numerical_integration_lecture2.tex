@@ -35,7 +35,7 @@
 %\usefonttheme{professionalfonts}
 
 \newcommand{\LNUM}{2\hspace{2mm}} % Lecture Number 
-\newcommand{\secondtitle}{Euler's Method for Higher-Order Models}% second line of the title of this presentation , aka the topic of this lecture
+\newcommand{\secondtitle}{Euler's Method for Higher-Order Equations}% second line of the title of this presentation , aka the topic of this lecture
 
 \newcommand{\vspccc}{\vspace{6mm}\\} % large vertical space
 \newcommand{\vspcc}{\vspace{4mm}\\}   % medium vertical space
@@ -125,7 +125,7 @@ Last time we solved a {\bf first order} ODE with Euler's method. \vspc
 % approximate with Euler's forward integration
 v_eu(1)=v0;
 for j=1:length(time)-1
-    v_eu(j+1)=v_eu(j)+(f(time(j),v_eu(j),m,c))*dt;  
+    v_eu(j+1)=v_eu(j)+f(time(j),v_eu(j),m,c)*dt;  
 end
 
 % If this is an 'Inline Definition' of the function 

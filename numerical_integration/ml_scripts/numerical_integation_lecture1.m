@@ -15,7 +15,7 @@ v_exact=v0*exp(-c/m*time);
 % approximate with Euler's forward integration
 v_eu(1)=v0;
 for j=1:length(time)-1
-    v_eu(j+1)=v_eu(j)+(f(time(j),v_eu(j),m,c))*dt;  
+    v_eu(j+1)=v_eu(j)+f(time(j),v_eu(j),m,c)*dt;  
 end
 
 % plot the results of both methods
