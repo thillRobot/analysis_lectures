@@ -7,7 +7,7 @@ clear variables;close all;clc
 global m g l kt;
 
 m=2;g=9.8;
-l=42*(1/100);kt=6;
+l=40*(1/100);kt=9;
 
 % initial conditions
 theta0=15;
@@ -18,30 +18,31 @@ dt=.001;tstop=10;
 time=0:dt:tstop;
 
 % approximate with Euler's forward integration
-z1_eu(1)=theta0*pi/180; %u1, initial theta
-z2_eu(1)=0;  %u2, initial omega
+z1(1)=theta0*pi/180; %u1, initial theta
+z2(1)=0;  %u2, initial omega
 
 for j=1:length(time)-1
-    z1_eu(j+1)=z1_eu(j)+f1(time(j),z1_eu(j),z2_eu(j))*dt;  
-    z2_eu(j+1)=z2_eu(j)+f2(time(j),z1_eu(j),z2_eu(j))*dt;
+    z1(j+1)=z1(j)+f1(time(j),z1(j),z2(j))*dt;  
+    z2(j+1)=z2(j)+f2(time(j),z1(j),z2(j))*dt;
 end
 
 % plot the results of the method
 figure(1);hold on
-plot(time,z1_eu,'r')
-plot(time,z2_eu,'b')
+plot(time,z1,'r-','LineWidth',2)
+plot(time,z2,'b:','LineWidth',2)
 grid on
-title('Non-Linear Pendulum')
+str=sprintf('Non-Linear Pendulum (k_T=%.2f)',kt);
+title(str)
 legend('Angular Position (rad)','Angular Velocity (rad/s)')
 xlabel('Time(s)')
-axis([0 tstop -3 3])
+axis([0 tstop -1 1])
 
-function [dz1dt]=f1(t,z1,z2)
-    global m g l kt;
-    dz1dt=z2;
+function [z1dot]=f1(t,Z1,Z2)
+    global m g l kt
+    z1dot=Z2;
 end
 
-function [dz2dt]=f2(t,z1,z2)
-    global m g l kt;
-    dz2dt=(m*g*l*sin(z1)-kt*z1)/(m*l^2);
+function [z2dot]=f2(t,Z1,Z2)
+    global m g l kt
+    z2dot=(m*g*l*sin(Z1)-kt*Z1)/(m*l^2);
 end

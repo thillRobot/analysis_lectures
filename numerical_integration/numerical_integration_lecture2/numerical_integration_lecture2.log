@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.3)  16 APR 2020 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  17 APR 2020 00:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1015,18 +1015,18 @@ Package pdftex.def Info: metronome.png  used on input line 179.
 ] [10
 
 ]
-Overfull \hbox (51.80943pt too wide) in paragraph at lines 267--269
+Overfull \hbox (14.0095pt too wide) in paragraph at lines 266--268
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (51.80943pt too wide) in paragraph at lines 270--271
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (7.70952pt too wide) in paragraph at lines 268--269
+[][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (51.80943pt too wide) in paragraph at lines 271--272
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (1.40953pt too wide) in paragraph at lines 273--274
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
@@ -1035,17 +1035,27 @@ Overfull \vbox (6.66252pt too high) detected at line 284
 
 [11
 
-] [12
+]
+Overfull \hbox (14.0095pt too wide) in paragraph at lines 299--300
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[12
 
 ]
-<lecture1_fig4.png, id=242, 549.05125pt x 419.5675pt>
-File: lecture1_fig4.png Graphic file (type png)
-<use lecture1_fig4.png>
-Package pdftex.def Info: lecture1_fig4.png  used on input line 312.
-(pdftex.def)             Requested size: 192.1708pt x 146.85081pt.
+<lecture2_fig2.png, id=242, 498.86375pt x 419.5675pt>
+File: lecture2_fig2.png Graphic file (type png)
+<use lecture2_fig2.png>
+Package pdftex.def Info: lecture2_fig2.png  used on input line 310.
+(pdftex.def)             Requested size: 149.66028pt x 125.87122pt.
+<lecture2_fig3.png, id=243, 498.86375pt x 421.575pt>
+File: lecture2_fig3.png Graphic file (type png)
+<use lecture2_fig3.png>
+Package pdftex.def Info: lecture2_fig3.png  used on input line 310.
+(pdftex.def)             Requested size: 149.66028pt x 126.47346pt.
  [13
 
- <./lecture1_fig4.png>]
+ <./lecture2_fig2.png> <./lecture2_fig3.png>]
 \tf@nav=\write6
 \openout6 = `numerical_integration_lecture2.nav'.
 
@@ -1055,21 +1065,22 @@ Package pdftex.def Info: lecture1_fig4.png  used on input line 312.
 \tf@snm=\write8
 \openout8 = `numerical_integration_lecture2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
- (./numerical_integration_lecture2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 318.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
+
+(./numerical_integration_lecture2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
 Package rerunfilecheck Info: File `numerical_integration_lecture2.out' has not 
 changed.
 (rerunfilecheck)             Checksum: 4F7816AC5DAD4B1188CD038CCBB1540A;901.
  ) 
 Here is how much of TeX's memory you used:
- 19084 strings out of 494923
- 350579 string characters out of 6180743
- 465643 words of memory out of 5000000
- 21949 multiletter control sequences out of 15000+600000
- 12264 words of font info for 46 fonts, out of 8000000 for 9000
+ 19089 strings out of 494923
+ 350680 string characters out of 6180742
+ 467640 words of memory out of 5000000
+ 21953 multiletter control sequences out of 15000+600000
+ 12569 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,19n,57p,826b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></u
@@ -1082,10 +1093,10 @@ onts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on numerical_integration_lecture2.pdf (13 pages, 752641 bytes).
+Output written on numerical_integration_lecture2.pdf (13 pages, 777359 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
+ 305 PDF objects out of 1000 (max. 8388607)
  251 compressed objects within 3 object streams
  40 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
