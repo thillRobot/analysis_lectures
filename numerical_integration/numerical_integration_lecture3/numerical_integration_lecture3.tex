@@ -53,7 +53,7 @@
 \newcommand{\paramDTC}{0.01} % timestep, dt  - C
 
 
-\newcommand{\LNUM}{2\hspace{2mm}} % Lecture Number 
+\newcommand{\LNUM}{3\hspace{2mm}} % Lecture Number 3
 \newcommand{\secondtitle}{Solving Higher-Order Equations with ODE45}% second line of the title of this  presentation , aka the topic of this lecture
 
 \title{\vspace{2mm}\\Numerical Integration - Lecture \LNUM}
@@ -91,29 +91,30 @@
 \end{multicols}
 }
 
-% Section 1 - Review ODE45 function
 
-\subsection{Using the ODE45 function}
+% Section 1 - Review ODE45 function
+\section{Review ODE45 Function}
+\subsection{Using the ODE45 Function}
 
 \frame[containsverbatim]{
 
-  \frametitle{Using the ODE45 function}
+  \frametitle{Using the ODE45 Function}
 
  
-The {\bf ode45} function is a powerful tool and it is easy to use. \vspace{0mm}\\
+The {\bf ode45} function is a MATLAB tool for solving differential \vspc equations. The equation(s) must be \underline{\hspace{15mm}-\hspace{30mm}}.
 
+  \begin{framed}
   \begin{lstlisting}
-
-[t_45,y_45]=ode45(@ODEFUN,TSPAN,Y0,OPTIONS,P...);
- 
+[TOUT,YOUT]=ode45(@ODEFUN,TSPAN,Y0,OPTS,P...);
   \end{lstlisting}
+\end{framed}
 
-\vspace{3mm} Here is a description of the arguments.\vspace{2mm}\\
+%\vspace{0mm} Here is a description of the arguments.\vspace{1mm}\\
 
 ODEFUN - name of the function containing the model \vspace{2mm}\\
 TSPAN - time range for the initial value problem \vspace{2mm}\\
 Y0 - initial value of the dependent variable \vspace{2mm}\\
-OPTIONS - options defined by OPTIMSET function \vspace{2mm}\\
+OPTS - options defined by OPTIMSET function \vspace{2mm}\\
 P... - additional parameters passed to ODEFUN \vspace{2mm}\\
 
 

@@ -1,12 +1,13 @@
-\BOOKMARK [3][]{Outline0.0.1.3}{Using the ODE45 function}{}% 1
-\BOOKMARK [3][]{Outline0.0.2.4}{Euler's Method in MATLAB}{}% 2
-\BOOKMARK [2][]{Outline0.1}{A More Exciting Model}{}% 3
-\BOOKMARK [3][]{Outline0.1.1.5}{A More Exciting Model}{Outline0.1}% 4
-\BOOKMARK [2][]{Outline0.2}{Equation Decomposition}{}% 5
-\BOOKMARK [3][]{Outline0.2.1.7}{Equation Decomposition}{Outline0.2}% 6
-\BOOKMARK [3][]{Outline0.2.2.8}{x2 First Order from x1 Second Order}{Outline0.2}% 7
-\BOOKMARK [3][]{Outline0.2.3.9}{Execute Euler's Method}{Outline0.2}% 8
-\BOOKMARK [2][]{Outline0.3}{MATLAB Solution}{}% 9
-\BOOKMARK [3][]{Outline0.3.1.10}{Part 1 - Program Setup}{Outline0.3}% 10
-\BOOKMARK [3][]{Outline0.3.2.11}{Part 2 - Euler's Method}{Outline0.3}% 11
-\BOOKMARK [3][]{Outline0.3.3.12}{Part 3 - Graph the Solutions}{Outline0.3}% 12
+\BOOKMARK [2][]{Outline0.1}{Review ODE45 Function}{}% 1
+\BOOKMARK [3][]{Outline0.1.1.3}{Using the ODE45 Function}{Outline0.1}% 2
+\BOOKMARK [3][]{Outline0.1.2.4}{Euler's Method in MATLAB}{Outline0.1}% 3
+\BOOKMARK [2][]{Outline0.2}{A More Exciting Model}{}% 4
+\BOOKMARK [3][]{Outline0.2.1.5}{A More Exciting Model}{Outline0.2}% 5
+\BOOKMARK [2][]{Outline0.3}{Equation Decomposition}{}% 6
+\BOOKMARK [3][]{Outline0.3.1.7}{Equation Decomposition}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.2.8}{x2 First Order from x1 Second Order}{Outline0.3}% 8
+\BOOKMARK [3][]{Outline0.3.3.9}{Execute Euler's Method}{Outline0.3}% 9
+\BOOKMARK [2][]{Outline0.4}{MATLAB Solution}{}% 10
+\BOOKMARK [3][]{Outline0.4.1.10}{Part 1 - Program Setup}{Outline0.4}% 11
+\BOOKMARK [3][]{Outline0.4.2.11}{Part 2 - Euler's Method}{Outline0.4}% 12
+\BOOKMARK [3][]{Outline0.4.3.12}{Part 3 - Graph the Solutions}{Outline0.4}% 13

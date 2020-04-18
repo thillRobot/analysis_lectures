@@ -1,12 +1,13 @@
-\beamer@subsectionintoc {0}{1}{Using the ODE45 function}{3}{0}{0}
-\beamer@subsectionintoc {0}{2}{Euler's Method in MATLAB}{4}{0}{0}
-\beamer@sectionintoc {1}{A More Exciting Model}{5}{0}{1}
-\beamer@subsectionintoc {1}{1}{A More Exciting Model}{5}{0}{1}
-\beamer@sectionintoc {2}{Equation Decomposition}{7}{0}{2}
-\beamer@subsectionintoc {2}{1}{Equation Decomposition}{7}{0}{2}
-\beamer@subsectionintoc {2}{2}{x2 First Order from x1 Second Order}{8}{0}{2}
-\beamer@subsectionintoc {2}{3}{Execute Euler's Method}{9}{0}{2}
-\beamer@sectionintoc {3}{MATLAB Solution}{10}{0}{3}
-\beamer@subsectionintoc {3}{1}{Part 1 - Program Setup}{10}{0}{3}
-\beamer@subsectionintoc {3}{2}{Part 2 - Euler's Method}{11}{0}{3}
-\beamer@subsectionintoc {3}{3}{Part 3 - Graph the Solutions}{12}{0}{3}
+\beamer@sectionintoc {1}{Review ODE45 Function}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Using the ODE45 Function}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Euler's Method in MATLAB}{4}{0}{1}
+\beamer@sectionintoc {2}{A More Exciting Model}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{A More Exciting Model}{5}{0}{2}
+\beamer@sectionintoc {3}{Equation Decomposition}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Equation Decomposition}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{x2 First Order from x1 Second Order}{8}{0}{3}
+\beamer@subsectionintoc {3}{3}{Execute Euler's Method}{9}{0}{3}
+\beamer@sectionintoc {4}{MATLAB Solution}{10}{0}{4}
+\beamer@subsectionintoc {4}{1}{Part 1 - Program Setup}{10}{0}{4}
+\beamer@subsectionintoc {4}{2}{Part 2 - Euler's Method}{11}{0}{4}
+\beamer@subsectionintoc {4}{3}{Part 3 - Graph the Solutions}{12}{0}{4}
