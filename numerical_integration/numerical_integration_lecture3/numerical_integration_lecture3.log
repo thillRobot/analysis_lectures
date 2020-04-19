@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  19 APR 2020 01:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  19 APR 2020 01:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,21 +917,22 @@ Dictionary: translator-theorem-dictionary, Language: English
 ap/pdftex.map}
 
 ]
-<baxter.jpg, id=109, 1204.5pt x 632.3625pt>
-File: baxter.jpg Graphic file (type jpg)
-<use baxter.jpg>
-Package pdftex.def Info: baxter.jpg  used on input line 101.
-(pdftex.def)             Requested size: 180.6672pt x 94.85028pt.
+<atlas-page.png, id=109, 702.625pt x 597.23125pt>
+File: atlas-page.png Graphic file (type png)
+<use atlas-page.png>
+Package pdftex.def Info: atlas-page.png  used on input line 101.
+(pdftex.def)             Requested size: 175.6558pt x 149.30743pt.
 
-Overfull \hbox (32.02228pt too wide) in paragraph at lines 101--101
+Overfull \hbox (27.01088pt too wide) in paragraph at lines 101--101
 [][]  
  []
 
 [2
 
- <./baxter.jpg>]
+ <./atlas-page.png>]
 LaTeX Font Info:    Try loading font information for U+msa on input line 113.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 113.
@@ -955,17 +956,17 @@ Overfull \vbox (6.34106pt too high) detected at line 130
 ] [4
 
 ]
-<jeep_01.jpg, id=147, 3276.24pt x 2457.18pt>
+<jeep_01.jpg, id=149, 3276.24pt x 2457.18pt>
 File: jeep_01.jpg Graphic file (type jpg)
 <use jeep_01.jpg>
 Package pdftex.def Info: jeep_01.jpg  used on input line 172.
 (pdftex.def)             Requested size: 65.53864pt x 49.15398pt.
-<water_tank.png, id=148, 539.01375pt x 401.24907pt>
+<water_tank.png, id=150, 539.01375pt x 401.24907pt>
 File: water_tank.png Graphic file (type png)
 <use water_tank.png>
 Package pdftex.def Info: water_tank.png  used on input line 172.
 (pdftex.def)             Requested size: 80.84857pt x 60.18475pt.
-<rc_circuit.png, id=150, 379.4175pt x 231.11343pt>
+<rc_circuit.png, id=151, 379.4175pt x 231.11343pt>
 File: rc_circuit.png Graphic file (type png)
 <use rc_circuit.png>
 Package pdftex.def Info: rc_circuit.png  used on input line 172.
@@ -1012,7 +1013,7 @@ Overfull \hbox (14.0095pt too wide) in paragraph at lines 339--340
 [16
 
 ]
-<lecture3_fig5.png, id=331, 529.98pt x 418.56375pt>
+<lecture3_fig5.png, id=332, 529.98pt x 418.56375pt>
 File: lecture3_fig5.png Graphic file (type png)
 <use lecture3_fig5.png>
 Package pdftex.def Info: lecture3_fig5.png  used on input line 349.
@@ -1040,7 +1041,7 @@ changed.
  ) 
 Here is how much of TeX's memory you used:
  19200 strings out of 494923
- 351718 string characters out of 6180742
+ 351738 string characters out of 6180742
  484636 words of memory out of 5000000
  22054 multiletter control sequences out of 15000+600000
  12737 words of font info for 48 fonts, out of 8000000 for 9000
@@ -1054,10 +1055,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on numerical_integration_lecture3.pdf (17 pages, 2779794 bytes).
+Output written on numerical_integration_lecture3.pdf (17 pages, 2911862 bytes).
 
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
+ 388 PDF objects out of 1000 (max. 8388607)
  336 compressed objects within 4 object streams
  53 named destinations out of 1000 (max. 500000)
  218 words of extra memory for PDF output out of 10000 (max. 10000000)
