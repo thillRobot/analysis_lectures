@@ -20,7 +20,7 @@ time=0:1:200;
 vel=(v0-F/c)*exp(-c/m*time)+F/c;
 
 % validate the solution with ODE45
-opts=optimset('Display','none');
+opts=optimset('Stats','none');
 [t45,v45]=ode45(@vdot_model,time,v0,opts,F,m,c);
 
 % show a graph of the solution
@@ -33,3 +33,8 @@ xlabel('Time(s)')
 ylabel('Velocity(m/s)')
 grid on
 legend('analytical solution','numerical solution')
+
+
+function [vdot]=vdot_model(tin,vin,F,m,c)
+    vdot=(F-c*vin)/m;
+end

@@ -19,6 +19,17 @@
 
 \usepackage{soul}
 
+\lstdefinestyle{myCustomMatlabStyle}{
+  language=Matlab,
+  numbers=left,
+  stepnumber=1,
+  numbersep=10pt,
+  tabsize=4,
+  showspaces=false,
+  showstringspaces=false
+}
+\lstset{basicstyle=\ttfamily\small,style=myCustomMatlabStyle}
+%lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 
 \beamertemplateballitem
 
@@ -59,11 +70,9 @@
 \title{\vspace{2mm}\\Numerical Integration - Lecture \LNUM}
 \author{ME3001 - Mechanical Engineering Analysis} % original formatting from Mike Renfro, September 21, 2004
 
-\date{April 17, 2020}
+\date{April 18, 2020}
 
 \begin{document}
-
-\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 
 
 % Section 0 - Outline (I know there is a beamer thing for this...)
@@ -81,8 +90,8 @@
  \begin{itemize}
 
 	\item Review ODE45 Function\vspace{4mm}\\
-	\item A More Exciting Model \vspace{4mm}\\
-	\item Equation Decomposition  \vspace{4mm}\\	
+	\item A Homework Problem \vspace{4mm}\\
+	\item Solution Validation  \vspace{4mm}\\	
 	\item MATLAB Solution\vspace{4mm}\\
 
 \end{itemize}
@@ -101,10 +110,10 @@
   \frametitle{Using the ODE45 Function}
 
  
-The {\bf ode45} function is a MATLAB tool for solving differential \vspc equations. The equation(s) must be \underline{\hspace{15mm}-\hspace{30mm}}.
+The {\bf ode45} function is a MATLAB tool for solving differential \vspc equations. The equation(s) must be \underline{\hspace{20mm}-\hspace{25mm}}.
 
   \begin{framed}
-  \begin{lstlisting}
+  \begin{lstlisting}[numbers=none]
 [TOUT,YOUT]=ode45(@ODEFUN,TSPAN,Y0,OPTS,P...);
   \end{lstlisting}
 \end{framed}
@@ -125,73 +134,100 @@ P... - additional parameters passed to ODEFUN \vspace{2mm}\\
   \frametitle{Euler's Method in MATLAB}
 
  \begin{lstlisting}
-% approximate with Euler's forward integration
-v_eu(1)=v0;
-for j=1:length(time)-1
-    v_eu(j+1)=v_eu(j)+f(time(j),v_eu(j),m,c)*dt;  
-end
+% validate the solution with ODE45
+opts=optimset('Display','none');
+[t45,v45]=ode45(@vdot_model,time,v0,opts,F,m,c);
 
-% If this is an 'Inline Definition' of the function 
-% it MUST go at the bottom of the script
-function [dvdt]=f(t,v,M,C)
-    dvdt=-C/M*v;
+% show a graph of the solution
+figure(1); hold on
+plot(time,vel,'ro');pause %analytical solution
+plot(t45,v45,'b*')  %numerical solution
+
+% Inline function definitions go at the bottom
+function [vdot]=vdot_model(tin,vin,F,m,c)
+    vdot=(F-c*vin)/m;
 end
 
   \end{lstlisting}
 
 }
 
-% Section 2 - A More Exciting Model
-\section{A More Exciting Model}
-\subsection{A More Exciting Model}
+% Section 2 - A Homework Problem
+\section{A Homework Problem}
+\subsection{First and Second Order Linear Systems}
 \frame{
 
-\frametitle{A More Exciting Model}
+\frametitle{First and Second Order Linear Systems}
 \begin{itemize}
 
 \item First and second order linear models are frequently used  in science and engineering
 
-\item However the world is \underline{\hspace{15mm}-\hspace{40mm}}\\
+\item Lets work one of the second order problems from the homework. Hopefully you see it could represent one of the physical systems. 
 
-\item Many exciting and important engineering problems invlove {\bf more complex models} involving rotational motion.
+\includegraphics[scale=0.020,angle=-90,origin=c]{jeep_01.jpg}\hspace{10mm}\includegraphics[scale=0.15]{water_tank.png}\hspace{10mm}\includegraphics[scale=0.25]{rc_circuit.png}
+
+
 
 \end{itemize}
-
-\includegraphics[scale=0.15]{ur5e.png}
-\includegraphics[scale=0.25]{dji_phantom.jpg}
-\includegraphics[scale=0.07]{steady_cam.jpg}
-
 }
 
+\subsection{Homework 5 - Problem 1 Part C}
 \frame{
 
-\frametitle{Non-Linear Swinging Pendulum}
+\frametitle{Homework 5 - Problem 1 Part C plus a f(t)=6t}
+\begin{framed}
+Solve the following ODE using the trial solution method. \vspc
+\scalebox{1}{$3\ddot{x}+12x=6t\hspccc \hspc x(0)=2\hspcc \dot{x}(0)=2$}
+\end{framed}\vspace{5mm}
+\underline{Step 1:} Find complementary part \vspccc
+\underline{Step 2:} Find particular part		\vspccc
+\underline{Step 3:} Combine and Solve for Unknown Constants \vspccc
+\vspace{50mm}
 
-An example of a non-linear system is an {\it inverted pendulum metronome}. \vspc
+}
+\subsection{Find Complementary Solution}
+\frame{
 
-\begin{multicols}{2}
-\includegraphics[scale=0.15]{metronome.png}
-
-How will this system behave?\vspc
-\scalebox{1}{$I_o\ddot{\theta}+k_T-\left( m\cdot g\cdot l\right) sin(\theta)=0$} \vspcc
-
-Finding an analytical solution is {\bf very involved} and only mathematicians have time for all that...but you can look \href{https://www.researchgate.net/publication/230969993_A_comprehensive_analytical_solution_of_the_nonlinear_pendulum}{\color{blue}here\color{black}}
-
-\end{multicols}
+\frametitle{Find Complementary Solution}
+\underline{Step 1:} Find complementary part from the LHS=0 of the ODE. \vspace{50mm}
 
 }
 
-% Section 3 - Equation Decomposition
-\section{Equation Decomposition}
+\subsection{Find Particular Solution}
+\frame{
+
+\frametitle{Find Particular Solution}
+\underline{Step 2:} Find particular part from the LHS=RHS of the ODE. \vspace{50mm}
+
+}
+
+\subsection{Combine and Solve for Unknown Constants}
+\frame{
+
+\frametitle{Combine and Solve for Unknown Constants}
+\underline{Step 3:} The solution is the sum of the complementary and particular parts. Solve for the two remaining unknowns. \vspace{50mm}
+
+}
+
+\subsection{Analyitcal Solution}
+\frame{
+
+\frametitle{Analyitcal Solution}
+
+\scalebox{1}{$x(t)=2cos(2t)+\frac{3}{4}sin(2t)+\frac{1}{2}t$} \vspace{50mm}
+
+}
+
+
+% Section 3 - Solution Validation
+\section{Solution Validation}
 \subsection{Equation Decomposition}
 \frame{
-As we have seen using Euler's method is not hard, but we have to setup the problem correctly. This is a re-occuring theme! \vspccc
-\scalebox{1}{$I_o\ddot{\theta}+k_T-\left( m\cdot g\cdot l\right) sin(\theta)=0$} \vspcc
+As we have seen using ODE45 is not hard, but we have to setup the problem correctly. This is a re-occuring theme!!! \vspccc
+\scalebox{1}{$3\ddot{x}+12x=6t\hspccc \hspc x(0)=2\hspcc \dot{x}(0)=2$} \vspcc
 
-To solve a second order system with an integration method like Euler's you must write the {\bf slope function(s)}. \vspccc
-
-There are two derivatives so there are two \underline{\hspace{15mm}}\hspace{3mm}\underline{\hspace{20mm}}. \vspc
-
+ODE45 can solve higher order equations but they must be written as a system of\underline{\hspace{15mm}}\hspace{3mm}\underline{\hspace{20mm}} \vspccc
+There are two derivatives so there are two \underline{\hspace{15mm}}\hspace{3mm}\underline{\hspace{20mm}} \vspc differential equations \vspc
 }
 
 
@@ -200,29 +236,37 @@ There are two derivatives so there are two \underline{\hspace{15mm}}\hspace{3mm}
 
 \frametitle{x2 First Order from x1 Second Order}
 
-{\it One} second order ODE can be {\bf decomposed} into {\it two} first order ODEs through a simple change of variables. This step can be confusing, but remember it is just an algebraic substitution!\vspccc
+{\it One} second order ODE can be {\bf decomposed} into {\it two} first order ODEs through a simple change of variables.\vspccc
 
-	\scalebox{1}{$I_o\ddot{\theta}+k_T-\left( m\cdot g\cdot l\right) sin(\theta)=0$} \vspcc
+\scalebox{1}{$3\ddot{x}+12x=6t\hspccc \hspc x(0)=2\hspcc \dot{x}(0)=2$} \vspace{40mm}
 
 }
 
 
-\subsection{Execute Euler's Method}
-\frame{
+\subsection{The ODE45 Function}
+\frame[containsverbatim]{
 
-\frametitle{Execute Euler's Method}
-\scalebox{1.0}{$f_1=$}\vspc
-\scalebox{1.0}{$f_2=$}\vspc
-Use Euler's method just as before with both slope functions. Compute the values of the solution one-by-one {\bf forward in time} for each variable side-by-side. \vspcc
-\begin{tabular}{|c|c|c|}\hline
-i&\scalebox{0.7}{$z_1(t_{i+1})=z_1(t_i)+f_1(t_i,z_{1i},z_{2i})\Delta t$}&\scalebox{0.7}{$z_2(t_{i+1})=z_2(t_i)+f_2(t_i,z_{1i},z_{2i})\Delta t$}\\ \hline
-1&\scalebox{0.7}{$z_1(\hspccc)=z_1(\hspccc)+f_1(\hspccc,\hspccc,\hspccc)\Delta t$}&\scalebox{0.7}{$z_2(\hspccc)=z_2(\hspccc)+f_2(\hspccc,\hspccc,\hspccc)\Delta t$}\\ \hline
-2&\scalebox{0.7}{$z_1(\hspccc)=z_1(\hspccc)+f_1(\hspccc,\hspccc,\hspccc)\Delta t$}&\scalebox{0.7}{$z_2(\hspccc)=z_2(\hspccc)+f_2(\hspccc,\hspccc,\hspccc)\Delta t$}\\ \hline
-3&\scalebox{0.7}{$z_1(\hspccc)=z_1(\hspccc)+f_1(\hspccc,\hspccc,\hspccc)\Delta t$}&\scalebox{0.7}{$z_2(\hspccc)=z_2(\hspccc)+f_3(\hspccc,\hspccc,\hspccc)\Delta t$}\\ \hline
-\end{tabular}
-
-\vspace{5mm} As you can see this can get messy quickly. 
-
+\begin{lstlisting}[numbers=none,basicstyle=\ttfamily\tiny]
+>> help ode45
+ ode45  Solve non-stiff differential equations, medium order method.
+    [TOUT,YOUT] = ode45(ODEFUN,TSPAN,Y0) with TSPAN = [T0 TFINAL] integrates 
+    the system of differential equations y' = f(t,y) from time T0 to TFINAL 
+    with initial conditions Y0. ODEFUN is a function handle. For a scalar T
+    and a vector Y, ODEFUN(T,Y) must return a column vector corresponding 
+    to f(t,y). Each row in the solution array YOUT corresponds to a time 
+    returned in the column vector TOUT.  To obtain solutions at specific 
+    times T0,T1,...,TFINAL (all increasing or all decreasing), use TSPAN = 
+    [T0 T1 ... TFINAL].     
+    
+    [TOUT,YOUT] = ode45(ODEFUN,TSPAN,Y0,OPTIONS) solves as above with default
+    integration properties replaced by values in OPTIONS, an argument created
+    with the ODESET function. See ODESET for details. Commonly used options 
+    are scalar relative error tolerance 'RelTol' (1e-3 by default) and vector
+    of absolute error tolerances 'AbsTol' (all components 1e-6 by default).
+    If certain components of the solution must be non-negative, use
+    ODESET to set the 'NonNegative' property to the indices of these
+    components.
+\end{lstlisting}
 
 
 
@@ -243,18 +287,12 @@ i&\scalebox{0.7}{$z_1(t_{i+1})=z_1(t_i)+f_1(t_i,z_{1i},z_{2i})\Delta t$}&\scaleb
 
 clear variables;close all;clc
 
-% define the constant parameters
-global m g l kt; % global variables, gross...
-m=2;g=9.8;
-l=42*(1/100);kt=6;
-
-% initial conditions
-theta0=15;
-omega0=0;
-
 % create an array of time values
 dt=.001;tstop=10;
-time=0:dt:tstop;
+t=0:dt:tstop;
+
+% compute solution from derived equation
+x_ex=2*cos(2*t)+3/4*sin(2*t)+1/2*t;
 \end{lstlisting}
 
 }
@@ -266,23 +304,19 @@ time=0:dt:tstop;
 % This method is not suitable for manual computation. \vspace{0mm}\\
 
  \begin{lstlisting}
-z1(1)=theta0*pi/180; z2(1)=0;  % initial conditions
-			 
-for j=1:length(time)-1  % approximate with Euler's
-    z1(j+1)=z1(j)+f1(time(j),z1(j),z2(j))*dt;  
-    z2(j+1)=z2(j)+f2(time(j),z1(j),z2(j))*dt;
-end
+% validate solution with ODE45
+iv=[2 2];     % intitial vals for dependent var
 
-function [z1dot]=f1(t,Z1,Z2)  % fns. go at bottom
-    global m g l kt % even grosser
-    z1dot=Z2;
-end
+opts=odeset('Stats','off');
+[t_45,x_45]=ode45(@ode_sys,t,iv,opts);
 
-function [z2dot]=f2(t,Z1,Z2)
-    global m g l kt 
-    z2dot=(m*g*l*sin(Z1)-kt*Z1)/(m*l^2);
+% a function to use with ODE45
+function [Zdot]=ode_sys(T,Z)  
+    Zdot=zeros(2,1);
+    Zdot(1)=Z(2);
+    Zdot(2)=(5*T-12*Z(1))/3;
 end
-  \end{lstlisting}
+\end{lstlisting}
 
 }
 
@@ -294,14 +328,16 @@ end
 
  \begin{lstlisting}
 % plot the results of the method
+% plot the results of the method
 figure(1);hold on
-plot(time,z1,'r')
-plot(time,z2,'b')
+plot(t,x_ex,'r-','LineWidth',2)
+plot(t_45,x_45(:,1),'b:','LineWidth',2)
+
 grid on
-title('Non-Linear Pendulum')
-legend('Angular Pos. (rad)','Angular Vel. (rad/s)')
-xlabel('Time(s)')
-axis([0 tstop -3 3])
+str=sprintf('Solution to 3x''''+12x=6t, x(0)=2, x''(0)=2');
+title(str)
+legend('Analytical Solution','ODE45 Approximation')
+xlabel('Time(s)');ylabel('x(t)')
   \end{lstlisting}
 
 }
@@ -310,15 +346,15 @@ axis([0 tstop -3 3])
 \frame[containsverbatim]{
 \frametitle{ Do you believe the results?}
 
-\includegraphics[scale=0.3]{lecture2_fig2.png} \includegraphics[scale=0.3]{lecture2_fig3.png}  \\
-\small This graph on the left makes sense, but what about this on the right?
+\includegraphics[scale=0.35]{lecture3_fig5.png}  \vspc
+\small The graphs are close but they are not exactly the same! \\
 }
 
 
 \end{document}
 
 
-
+%\item \underline{ Differential Equations with Boundary Value Problems} - Zill 
 
 
 
