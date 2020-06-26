@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.13)  25 JUN 2020 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.13)  25 JUN 2020 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**odes_lecture5.tex
-(./odes_lecture5.tex
+**odes_lecture5_handout.tex
+(./odes_lecture5_handout.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -769,8 +769,8 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count329
 \l__pdf_internal_box=\box121
 )
-(./odes_lecture5.aux)
-\openout1 = `odes_lecture5.aux'.
+No file odes_lecture5_handout.aux.
+\openout1 = `odes_lecture5_handout.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
@@ -788,7 +788,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -863,10 +862,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
-
-(./odes_lecture5.out) (./odes_lecture5.out)
 \@outlinefile=\write5
-\openout5 = `odes_lecture5.out'.
+\openout5 = `odes_lecture5_handout.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 48.
@@ -946,12 +943,13 @@ ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count337
- (./odes_lecture5.nav)
+
+No file odes_lecture5_handout.nav.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+) [1
 
-] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
@@ -990,7 +988,7 @@ thkerncmss.
 ] [10
 
 ]
-<lecture1_fig2.png, id=351, 934.49126pt x 739.76375pt>
+<lecture1_fig2.png, id=293, 934.49126pt x 739.76375pt>
 File: lecture1_fig2.png Graphic file (type png)
 <use lecture1_fig2.png>
 Package pdftex.def Info: lecture1_fig2.png  used on input line 183.
@@ -1003,31 +1001,38 @@ Package pdftex.def Info: lecture1_fig2.png  used on input line 183.
 
  <./lecture1_fig2.png>]
 \tf@nav=\write6
-\openout6 = `odes_lecture5.nav'.
+\openout6 = `odes_lecture5_handout.nav'.
 
 \tf@toc=\write7
-\openout7 = `odes_lecture5.toc'.
+\openout7 = `odes_lecture5_handout.toc'.
 
 \tf@snm=\write8
-\openout8 = `odes_lecture5.snm'.
+\openout8 = `odes_lecture5_handout.snm'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
 
-(./odes_lecture5.aux)
+(./odes_lecture5_handout.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
-Package rerunfilecheck Info: File `odes_lecture5.out' has not changed.
-(rerunfilecheck)             Checksum: 566262964634709775369E1BCA37E3FF;226.
+
+
+Package rerunfilecheck Warning: File `odes_lecture5_handout.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `odes_lecture5_handout.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  566262964634709775369E1BCA37E3FF;226.
  ) 
 Here is how much of TeX's memory you used:
- 19446 strings out of 481239
- 365816 string characters out of 5920377
- 803335 words of memory out of 5000000
- 34224 multiletter control sequences out of 15000+600000
+ 19377 strings out of 481239
+ 364834 string characters out of 5920377
+ 800062 words of memory out of 5000000
+ 34163 multiletter control sequences out of 15000+600000
  539476 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,19n,67p,809b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,16n,67p,817b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
@@ -1036,10 +1041,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy7.pfb>
-Output written on odes_lecture5.pdf (11 pages, 108588 bytes).
+Output written on odes_lecture5_handout.pdf (11 pages, 104971 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 380 compressed objects within 4 object streams
+ 358 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
  27 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 54 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Review}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Analytical Method}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Numerical Solutions}{4}{0}{1}
+\beamer@sectionintoc {2}{Engineering Example - Analytical Solution}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Problem Statement}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Trial Solution Method}{6}{0}{2}

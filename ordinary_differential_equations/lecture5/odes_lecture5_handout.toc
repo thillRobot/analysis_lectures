@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Trial Solution Method}{3}{0}{1}
+\beamer@sectionintoc {2}{Complementary Solution}{5}{0}{2}
+\beamer@sectionintoc {3}{Particular Solution}{7}{0}{3}
+\beamer@sectionintoc {4}{Apply Initial Conditions}{9}{0}{4}
