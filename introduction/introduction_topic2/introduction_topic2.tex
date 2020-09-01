@@ -2,7 +2,7 @@
 % Lecture Template for ME3001-001-Tristan Hill - Spring 2017 - Fall 2017 - Fall 2020
 % Mechanical Engineering Analysis with MATLAB
 % Module 1 - Introduction 
-% Topic 1 - What is Analysis ?
+% Topic 2 - MATLAB Review
 
 % Document settings
 
@@ -65,18 +65,16 @@
 \newsavebox{\mybox} % custom box
 
 \newcommand{\MNUM}{1\hspace{2mm}} % Module number
-\newcommand{\TNUM}{1\hspace{2mm}} % Topic number 
+\newcommand{\TNUM}{2\hspace{2mm}} % Topic number 
 \newcommand{\moduletitle}{Introduction} % Titles and Stuff
-\newcommand{\topictitle}{What is Analysis} 
+\newcommand{\topictitle}{MATLAB Review} 
 
-\newcommand{\sectiontitleI}{What is this class about?} % More Titles and Stuff
-\newcommand{\sectiontitleII}{How does it apply to mechanical engineering?}
-\newcommand{\sectiontitleIII}{What areas of engineering will we cover?}
-\newcommand{\sectiontitleIV}{Remember those math classes? }
-\newcommand{\sectiontitleV}{Major Topic Covered }
+\newcommand{\sectiontitleI}{What is MATLAB?} % More Titles and Stuff
+\newcommand{\sectiontitleII}{Why use it? Why Not?}
+\newcommand{\sectiontitleIII}{Review Basic Use}
+\newcommand{\sectiontitleIV}{Hello World}
 
-
-\author{ME3050 - Dynamics Modeling and Controls}
+\author{ME3001 - Mechanical Engineering Analysis}
 \title{Module \MNUM - \moduletitle}
 \date{Mechanical Engineering\vspc Tennessee Technological University}
 
@@ -97,7 +95,6 @@
 		\item \sectiontitleII 	\vspc % Section II
 		\item \sectiontitleIII 	\vspc %Section III
 		\item \sectiontitleIV 	\vspc %Section IV
-		\item \sectiontitleV 	\vspc %Section V
 	
 	\end{itemize}
 
@@ -109,38 +106,48 @@
 \frame{
   \frametitle{\sectiontitleI}
   			
-  		Define {\it Analysis}: \\	
-			- detailed examination of the elements or structure of something, typically as a basis for discussion or interpretation.  \vspace{5mm} \\ 
-			
-		
-			
-    \begin{itemize}
-		
-		\item Analysis \vspace{5mm}
-		
-		\item Design
-
-	\end{itemize}  
+  	\begin{itemize}
+			\item High Level programming language
+				\begin{itemize}
+					\item language written in C++
+					\item Interactive Development Environment written in JAVA 
+					\item Windows, Mac, and Linux compatible
+				\end{itemize}
+			\item {\it MAT}rix {\it LAB}oratory
+			\item {\it Technical Computing Language} - Mathworks
+		\end{itemize}	
 
 }
 
 \section{\sectiontitleII}
 
-\frame{
+\frame{ \small
   \frametitle{\sectiontitleII}
   
-  \textbf{This is not just another math class!}\\
-
-
-	\begin{itemize}
-			\item we will study mathematical modeling of engineering systems and the theoretical and numerical solutions to non-linear equations, systems of linear equations, and ordinary and partial differential equations \\
-			
-			\item mathematical methods for solving mechanical engineering problems with modern computing tools\\
-    
-		
-		\item we can solve the \large{BIG} problems!
-
-	\end{itemize}  
+  \begin{itemize}
+			\item A powerful tool for engineers, scientists, and students
+				\begin{itemize}	
+					\item  optimized for floating point arithmetic and linear algebra
+					\item extensive library of mathematical functions and operations 
+					\item specialized functions and operations
+						\begin{itemize}
+							\begin{multicols}{2}
+							\item Aerospace
+							\item Robotics
+							\item Communications
+							\item Image/Signal Processing 
+							\item Embedded Systems and Controls
+							\end{multicols}
+						\end{itemize}
+					\item ability to use {\it symbolic programming }	
+				\end{itemize}
+			\item Ease of Access and Community
+				\begin{itemize}
+					\item {\it Plug and Play}, it works out of the box
+					\item requires no programming experience to begin
+					\item online community for sharing code,  {\it MATLAB Central}
+				\end{itemize}
+		\end{itemize}
 
 }
 \section{\sectiontitleIII}
@@ -148,62 +155,92 @@
 \frame{
   \frametitle{\sectiontitleIII}
 	
-	\begin{itemize}
+\textbf{Useful Commands( type in Command Window)} \vspace{3mm}\\
+
+		
+			\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  clear variables}} \vspace{3mm}\\
+			\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  clc}} \vspace{3mm}\\
+			\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  close all}} \vspace{3mm}\\
+			\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  }} \\
+
 	
-		\item Statics and Mechanics\\
-		\item Rigid Body Dynamics\\
-		\item Fluid Dynamics\\
-		\item Thermodynamics and Heat Transfer\\
-		\item Vibrations\\
+}	
+\frame{
+  \frametitle{\sectiontitleIII}
 	
-	\end{itemize}  
+		
+		
+				\textbf{ Common Mathematics Functions} \vspace{3mm}\\	
+					\begin{itemize}
+						\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} sqrt()}} \vspace{3mm}\\
+						\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} exp()}} \vspace{3mm}\\
+						\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log()}} \vspace{3mm}\\
+						\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log2()}} \vspace{3mm}\\
+						\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log10()}} \\
+					\end{itemize}	
 
 }
+
+\frame{
+  \frametitle{\sectiontitleIII}
+	
+
+		
+		
+			\textbf{ Other Useful Functions} \\	
+					\begin{multicols}{2}	
+					\begin{itemize}
+						\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} round()}} \\
+						\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} floor()}} \\
+						\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} int8()}} \\
+						\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} sign()}} \\
+						\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} mod()}} \\
+						\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} rem()}} \\
+						\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} fzero()}} \\
+					\end{itemize}	
+					\end{multicols}
+					
+				\textbf{ Built-in Constants} \\		
+					\begin{multicols}{2}
+						\begin{itemize}
+					
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} pi}} \vspace{1mm}\\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} i}} \vspace{1mm}\\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} j}} \vspace{1mm}\\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} inf}} \vspace{1mm}\\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} NaN}} \vspace{1mm}\\
+
+				\end{itemize}
+				\end{multicols}
+}
+
+
+
+\frame{
+  \frametitle{\sectiontitleIII}
+	
+\textbf{The Built in Help } \vspace{3mm}\\
+\begin{itemize}	
+					\item 	\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >> help fzero()}} \vspace{3mm}\\
+						\item use the help to get information about the built in functions  \vspace{3mm}\\
+						\item the full documentation is also available online  \vspace{3mm}\\
+				\end{itemize}		
+						
+						 
+
+}
+						
+					
 \section{\sectiontitleIV}
 
 \frame{
   \frametitle{\sectiontitleIV}
   
-	We will be doing some {\it applied mathematics} in this class!
-	\begin{multicols}{2}
-	\begin{itemize}
-	
-		\item Algebra and Arithmetic\\
-		\item Matrix\slash Linear Algebra \\
-		\item Calculus \\
-		\item Ordinary and Partial \\Differential Equations \\
-		\item The Fourier Series \\
-		
-	
-	\end{itemize}
-	\end{multicols} 
+This is the classic first exercise for any programming language. \vspace{10mm}\\
+
+	\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >> Hello World}} \vspace{3mm}\\
 
 }
-
-\frame{
-  \frametitle{\sectiontitleIV}
-		This class is different than a traditional mathematics class.\\ 
-				\begin{itemize}
-					\item By nature engineering problems are hard to solve on paper.\\
-					
-					\item So, will be using calculators but we will also be using...\\
-									
-					\item \hspace{1mm} \vspace{10mm}\\
-									
-				\end{itemize}
-				
-		 Modern Computing Tools\\ 		
-		
-				\begin{itemize}
-					\item  \hspace{1mm} \vspace{5mm}\\
-					
-					\item  \hspace{1mm} \vspace{5mm}\\
-					
-					\item  \hspace{1mm} \vspace{5mm}\\
-									
-				\end{itemize}
-		
-	}
 
 \end{document}
 
