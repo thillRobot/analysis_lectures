@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  13 SEP 2020 01:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  13 SEP 2020 12:52
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1019,7 +1019,7 @@ Package rerunfilecheck Info: File `systems_linear_equations_topic2.out' has not
 Here is how much of TeX's memory you used:
  19655 strings out of 481239
  368089 string characters out of 5920377
- 809056 words of memory out of 5000000
+ 809057 words of memory out of 5000000
  34426 multiletter control sequences out of 15000+600000
  544997 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

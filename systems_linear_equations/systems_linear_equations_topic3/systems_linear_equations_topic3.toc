@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Techniques for Solving Linear Systems}{3}{0}{1}
+\beamer@sectionintoc {2}{Homogeneous and Inhomogeneous Systems}{4}{0}{2}
+\beamer@sectionintoc {3}{Solution Existence Cases in 2D}{5}{0}{3}
+\beamer@sectionintoc {4}{Numerical Error and System Condition}{10}{0}{4}
