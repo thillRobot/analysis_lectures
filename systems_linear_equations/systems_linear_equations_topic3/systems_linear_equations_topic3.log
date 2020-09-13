@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  12 SEP 2020 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  13 SEP 2020 01:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -341,7 +341,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count269
 \l__pdf_internal_box=\box92
 )
-No file systems_linear_equations_topic3.aux.
+(./systems_linear_equations_topic3.aux)
 \openout1 = `systems_linear_equations_topic3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -360,6 +360,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -433,6 +434,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 83.
 LaTeX Info: Redefining \pageref on input line 83.
 LaTeX Info: Redefining \nameref on input line 83.
+
+(./systems_linear_equations_topic3.out) (./systems_linear_equations_topic3.out)
 \@outlinefile=\write4
 \openout4 = `systems_linear_equations_topic3.out'.
 
@@ -745,23 +748,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (./systems_linear_equations_topic3.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
-
-
-Package rerunfilecheck Warning: File `systems_linear_equations_topic3.out' has 
-changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `systems_linear_equations_topic3.out
-':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `systems_linear_equations_topic3.out' has not
+ changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 7236 strings out of 481239
- 107746 string characters out of 5920377
- 374544 words of memory out of 5000000
+ 7242 strings out of 481239
+ 107962 string characters out of 5920377
+ 374648 words of memory out of 5000000
  22370 multiletter control sequences out of 15000+600000
  537471 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

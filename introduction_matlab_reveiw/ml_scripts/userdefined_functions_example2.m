@@ -2,8 +2,8 @@
 % ME3001 - Mechanical Engineering Analysis Tennessee Technological University
 % Tristan Hill, September 12, 2019 - September 04, 2020
 % Module 1 - Intro to MATLAB
-% Topic 5 - User Defined Functions Example 1 
-% This program adds/substract/multiplys two numbers using functions!
+% Topic 5 - User Defined Functions Example 2 
+% This program adds/substract/multiplys two arrays of numbers using functions!
 %%
 clear variables; clc
 
@@ -23,10 +23,15 @@ for i=1:5
     
 end
 
+%% show the results
+sum_AB
+diff_AB
+prod_AB
 
-fprintf('The sum is %f\nThe difference is %f\nThe product is %f\n',sum_AB(1),diff_AB(1),prod_AB(1));
-
-
+%% verify the answers
+sum_AB_check=num_A+num_B
+diff_AB_check=num_A-num_B
+prod_AB_check=num_A.*num_B % Notice the 'element-wise' multiplication (.*)
 
 %% Define functions below
 function [C]=add_numbers(A,B) 
