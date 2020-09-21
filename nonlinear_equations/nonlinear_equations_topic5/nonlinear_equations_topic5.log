@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  14 SEP 2020 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  14 SEP 2020 12:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**nonlinear_equations_topic3.tex
-(./nonlinear_equations_topic3.tex
+**nonlinear_equations_topic5.tex
+(./nonlinear_equations_topic5.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -783,8 +783,8 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count329
 \l__pdf_internal_box=\box122
 )
-(./nonlinear_equations_topic3.aux)
-\openout1 = `nonlinear_equations_topic3.aux'.
+(./nonlinear_equations_topic5.aux)
+\openout1 = `nonlinear_equations_topic5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
@@ -878,9 +878,9 @@ LaTeX Info: Redefining \ref on input line 81.
 LaTeX Info: Redefining \pageref on input line 81.
 LaTeX Info: Redefining \nameref on input line 81.
 
-(./nonlinear_equations_topic3.out) (./nonlinear_equations_topic3.out)
+(./nonlinear_equations_topic5.out) (./nonlinear_equations_topic5.out)
 \@outlinefile=\write5
-\openout5 = `nonlinear_equations_topic3.out'.
+\openout5 = `nonlinear_equations_topic5.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 81.
@@ -962,7 +962,7 @@ ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count337
- (./nonlinear_equations_topic3.nav)
+ (./nonlinear_equations_topic5.nav)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -976,101 +976,66 @@ Overfull \vbox (6.74406pt too high) detected at line 124
 [3
 
 ]
-<newton_portrait.jpg, id=66, 408.52625pt x 561.09625pt>
-File: newton_portrait.jpg Graphic file (type jpg)
-<use newton_portrait.jpg>
-Package pdftex.def Info: newton_portrait.jpg  used on input line 142.
-(pdftex.def)             Requested size: 69.44853pt x 95.3851pt.
-<raphson_book.jpg, id=67, 236.74655pt x 326.46103pt>
-File: raphson_book.jpg Graphic file (type jpg)
-<use raphson_book.jpg>
-Package pdftex.def Info: raphson_book.jpg  used on input line 142.
-(pdftex.def)             Requested size: 71.0245pt x 97.93906pt.
- [4
-
- <./newton_portrait.jpg> <./raphson_book.jpg>]
-<topic3_fig1.png, id=76, 702.59009pt x 316.73112pt>
+<topic3_fig1.png, id=66, 702.59009pt x 316.73112pt>
 File: topic3_fig1.png Graphic file (type png)
 <use topic3_fig1.png>
-Package pdftex.def Info: topic3_fig1.png  used on input line 152.
+Package pdftex.def Info: topic3_fig1.png  used on input line 138.
+(pdftex.def)             Requested size: 281.03105pt x 126.69019pt.
+ [4
+
+ <./topic3_fig1.png>]
+File: topic3_fig1.png Graphic file (type png)
+<use topic3_fig1.png>
+Package pdftex.def Info: topic3_fig1.png  used on input line 146.
 (pdftex.def)             Requested size: 281.03105pt x 126.69019pt.
  [5
 
- <./topic3_fig1.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 166
-.
+]
+File: topic3_fig1.png Graphic file (type png)
+<use topic3_fig1.png>
+Package pdftex.def Info: topic3_fig1.png  used on input line 155.
+(pdftex.def)             Requested size: 281.03105pt x 126.69019pt.
+ [6
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 166
-.
+] [7
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 166.
-
-(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-[6
+] [8
 
 ]
-<topic3_fig2.png, id=103, 734.01183pt x 449.9593pt>
-File: topic3_fig2.png Graphic file (type png)
-<use topic3_fig2.png>
-Package pdftex.def Info: topic3_fig2.png  used on input line 177.
-(pdftex.def)             Requested size: 293.59953pt x 179.98053pt.
-
-Overfull \vbox (113.63121pt too high) detected at line 177
- []
-
-[7
-
- <./topic3_fig2.png>]
 \tf@nav=\write6
-\openout6 = `nonlinear_equations_topic3.nav'.
+\openout6 = `nonlinear_equations_topic5.nav'.
 
 \tf@toc=\write7
-\openout7 = `nonlinear_equations_topic3.toc'.
+\openout7 = `nonlinear_equations_topic5.toc'.
 
 \tf@snm=\write8
-\openout8 = `nonlinear_equations_topic3.snm'.
+\openout8 = `nonlinear_equations_topic5.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
- (./nonlinear_equations_topic3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
-Package rerunfilecheck Info: File `nonlinear_equations_topic3.out' has not chan
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+ (./nonlinear_equations_topic5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
+Package rerunfilecheck Info: File `nonlinear_equations_topic5.out' has not chan
 ged.
-(rerunfilecheck)             Checksum: B859354149C839FADDCEFA1F0F24733D;194.
+(rerunfilecheck)             Checksum: DA0F279AD3E4568A66C812CEA73811E5;193.
  ) 
 Here is how much of TeX's memory you used:
- 19683 strings out of 481239
- 368419 string characters out of 5920377
- 806893 words of memory out of 5000000
- 34444 multiletter control sequences out of 15000+600000
- 546459 words of font info for 68 fonts, out of 8000000 for 9000
+ 19605 strings out of 481239
+ 367107 string characters out of 5920377
+ 807920 words of memory out of 5000000
+ 34400 multiletter control sequences out of 15000+600000
+ 536588 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,19n,67p,822b,552s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb>
-Output written on nonlinear_equations_topic3.pdf (7 pages, 369785 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
+Output written on nonlinear_equations_topic5.pdf (8 pages, 58329 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
