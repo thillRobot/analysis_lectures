@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  12 SEP 2020 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  6 OCT 2020 07:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1027,7 +1027,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  19491 strings out of 481239
  366373 string characters out of 5920377
- 803529 words of memory out of 5000000
+ 803528 words of memory out of 5000000
  34259 multiletter control sequences out of 15000+600000
  540326 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

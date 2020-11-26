@@ -1,6 +1,6 @@
 % Lecture Template for ME3001-001-Tristan Hill - Spring 2020
 % Mechanical Engineering Analysis with MATLAB
-% Ordinary Differential Equations - Lecture 1
+% Ordinary Differential Equations - Topic 1
 
 % I am finally converting my stuff to BEAMER
 
@@ -8,98 +8,55 @@
 
 
 
-%\documentclass{beamer}                  % for presentation ?
-\documentclass[handout]{beamer}  % for handout ?
-\usepackage{beamerthemesplit}
-\usepackage{amsmath}
-\usepackage{listings}
-\usepackage{multicol}
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
 
-\beamertemplateballitem
+% Lecture Template for ME3001-001-Tristan Hill - Spring 2017 - Fall 2017 - Fall 2020
+% Mechanical Engineering Analysis with MATLAB
+% Module 4 - ODE Applications 
+% Topic 1 - Review and Classification  
 
-\definecolor{TTUpurple}{rgb}{0.3098, 0.1607, 0.5176} % TTU Purple (primary)
-\definecolor{TTUgold}{rgb}{1.0000, 0.8666, 0.0000} % TTU Gold (primary)
+\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
 
-\setbeamercolor{palette primary}{bg=TTUpurple,fg=TTUgold}
-\setbeamercolor{palette secondary}{bg=black,fg=TTUgold}
-\setbeamercolor{palette tertiary}{bg=black,fg=TTUpurple}
-\setbeamercolor{palette quaternary}{bg=TTUgold,fg=black}
-\setbeamercolor{structure}{fg=TTUpurple} % itemize, enumerate, etc
-\setbeamercolor{section in toc}{fg=TTUpurple} % TOC sections
+\usepackage{/home/thill/Documents/lectures/analysis_lectures/analysis_lectures}
 
-%\usefonttheme{professionalfonts}
+\newcommand{\MNUM}{5\hspace{2mm}} % Module number
+\newcommand{\TNUM}{1\hspace{2mm}} % Topic number 
+\newcommand{\moduletitle}{Systems of Linear Equations} % Titles and Stuff
+\newcommand{\topictitle}{Linear Systems Review} 
 
-\newcommand{\LNUM}{1\hspace{2mm}} % Lecture Number 
-
-\newcommand{\secondtitle}{Review of Differential Equations}% second line of the title of this presentation , aka the topic of this lecture
-\newcommand{\vspcc}{\vspace{6mm}\\ } 
-\newcommand{\vspc}{\vspace{3mm}\\ } 
-\newcommand{\hspc}{\hspace{5mm} } 
+\newcommand{\sectiontitleI}{What is a Differential Equation?} % More Titles and Stuff
+\newcommand{\sectiontitleII}{Standard Form of an ODE}
+\newcommand{\sectiontitleIII}{Classification}
+\newcommand{\sectiontitleIV}{Example}
 
 
-\title{Ordinary Differential Equations - Lecture \LNUM}
-\author{ME3001 - Mechanical Engineering Analysis} % original formatting from Mike Renfro, September 21, 2004
-
-\date{March 29, 2020}
+\author{ME3001 - Mechanical Engineering Analysis}
+\title{Module \MNUM - \moduletitle}
+\date{Mechanical Engineering\vspc Tennessee Technological University}
 
 \begin{document}
 
 \lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 
-\frame{\titlepage \center\textbf{\secondtitle}\vspcc}
+\frame{\titlepage \center\begin{framed}\Large \textbf{Topic \TNUM - \topictitle}\end{framed} \vspace{5mm}}
 
-%\section*{Outlines}
-%\subsection*{Part I: Review of Previous Lecture}
-%\frame{
-%  \nameslide{outline}
-%  \frametitle{Review of Previous Lecture}
-%  \tableofcontents[part=1]
-%}
-
-%\subsection*{Part II: Solution of Simultaneous Linear Algebraic Equations}
-%\frame{
-%  \frametitle{Solution of Simultaneous Linear Algebraic Equations}
-%  \tableofcontents[part=1]
-%}
-
-%\part{Review of Previous Lecture}
-%\frame{\partpage}
-
-%\frame{
-%  \frametitle{Review of Previous Lecture}
-
-%  \begin{itemize}
-%  \item<+-| alert@+> Sample problems solved with numerical methods
-%    \begin{itemize}
-%    \item<+-| alert@+> Natural frequencies of a vibrating bar
-%    \item<+-| alert@+> Static analysis of a scaffolding
-%    \item<+-| alert@+> Critical loads for buckling a column
-%    \item<+-| alert@+> Realistic Design Properties of Materials
-%    \end{itemize}
-%  \item<+-| alert@+> Solution of nonlinear equations
-%    \begin{itemize}
-%    \item<+-| alert@+> Introduction
-%    \item<+-| alert@+> Example: fluid mechanics
-%    \item<+-| alert@+> Incremental search method
-%    \end{itemize}
-%  \end{itemize}
-%}
-%ballitem
-%\part{Solution of Simultaneous Linear Algebraic Equations}
-%\frame{\partpage}
-
+% Section 0 - Outline
 \frame{
-
-{\bf Lecture \LNUM- \secondtitle :} \vspace{3mm}\\ % ' topics' are beamer 'sections' - TWH
-
- \begin{itemize}
-	\item Definitions\vspace{5mm}\\
-	\item Classification \vspace{5mm}\\	
-	\item Engineering Applications \vspace{5mm}\\
-	\item Example \vspace{5mm}\\
-\end{itemize}
+	
+	\large \textbf{Topic \TNUM - \topictitle} \vspace{3mm}\\
+	
+	\begin{itemize}
+	
+		\item \sectiontitleI    \vspc % Section I
+		\item \sectiontitleII 	\vspc % Section II
+		\item \sectiontitleIII 	\vspc %Section III
+		\item \sectiontitleIV 	\vspc %Section IV
+	
+	\end{itemize}
 
 }
+
 
 \section{Definitions}
 
