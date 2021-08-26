@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{What is this class about?}{3}{0}{1}
-\beamer@sectionintoc {2}{How does it apply to mechanical engineering?}{4}{0}{2}
-\beamer@sectionintoc {3}{What areas of engineering will we cover?}{5}{0}{3}
-\beamer@sectionintoc {4}{Remember those math classes? }{6}{0}{4}
-\beamer@sectionintoc {5}{Major Topic Covered }{8}{0}{5}
+\beamer@sectionintoc {2}{How does it apply to mechanical engineering?}{5}{0}{2}
+\beamer@sectionintoc {3}{What areas of engineering will we cover?}{6}{0}{3}
+\beamer@sectionintoc {4}{Remember those math classes? }{7}{0}{4}
+\beamer@sectionintoc {5}{Major Topics Covered }{9}{0}{5}

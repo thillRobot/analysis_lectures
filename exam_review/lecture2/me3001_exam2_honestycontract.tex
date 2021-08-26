@@ -1,0 +1,167 @@
+% Lecture Template for ME3001-001-Tristan Hill - Spring 2017 - Fall 2018
+% 
+% Mechanical Engineering Analysis with MATLAB
+%
+% Exam  Review - ME3001 - Spring 2020
+
+
+% Document settings
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{color,soul}
+\usepackage{fancyvrb}
+\usepackage{framed}
+\usepackage{wasysym}
+\usepackage{multicol}
+
+\pagestyle{plain}
+\setlength\parindent{0pt}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+% assignment number 
+
+\definecolor{mygreen}{rgb}{0, .39, 0}
+
+%\definecolor{dred}{#8B0000}
+% [153,50,204] - dark orchid
+\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
+%[139,69,19] - saddle brown
+\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
+
+\definecolor{mygray}{rgb}{.6, .6, .6}
+
+\setulcolor{red} 
+\setstcolor{green} 
+\sethlcolor{mygray} 
+
+\newcommand{\VA}{\vspace{2mm}}
+\newcommand{\VB}{\vspace{5mm}} 
+\newcommand{\VC}{\vspace{30mm}} 
+ 
+\newcommand{\R}{\color{red}}
+\newcommand{\B}{\color{blue}}
+\newcommand{\K}{\color{black}}
+\newcommand{\G}{\color{mygreen}}
+\newcommand{\PR}{\color{mypurple}}
+
+\newcommand{\NUM}{1} 
+\newcommand{\VSpaceSize}{2mm} 
+\newcommand{\HSpaceSize}{2mm} 
+
+\begin{document}
+
+\textbf{ \LARGE ME3001 - 002 - Spring 2020 - Exam 2 Review  } \\\\
+
+\large
+\begin{itemize}
+	\item  \textbf{\Large General Information}\\
+
+	\begin{itemize}
+
+		\item  \textbf{Date: Friday 04/24/2020 }\\
+		\item  \textbf{\underline{Start Time}: 12:20 AM\hspace{5mm}\underline{Stop Time}: 2:20 PM}\\
+		\item  \textbf{Location: The exam will be taken remotely. }\\
+		\item  \textbf{Access the exam at Start Time on ilearn.} \\
+		\item  \textbf{Submit your work as a .pdf before Stop Time on ilearn.}\\ 
+		\item  \textbf{Label all answers. \underline{Do not} write the problem statements.}\\
+	\end{itemize}
+
+		\item  \textbf{\Large Materials Allowed in Exam}\\
+
+	\begin{itemize}
+
+		\item  \textbf{Calculator of your Choice (i.e. TI, MATLAB, abacus)}\\
+		\item  \textbf{Your notes from class}\\
+		\item  \textbf{Reference Sheet(s) from Instructor}\\
+		\item  \textbf{A writing device of your choice, pencil or tablet}\\
+		\item  \textbf{You are not allowed to use external resources such as the \\internet or communicate with anyone besides the instructor during test}\\
+
+		\item \textbf{ This is a Self Proctored Exam - You are responsible for upholding the TNTECH Student Academic Misconduct Policy. You must write, sign and date the following honesty contract on the first page of your exam. }\\
+\end{itemize}
+\large 
+		\item \textbf{Honesty Contract:}
+\begin{framed}
+		 \textbf{I \underline{\hspace{50mm}}, agree to follow the policy of this exam as described in the document {\it me3001\_exam2\_honestycontract.pdf. }}\vspace{3mm}\\
+		 \textbf{Signature\underline{\hspace{80mm}}\hspace{10mm}Date\underline{\hspace{20mm}}}\\
+\end{framed}
+	
+\newpage
+\item  \textbf{\Large Topics Covered}\\
+	\begin{itemize}
+
+		\item  \textbf{\large Classification of Differential Equations}\vspace{0mm}\\
+		\item  \textbf{\large Analytical Solutions to ODEs}\vspace{0mm}\\
+		\item  \textbf{\large Numerical Soltions to ODEs}\vspace{0mm}\\
+		\item  \textbf{\large Equation Decomposition}\\
+
+
+	\end{itemize}
+
+\item  \textbf{\Large Probable Problem Breakdown}\\
+\Large
+	\begin{enumerate}
+
+
+		\item  \textbf{\Large Technical Problem A (33.33\%)}\\
+		\begin{itemize}
+			\item No Model - Just Math
+			\item Solve ODE $1^{st}$\hspace{3mm} $2^{nd}$
+			\item Separation of Variables or The Trial Solution Method\\
+		\end{itemize}
+		\item  \textbf{\Large Technical Problem B (33.33\%)}\\
+		\begin{itemize}
+		
+			\item Analytical Solution 
+			\item Numerical Integration for Solution Validation 
+			\item Sketch of Solutions \\
+
+		\end{itemize}
+		\item  \textbf{\Large Technical Problem C (33.33\%)}\\
+		\begin{itemize}
+			\item Given mathematical model 
+			\item Numerical Integration	for Solution 
+			\item Decomposition of Second Order Equation
+			\item Analyis question
+
+
+		\end{itemize}
+	\end{enumerate}
+%
+%\item  \textbf{\Large Solutions from TH}\\
+%\begin{itemize}
+%\item QZ 3,4,5
+%\item HW 3,4
+%\end{itemize}
+
+\end{itemize}
+
+
+	
+
+\end{document}
+
+
+

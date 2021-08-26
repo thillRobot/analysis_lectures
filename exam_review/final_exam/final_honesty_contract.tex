@@ -1,0 +1,195 @@
+% Lecture Template for ME3001-001-Tristan Hill - Spring 2017 - Fall 2018
+% 
+% Mechanical Engineering Analysis with MATLAB
+%
+% Exam  Review - ME3050 - s20
+
+
+% Document settings
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{color,soul}
+\usepackage{fancyvrb}
+\usepackage{framed}
+\usepackage{wasysym}
+\usepackage{multicol}
+
+\pagestyle{plain}
+\setlength\parindent{0pt}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+% assignment number 
+
+\definecolor{mygreen}{rgb}{0, .39, 0}
+
+%\definecolor{dred}{#8B0000}
+% [153,50,204] - dark orchid
+\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
+%[139,69,19] - saddle brown
+\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
+
+\definecolor{mygray}{rgb}{.6, .6, .6}
+
+\setulcolor{red} 
+\setstcolor{green} 
+\sethlcolor{mygray} 
+
+\newcommand{\VA}{\vspace{2mm}}
+\newcommand{\VB}{\vspace{5mm}} 
+\newcommand{\VC}{\vspace{30mm}} 
+ 
+\newcommand{\R}{\color{red}}
+\newcommand{\B}{\color{blue}}
+\newcommand{\K}{\color{black}}
+\newcommand{\G}{\color{mygreen}}
+\newcommand{\PR}{\color{mypurple}}
+
+\newcommand{\NUM}{1} 
+\newcommand{\VSpaceSize}{2mm} 
+\newcommand{\HSpaceSize}{2mm} 
+
+\begin{document}
+
+\setstcolor{blue}
+
+\textbf{ \LARGE ME3001 - 002 - Spring 2020 - Final Exam Review  } \\\\
+
+\begin{itemize}
+	\item  \textbf{\Large General Information}\\
+
+	\begin{itemize}
+
+		\item  {\Large Date: Wednesday 05/06/2020 }\\
+		\item  {\Large {\bf Start Time}: 3:30 PM\hspace{5mm}{\bf Stop Time}: 6:00 PM}\\
+		\item  {\Large Location: The exam will be taken remotely. }\\
+		\item  {\Large Access the exam {\bf at} Start Time on ilearn.} \\
+		\item {\Large Submit your work as a single .pdf {\bf before} Stop Time on ilearn.}\\ 
+		\item  {\Large Label all answers. {\bf Do not} write the problem statements.}\\
+	\end{itemize}
+
+		\item  \textbf{\Large Materials Allowed in Exam}\\
+
+	\begin{itemize}
+
+		\item  {\Large Calculator of your Choice}
+		\item  {\Large Open book, notes, internet, NO PEOPLE OR ROBOTS test.}\vspace{1mm}
+		\item  {\Large A writing device of your choice, pencil or tablet}
+		\item  {\Large Each problem must be on at least one separate page}
+		
+		\item  {\Large You are {\bf not allowed} communicate with anyone besides the instructor during test}. \\
+		\item {\Large This is a Self Proctored Exam - {\bf You are responsible} for upholding the TNTECH Student Academic Misconduct Policy}\\
+		\item  {\Large You must {\bf write and sign} the following honesty contract on the {\bf first page of your exam}}. \\
+
+\end{itemize}
+\begin{framed}
+		 \textbf{\Large I \underline{\hspace{50mm}} agree to follow the policy of this exam as described in the document {\it final\_honesty\_contract\_sec001.pdf}.  }\vspace{3mm}\\
+		 \textbf{\Large Signature \underline{\hspace{100mm} }}\\
+		%\item \textbf{\Large $\pi \phi \Omega$}\\		
+\end{framed}
+	
+\newpage
+\item  \textbf{\Large Major Topics}\\
+	\begin{itemize}
+
+		\item  {\large This is a comprehensive final exam}\\
+		\item  {\large Roots of Non- Linear Equations }
+		\item  {\large Systems of Linear Equations}
+		\item  {\large Solutions to Differential Equations}
+		\item  {\large Engineering Applications}
+		
+	\end{itemize}
+
+\item  \textbf{\Large Probable Problem Breakdown}\\
+\Large
+	\begin{enumerate}
+
+
+		\item  \textbf{\Large Technical Problem A (33.33\%)}
+		\begin{itemize}
+			\item  Roots of Non- Linear Equations \\
+		\end{itemize}
+		\item  \textbf{\Large Technical Problem B (33.33\%)}
+		\begin{itemize}
+			\item Systems of Linear Equations \\
+		\end{itemize}
+		\item  \textbf{\Large Technical Problem C (33.33\%)}
+		\begin{itemize}
+			\item Solutions to Differential Equations \\
+
+		\end{itemize}
+	\end{enumerate}
+%
+\item  \textbf{\Large Study Material from TH}\\
+\begin{itemize}
+
+\item Exam Grades (today or tomorrow)
+
+\item HW Solutions - 5,\st{6}
+
+\item Quiz Solution -5,6,7,8,\st{9,10}\\
+%
+
+
+\end{itemize}
+
+
+
+
+\newpage
+
+
+%\item  \textbf{\Large Final Grade Calculation as in Syllabus - ( $900$ points $\rightarrow$ A )}\vspace{10mm}\\
+%\renewcommand{\arraystretch}{1.5}
+%\begin{tabular}{|c|c|}
+%Homework&100\\
+%Quizzes&200\\
+%Exam1&150\\ 
+%Exam 2&150\\
+%Exam 3&150\\
+%Final Exam&250\\
+%Available&1000\\
+%\end{tabular}
+%
+%\vspace{10mm}
+%\item  \textbf{\Large Modified Final Grade Calculation - ( $900$ points $\rightarrow$ A )}\vspace{10mm}\\
+%\renewcommand{\arraystretch}{1.5}
+%\begin{tabular}{|c|c|c|c|}
+%Homework&100& + \B 50 (E3) \K& + \G 25 (HW3) \K \\
+%Quizzes&100& & + \PR 100(?)\\
+%Exam 1&150& + \B 50  (E3)&\\ 
+%Exam 2&150& + \B 50  (E3)&\\
+%\st{Exam 3}&\st{150}&&\\
+%Final Exam&250&&\\
+%Available&&1025\\
+%\end{tabular}
+%
+
+\end{itemize}
+
+\end{document}
+
+
+
