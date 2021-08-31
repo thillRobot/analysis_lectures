@@ -1,0 +1,190 @@
+
+% Lecture Template for ME3001-001-Tristan Hill - Spring 2017 - Fall 2017 - Fall 2020
+% Mechanical Engineering Analysis with MATLAB
+% Module 1 - Introduction 
+% Topic 5 - MATLAB Review - Loops
+
+% Document settings
+
+%\documentclass{beamer}                  % for presentation ?
+\documentclass[handout]{beamer}  % for handout ?
+\usepackage{/home/thill/Documents/lectures/analysis_lectures/analysis_lectures}
+
+\newcommand{\MNUM}{1\hspace{2mm}} % Module number
+\newcommand{\TNUM}{5\hspace{2mm}} % Topic number 
+\newcommand{\moduletitle}{Introduction and MATLAB Review} % Titles and Stuff
+\newcommand{\topictitle}{MATLAB Loops} 
+
+\newcommand{\sectiontitleI}{What is Looping?} % More Titles and Stuff
+\newcommand{\sectiontitleII}{Types of Loops}
+\newcommand{\sectiontitleIII}{MATLAB Examples}
+
+
+\newcommand{\btVFill}{\vskip0pt plus 1filll}
+
+% custom box
+\newsavebox{\mybox}
+
+\author{ME3001 - Mechanical Engineering Analysis} 
+\title{Lecture Module - \moduletitle}
+\date{Mechanical Engineering\vspc Tennessee Technological University}
+
+\begin{document}
+	
+	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+	
+	\frame{\titlepage \center\begin{framed}\Large \textbf{Topic \TNUM - \topictitle}\end{framed} \vspace{5mm}}
+	
+	% Section 0: Outline
+	\frame{
+		\large \textbf{Topic \TNUM - \topictitle} \vspace{3mm}\\
+		
+		\begin{itemize}
+			
+			\item \sectiontitleI    \vspc % Section I
+			\item \sectiontitleII 	\vspc % Section II
+			\item \sectiontitleIII 	\vspc %Section III
+			%\item \sectiontitleIV 	\vspc %Section IV
+			
+		\end{itemize}
+		
+	}
+
+
+
+\section{\sectiontitleI}
+
+\frame{
+  \frametitle{\sectiontitleI}
+  
+  
+Repeated Code
+
+
+You may have you noticed in your programs that there was a lot of \PR Repeated Code \BK? Is this OK?\vspc
+
+	\begin{itemize}
+		\item 
+		\item \vspace{3mm}
+	\end{itemize}
+	\vspace{3mm}
+
+What can we do about it?  
+            			
+Introduce a new \color{blue}Control Structure \color{black} ... 
+		
+}
+
+
+\frame{
+\frametitle{A New Control Structure}
+	
+
+A loop is a fundamental {\bf control structure} in sequential programming in which one or more commands is executed in repetition controlled by a logical statement or counter. - TH  
+\vspace{5mm}\\
+... In computer programming, a loop is a sequence of instructions that is repeated until a certain condition is reached.  - Web
+
+	\begin{itemize}
+		\item 
+		\item \vspace{3mm}
+	\end{itemize}
+	\vspace{3mm}
+
+}
+
+
+\frame{
+\frametitle{Why use Loops? }
+
+
+         \Large Why are loops useful in computer programming? \vspc
+	\large
+	\begin{itemize}
+		\item Reduce problems associated with {it repeated code} \vspc
+		\item \vspace{3mm}
+		\item \vspace{3mm}
+	\end{itemize}
+
+}
+
+
+\section{\sectiontitleII}
+\frame{
+\frametitle{Many Different Types}
+
+\large There are many different types of loops in computer programming. This is not an inclusive list.\vspc
+\begin{itemize}
+
+	\item \BL WHILE \BK loops
+	\item \BL FOR \BK loops
+	\item {\it nested} loops
+	\item DO... WHILE loops
+\end{itemize}
+
+\large Loops can be characterized as {\it entry-controlled} or {\it exit-controlled} loops.
+
+}
+
+\frame{
+\frametitle{The WHILE Loop}
+
+ The WHILE Loop is  the simplest loop in computer programming.\vspc
+\begin{itemize}
+
+	\item {\bf block of code} is repeated as long as \textbf{\PR condition} \BK is\textbf{ \GR true } \BK \vspc
+	\item {\it entry-controlled} loop structure \vspc
+	\item \vspace{3mm}
+	\item  \vspace{3mm}
+
+\end{itemize}
+
+}
+
+\frame[containsverbatim]{
+\frametitle{Structure of a WHILE Loop}
+
+%It is useful to visualize the structure in a {\bf program flowchart} \vspcc
+%%\begin{multicols}{2}
+%\includegraphics[scale=0.25]{lecture1_fig1.png}\\	
+%
+\begin{framed}
+\begin{lstlisting}
+i=1; %Initialize the Counter
+
+while(i<10)
+
+	% Do Stuff Here
+
+	i=i+1; % Increment the Counter
+
+end	
+\end{lstlisting}
+\end{framed}
+%
+%%\end{multicols}
+}
+
+
+%Section 3: MATLAB Examples
+\section{\sectiontitleIII}
+% references is not a section for now, for looks and it would be a waste of space
+\frame{
+
+\frametitle{References}
+
+\begin{itemize}
+	\item Your MATLAB textbook - Chapter 5 - Looping Statements
+\end{itemize}
+
+}
+\end{document}
+
+
+
+
+
+
+
+
+
+ 

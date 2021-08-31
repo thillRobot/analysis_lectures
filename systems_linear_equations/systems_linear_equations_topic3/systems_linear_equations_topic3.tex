@@ -22,32 +22,30 @@
 \newcommand{\sectiontitleIV}{Numerical Error and System Condition}
 
 
-\author{ME3001 - Mechanical Engineering Analysis}
-\title{\GD Module \MNUM - \moduletitle}
+\author{ME3001 - Mechanical Engineering Analysis} 
+\title{Lecture Module - \moduletitle}
 \date{Mechanical Engineering\vspc Tennessee Technological University}
 
 \begin{document}
-
-\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
-
-\frame{\titlepage \center\begin{framed}\Large \textbf{Topic \TNUM - \topictitle}\end{framed} \vspace{5mm}}
-
-% Section 0 - Outline
-\frame{
 	
-	\large \textbf{Topic \TNUM - \topictitle} \vspace{3mm}\\
+	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 	
+	\frame{\titlepage \center\begin{framed}\Large \textbf{Topic \TNUM - \topictitle}\end{framed} \vspace{5mm}}
+	
+	% Section 0: Outline
+	\frame{
+		\large \textbf{Topic \TNUM - \topictitle} \vspace{3mm}\\
+		
 		\begin{itemize}
-	
-		\item \hyperlink{sectionI}{\color{black}\sectiontitleI}	\vspace{3mm} % Section I
-		\item \hyperlink{sectionII}{\color{black}\sectiontitleII}	\vspace{3mm} % Section II
-		\item \hyperlink{sectionIII}{\color{black}\sectiontitleIII}	\vspace{3mm} %Section III
-		\item \hyperlink{sectionIV}{\color{black}\sectiontitleIV}	\vspace{3mm} %Section IV
-		%\item \hyperlink{sectionV}{\color{black}\sectiontitleV} %Section IV	
-	
-	\end{itemize}
-
-}
+			
+			\item \sectiontitleI    \vspc % Section I
+			\item \sectiontitleII 	\vspc % Section II
+			\item \sectiontitleIII 	\vspc %Section III
+			\item \sectiontitleIV 	\vspc %Section IV
+			
+		\end{itemize}
+		
+	}
 
 \section{\sectiontitleI}
 
@@ -71,7 +69,7 @@
 	\begin{itemize}
 		\item {\PR non-homogeneous} system is one in which ... \vspace{10mm}\\
 		\item most of the time the system will be {\PR non-homogeneous} \vspace{10mm}\\
-		\item a {\PR non-homogeneous} system has a {\B proper solution} if and only if\vspace{2mm}\\
+		\item a {\PR non-homogeneous} system has a {\BL proper solution} if and only if\vspace{2mm}\\
 		\[rank(A)=rank([A | b])=n\]
 	\end{itemize}
   
@@ -153,7 +151,7 @@
 			\item \textbf{system condition} \vspace{3mm}\\
 		\end{itemize}
 		
-		 \textbf{ The {\B System Condition} can cause problems!} \\
+		 \textbf{ The {\BL System Condition} can cause problems!} \\
 \begin{itemize}
 	 \item An {\PR ill-conditioned} system can cause error. \\
 	
