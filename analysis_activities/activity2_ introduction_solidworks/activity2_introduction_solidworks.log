@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.4.13)  2 SEP 2021 01:57
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.4.13)  2 SEP 2021 02:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**activity1_using_plot_function.tex
-(./activity1_using_plot_function.tex
+**activity2_introduction_solidworks.tex
+(./activity2_introduction_solidworks.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -944,8 +944,8 @@ Package hyperref Info: Option `pdfnewwindow' set `true' on input line 87.
 Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 \mybox=\box120
 )
-(./activity1_using_plot_function.aux)
-\openout1 = `activity1_using_plot_function.aux'.
+(./activity2_introduction_solidworks.aux)
+\openout1 = `activity2_introduction_solidworks.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
@@ -1027,39 +1027,37 @@ LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
 LaTeX Info: Redefining \nameref on input line 30.
 
-(./activity1_using_plot_function.out) (./activity1_using_plot_function.out)
+(./activity2_introduction_solidworks.out)
+(./activity2_introduction_solidworks.out)
 \@outlinefile=\write5
-\openout5 = `activity1_using_plot_function.out'.
+\openout5 = `activity2_introduction_solidworks.out'.
 
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 41
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
-File: activity1_fig1.png Graphic file (type bmp)
-<activity1_fig1.png>
- [1
+) [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 
-(./activity1_using_plot_function.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 83.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
-Package rerunfilecheck Info: File `activity1_using_plot_function.out' has not c
-hanged.
+(./activity2_introduction_solidworks.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 75.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
+Package rerunfilecheck Info: File `activity2_introduction_solidworks.out' has n
+ot changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 27371 strings out of 479819
- 493074 string characters out of 5895846
- 827327 words of memory out of 5000000
- 44029 multiletter control sequences out of 15000+600000
+ 27364 strings out of 479819
+ 493010 string characters out of 5895846
+ 827331 words of memory out of 5000000
+ 44024 multiletter control sequences out of 15000+600000
  557835 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 76i,5n,73p,483b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,5n,73p,487b,316s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on activity1_using_plot_function.pdf (1 page).
+Output written on activity2_introduction_solidworks.pdf (1 page).
