@@ -1,3 +1,4 @@
 \beamer@sectionintoc {1}{Analytical vs. Numerical}{3}{0}{1}
-\beamer@sectionintoc {2}{A Shooting Method: Graphical Explanation }{4}{0}{2}
-\beamer@sectionintoc {3}{Taylor Series Derivation}{6}{0}{3}
+\beamer@sectionintoc {2}{Automating Newton-Raphson}{4}{0}{2}
+\beamer@sectionintoc {3}{Modified Newton-Raphson}{6}{0}{3}
+\beamer@sectionintoc {4}{The Finite Difference}{8}{0}{4}

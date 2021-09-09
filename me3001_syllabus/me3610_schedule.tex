@@ -1,0 +1,118 @@
+% 
+% ENGR 1120 030/031/E01  
+% Tristan Hill -  Spring 2017
+% Lab 3  - Basic User Input and Output 
+%              - fprintf and input 
+% 
+ 
+
+\documentclass{article}
+\usepackage{termcal}
+
+% Few useful commands (our classes always meet either on Monday and Wednesday 
+% or on Tuesday and Thursday)
+
+\newcommand{\MWClass}{%
+\calday[Monday]{\classday} % Monday
+\skipday % Tuesday (no class)
+\calday[Wednesday]{\classday} % Wednesday
+\skipday % Thursday (no class)
+\skipday % Friday 
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\TRClass}{%
+\calday[Monday]{\classday} % Tuesday
+\calday[Tuesday]{\classday} % Tuesday
+\calday[Wednesday]{\classday} % Tuesday
+\calday[Thursday]{\classday} % Thursday
+\calday[Friday]{\classday} % Tuesday
+\skipday \skipday % weekend (no class)
+}
+
+\newcommand{\Holiday}[2]{%
+\options{#1}{\noclassday}
+\caltext{#1}{#2}
+}
+
+\begin{document}
+\paragraph*{ME 3610 - Summer 2017 - Tentative Schedule:}
+\begin{center}
+\begin{calendar}{06/05/2017}{10} % Semester starts on 1/11/2010 and last for 16
+                    % weeks, including finals week
+\setlength{\calboxdepth}{0.5in}
+\setlength{\calwidth}{6in}
+\TRClass
+% schedule
+\caltexton{1}{Syllabus and Ch 1.0-1.4}
+\caltextnext{Kinematics Ch 2.0-2.6}
+\caltextnext{Kinematics Ch 2.11-2.14}
+\caltextnext{Position Analysis Ch 4.0-4.4,4.6}
+\caltextnext{Position Analysis Ch 4.5}
+\caltextnext{Position Analysis Ch 4.6-4.7}
+\caltextnext{Project\\Computer Lab}
+\caltextnext{Project\\Computer Lab}
+\caltextnext{Velocity Analysis Ch 6.0}
+\caltextnext{Velocity Analysis Ch 6.0}
+\caltextnext{Velocity Analysis Ch 6.0}
+\caltextnext{Project\\Computer Lab}
+\caltextnext{Project\\Computer Lab}
+\caltextnext{Acceleration Analysis Ch 7.0}
+\caltextnext{Acceleration Analysis Ch 7.0}
+\caltextnext{Acceleration Analysis Ch 7.0}
+\caltextnext{Project\\Computer Lab}
+\caltextnext{Project\\Computer Lab}
+\caltextnext{Review}
+\caltextnext{Review}
+
+
+\caltextnext{Cam Design\\ Ch. 8.0}
+\caltextnext{Cam Design\\ Ch. 8.0}
+\caltextnext{Cam Design\\ Ch. 8.0}
+\caltextnext{Cam Design\\ Ch. 8.0}
+\caltextnext{Cam Design\\ Ch. 8.0}
+
+\caltextnext{Gear Trains\\ Ch. 9.0}
+\caltextnext{Gear Trains\\ Ch. 9.0}
+\caltextnext{Gear Trains\\ Ch. 9.0}
+\caltextnext{Gear Trains\\ Ch. 9.0}
+\caltextnext{Gear Trains\\ Ch. 9.0}
+
+\caltextnext{Mechanism Synthesis\\ Ch. 3 and Ch. 5}
+\caltextnext{Mechanism Synthesis\\ Ch. 3 and Ch. 5}
+\caltextnext{Mechanism Synthesis\\ Ch. 3 and Ch. 5}
+\caltextnext{Mechanism Synthesis\\ Ch. 3 and Ch. 5}
+\caltextnext{Mechanism Synthesis\\ Ch. 3 and Ch. 5}
+
+\caltextnext{Project\\Shop}
+\caltextnext{Project\\Shop}
+\caltextnext{Project\\Shop}
+\caltextnext{Project\\Shop}
+\caltextnext{Project\\Shop}
+% ... and so on
+
+% Holidays
+
+\Holiday{7/3/2017}{Midterm Exam}
+
+\Holiday{7/4/2017}{Break}
+\Holiday{7/5/2017}{Break}
+\Holiday{7/6/2017}{Break}
+\Holiday{7/7/2017}{Break}
+
+\Holiday{8/7/2017}{Study Day (No Classes)}
+\Holiday{8/8/2017}{Study Day (No Classes)}
+\Holiday{8/9/2017}{Study Day (No Classes)}
+\Holiday{8/10/2017}{Final Exam}
+\Holiday{8/11/2017}{Final Exam}
+% ... and so on
+
+\options{8/10/2017}{\noclassday} % finals week
+\options{8/11/2017}{\noclassday} % finals week
+%\options{4/28/2010}{\noclassday} % finals week
+%\options{4/29/2010}{\noclassday} % finals week
+%\options{4/30/2010}{\noclassday} % finals week
+\caltext{4/27/2010}{\textbf{Final Exam}}
+\end{calendar}
+\end{center}
+\end{document}
