@@ -1,8 +1,7 @@
-
 % Lecture Template for ME3001-001-Tristan Hill - Spring 2017 - Fall 2017 - Fall 2020
 % Mechanical Engineering Analysis with MATLAB
 % Module 2 - Non-Linear Equations
-% Topic 3 - Newton Raphson Method
+% Topic 3 - The Secant Method
 
 % Document settings
 
@@ -10,16 +9,16 @@
 \documentclass[handout]{beamer}  % for handout ?
 \usepackage{/home/thill/Documents/lectures/analysis_lectures/analysis_lectures}
 
-
 \newcommand{\MNUM}{2\hspace{2mm}} % Module number
 \newcommand{\TNUM}{3\hspace{2mm}} % Topic number 
-\newcommand{\moduletitle}{Non Linear Equations} % Titles and Stuff
-\newcommand{\topictitle}{The Newton-Raphson Method} 
+\newcommand{\moduletitle}{Nonlinear Equations} % Titles and Stuff
+\newcommand{\topictitle}{The Secant Method} 
 
 \newcommand{\sectiontitleI}{Analytical vs. Numerical} % More Titles and Stuff
-\newcommand{\sectiontitleII}{A Shooting Method: Graphical Explanation }
-\newcommand{\sectiontitleIII}{Taylor Series Derivation}
-\newcommand{\sectiontitleIV}{A Better Hammer!}
+\newcommand{\sectiontitleII}{Automating Newton-Raphson}
+\newcommand{\sectiontitleIII}{Modified Newton-Raphson}
+\newcommand{\sectiontitleIV}{The Finite Difference}
+\newcommand{\sectiontitleV}{Algorithm Comparison}
 
 \newcommand{\btVFill}{\vskip0pt plus 1filll}
 
@@ -52,174 +51,200 @@
 	}
 
 
-
 \section{\sectiontitleI}
 
 \frame{
-  \frametitle{\sectiontitleI}
-  
-\vspace{5mm}  	
-	\textbf{ Theoretical/Analytical Solution Techniques }
-			\begin{itemize}
-				\item solving the equation using exact mathematics \\
-				\item leads to an exact or {\it analytical} solution \\ 	\vspace{10mm}
-				
-			\end{itemize}
-	\ \textbf{ Numerical Solution Techniques }		
-			\begin{itemize}
-				\item  approximating the solution to the equation using varying methods, or {\it algorithms}  \\
-				\item leads to a approximate solution \\ 
-				\item a.k.a. {\it Numerical Method}\vspace{20mm}
-			\end{itemize}
-
+	\frametitle{\sectiontitleI}
 	
-} 
-
+	\textbf{Analytical}
+	\begin{itemize}
+		\item solution to a problem that can be written in {\bf closed form} 
+		\item solution in terms of known functions, constants, etc.  
+		\item gives an {\bf exact answer}  \vspcc
+	\end{itemize}
+	
+	\textbf{Numerical}
+	\begin{itemize}
+		\item an {\bf approximation} to the solution of a mathematical equation
+		\item iterative procedure or algorithm
+		\item 
+	\end{itemize}
+	
+}
 
 \section{\sectiontitleII}
 
 \frame{
-  \frametitle{\sectiontitleII}
+	\frametitle{\sectiontitleII}
+	
+Our goal is to write a computer program to automate the Newton-Raphson method. We want our program to be (1) robust to different inputs and (2) user friendly. 
+	
+}
 
-		These scientists changed the world forever.
-		
-		\begin{itemize}
-			\item Isaac Newton, mathematician and physicist, 1642-1727
-			\item Joseph Raphson, English Mathematician, 1648-1715 \\
-		\end{itemize}
-
-
-  \includegraphics[scale=.17]{newton_portrait.jpg}
-  \hspace{10mm}\includegraphics[scale=.30]{raphson_book.jpg}
-  }
 
 \frame{
   \frametitle{\sectiontitleII}
+  
+	
+	\textbf{The Newton-Raphson method is not \PR{purely numerical}\BK, why?} \\
+		\begin{itemize}
+			\item  The Equation\vspace{3mm}	\\
+			\item  The Derivation\vspace{3mm}	\\
+		\end{itemize}
+	\textbf{How can we avoid this issue?} \vspace{10mm}\\
 
-	The Newton-Raphson method is a {\it shooting method}. \vspace{5mm}
-
-
-	\includegraphics[scale=.40]{topic3_fig1.png}
-
-}
-
+	\textbf{{\it Hint:} Think about the title \PR{secant} \BK ...} \vspace{10mm}\\
+	
+} 
 
 \section{\sectiontitleIII}
 
 \frame{
+	\frametitle{\sectiontitleIII}
+	
+	\textbf{The {\PR secant} method is a modified version of the Newton-Raphson method.} \\
+	\begin{multicols}{2}
+	Newton-Raphson
+	\includegraphics[scale=.22]{lecture4_fig1.png} 
+	Secant
+	\includegraphics[scale=.22]{lecture4_fig1.png}
+	\end{multicols}
+	
+} 
+
+
+\frame{
   \frametitle{\sectiontitleIII}
-
-	The method is derived from the Taylor series. \vspace{5mm} \\
-	
-	
-				\scalebox{1}{$f(x)\approx f(a)+f'(a)(x-a)+\frac{f''(a)}{2!}(x-a)^2+...+\frac{f^{(n)}(a)}{n!}(x-a)^{(n)}$} \vspace{50mm}
-		
   
-  }
-  
-
-
-\frame{ \small
-  \frametitle{\sectiontitleIV}
-
-	Now you have much better hammer. However, must be used properly... \vspace{3mm}\\
-\includegraphics[scale=.4]{topic3_fig2.png}
+	\textbf{The {\PR secant} method is a modified version of the Newton-Raphson method.} \vspace{10mm}\\
+\textbf{What are the benefits?} \\
+		\begin{itemize}
+			\item  \vspace{3mm}
+			\item  \vspace{3mm}	
+		\end{itemize}
 	
- \vspace{40mm}
-  }
+\textbf{Are there tradeoffs?} \\
+\begin{itemize}
+	\item  \vspace{3mm}
+	\item  \vspace{3mm}	
+\end{itemize}
 
+} 
+
+
+
+
+\section{\sectiontitleIV}
+
+\frame{
+	\frametitle{\sectiontitleIV}
+	
+	This idea or technique is the foundation of a family of methods known as the {\it \PN Finite Difference Methods}.
+
+	\begin{multicols}{3}
+
+	Forward\\
+	Difference\\
+	\includegraphics[scale=.14]{lecture4_fig1.png}\\
+
+	Backwards\\
+	Difference\\
+	\includegraphics[scale=.14]{lecture4_fig1.png}\\
+
+	Central\\
+	Difference\\
+	\includegraphics[scale=.14]{lecture4_fig1.png}\\
+	
+\end{multicols}
+}
 
 
 \end{document}
-
-%\begin{document}
+%\begin{itemize}
+%\Large
+%	\item \textbf{What does \PR{secant} \K mean?} \vspace{30mm}\\
+%	\item \textbf{The Newton-Raphson method is not \PR{purely numerical}\K, why?} \\\\
+%		\begin{itemize}
+%			\item  The Equation\vspace{30mm}	\\
+%			\item  The Derivation\vspace{30mm}	\\
+%		\end{itemize}
+%	\item \textbf{\LARGE  How can we avoid this issue?}\\\\
 %
-%\textbf{ \LARGE ME 3001 Lecture - Roots of Non-Linear Equations} \\
+%\newpage
+%	\item \textbf{ \LARGE Introduce the {\it Secant Method (modified Newton-Raphson)}}
+%\begin{itemize}	
+%	\item \LARGE{Forward Difference}\\\\
+%	\includegraphics[scale=.35]{lecture4_fig1.png}\\
+%	\item \LARGE{Backwards Difference}\\\\
+%	\includegraphics[scale=.35]{lecture4_fig1.png}\\
+%	\item \LARGE{Central Difference}\\\\
+%	\includegraphics[scale=.35]{lecture4_fig1.png}
+%\newpage
+%	\item \LARGE{These are know as {\it Finite Difference Approximations} .}\\
+%	\item \LARGE{When they are used in the {\it Newton-Raphson} equation this becomes the {\it Secant Method} .}\vspace{25mm}\\
+%	
+%	\item \LARGE{So what is different about using this method? }\\
+%		
+%\end{itemize}
+%
+%		\newpage
+%
+%\end{itemize}
+%\newpage 
+%
+%% part 2 of the lecture
+%\textbf{ \LARGE A Brief Introduction to Optimization } \\
+%
+%\begin{itemize}
+%\Large
+%	\item \textbf{\LARGE What is Optimization ?}
+%		\begin{itemize}
+%			\item Find Local Minima and Maxima \vspace{80mm}	
+%			\item Constraints	
+%		\end{itemize}
+%		\newpage
+%		
+%	\item \textbf{\LARGE Root finding and Optimization?}
+%		\begin{itemize}
+%			\item Using the derivative, 4$^{th}$ form of the problem... \vspace{80mm}	
+%	
+%		\end{itemize}
+%	\item \textbf{\LARGE What kind of problems do we solve? Think about the cone we designed a few days ago.}	\\
+%			\includegraphics[scale=.5]{lecture4_fig3.png}\hspace{5mm}
+%		 \scalebox{1.2}{surface area, $s=\pi r l = \pi r \sqrt{h^2+r^2}$} \\\\
+%		  \hspace*{60mm} \scalebox{1.2}{volume, $v=\pi r^2 \frac{h}{3}$} \\\\
+%		
+%		\newpage
+%
+%	\item \textbf{\LARGE Optimization Techniques}\\\\
+%		\includegraphics[scale=1]{lecture4_fig2.png}
+%		\begin{itemize}
+%			\item Brute Force \vspace{30mm}
+%			\item Steepest Accent	
+%		\end{itemize}
+%		\newpage
+%
+%\end{itemize}
+%\textbf{ \LARGE REMINDERS } \\
 %
 %\begin{itemize}
 %
-%
-%	\item \textbf{ \LARGE What is a Non-Linear Equation ? }
-%			
-%			\Large{" an equation whose graph does not form a straight line"} \\ \vspace{20mm}
-%
-%
-%	\item \textbf{ \LARGE Different Types of Non-Linear Equations }
-%		
-%		\begin{itemize}
-%			\item \textbf{\Large Polynomials (excluding first order)} \vspace{30mm}
-%			\item \textbf{\Large Transcendentals} \vspace{10mm}
-%
-%\Large{" a transcendental function "transcends" algebra in that it cannot be expressed in terms of a finite sequence of the algebraic operations of addition, multiplication, and root extraction... "}\\
-%				\begin{itemize}
-%					\item Exponentials \vspace{10mm}
-%					\item Logarithms \vspace{10mm}
-%					\item Trigonometrics \vspace{5mm}
-%				\end{itemize}
-%
-%		\end{itemize}
-%
-%	\item \textbf{ \LARGE What does "Solve the Equation" mean?}
-%	\newpage
-%
-%	\item \textbf{ \LARGE Let us do a simple example} \\\\
+%	\item \textbf{ \LARGE Homework was due Friday but there is a late policy.} \\
 %	
-%		\hspace{20mm}\scalebox{1.5}{$y = x^2 + 2x - 10$}	 \vspace{80mm}
+%	\item \textbf{ \LARGE The late policy has changed slightly. Please see the syllabus} \\
+%	 
+%	\item \textbf{ \LARGE MATLAB script from today's lecture will be posted on ilearn. } \\
 %		
-%		\includegraphics[scale=1]{lecture1_fig1.png}
-%		
-%		\newpage
+% \end{itemize}
 %
 %
-%	\item \textbf{ \LARGE Method 1 - {\it The Incremental Search} }
-%
-%		
-%
-%			\begin{itemize}
-%			\item \Large{ We are looking for where the line crosses the x-axis, so how can we tell if this happens?} \\ 
-%			\item \Large{ Let us investigate with our simple example.} \\ 
-%
-%			 \hspace{20mm}\scalebox{1.5}{$y = x^2 + 2x - 10$}\vspace{20mm}\\
-%		\end{itemize}
-%			\includegraphics[scale=.3]{lecture1_fig4.png}
-%			\includegraphics[scale=.8]{lecture1_fig3.png}
-%
-%		\newpage
-%		\item \textbf{ \LARGE Method 2 - {\it The Bisection Method} } \\
-%			\begin{itemize}
-%				\item different than the previous method because it is a {\it bracketing method}\\
-%				\item It is a faster method in general but can you think of any tradeoffs?\\ \vspace{20mm}
-%			\end{itemize}
-%	\includegraphics[scale=.5]{lecture1_fig5.png}
-%
-%	\newpage
-%	\item \textbf{ \LARGE {\it Advantages, Disadvantages, and Pitfalls} } \\\\
-%	\includegraphics[scale=.65]{lecture1_fig6.png}
-%\newpage
-%
-%	\item \textbf{ \LARGE It is useful to have generalized methods }\\
-%		\begin{itemize}
-%			\item \Large{A solution technique for the general problem}\\		
-%			\item \Large{Standard set of steps or {\it algorithm} for finding the solution}\\\\
-%		\end{itemize}
-%
-%	\item \textbf{ \LARGE The general {\it root-finding} problem }\\\\\\
-%	\includegraphics[scale=.6]{lecture1_fig2.png}
-%	\newpage 
-%
-%	\item \textbf{ \LARGE REMINDER - Homework 1 is posted on ilearn } \\
-%	
-%	 \textbf{ \LARGE DUE: Wednesday, Sep. 5}	\\\\
-%
-%	\item \textbf{ \LARGE REMINDER - Instructions for Installing MATLAB on your computer have been posted on ilearn. } \\
-%	
-%
-%\end{itemize}
 %
 %
 %	
 %
 %\end{document}
+%
+%
 %
 %
 %

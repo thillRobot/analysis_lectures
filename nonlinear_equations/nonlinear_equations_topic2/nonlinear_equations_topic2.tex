@@ -2,7 +2,7 @@
 % Lecture Template for ME3001-001-Tristan Hill - Spring 2017 - Fall 2017 - Fall 2020
 % Mechanical Engineering Analysis with MATLAB
 % Module 2 - Non-Linear Equations
-% Topic 2 - A Mechanical Design Problem
+% Topic 2 - Newton Raphson Method
 
 % Document settings
 
@@ -10,15 +10,16 @@
 \documentclass[handout]{beamer}  % for handout ?
 \usepackage{/home/thill/Documents/lectures/analysis_lectures/analysis_lectures}
 
+
 \newcommand{\MNUM}{2\hspace{2mm}} % Module number
 \newcommand{\TNUM}{2\hspace{2mm}} % Topic number 
-\newcommand{\moduletitle}{Non-Linear Equations} % Titles and Stuff
-\newcommand{\topictitle}{Mechanical Design Problem} 
+\newcommand{\moduletitle}{Non Linear Equations} % Titles and Stuff
+\newcommand{\topictitle}{The Newton-Raphson Method} 
 
-\newcommand{\sectiontitleI}{Problem Statement} % More Titles and Stuff
-\newcommand{\sectiontitleII}{Mathematical Model}
-\newcommand{\sectiontitleIII}{Solution Approach}
-\newcommand{\sectiontitleIV}{Design!}
+\newcommand{\sectiontitleI}{Analytical vs. Numerical} % More Titles and Stuff
+\newcommand{\sectiontitleII}{A Shooting Method: Graphical Explanation }
+\newcommand{\sectiontitleIII}{Taylor Series Derivation}
+\newcommand{\sectiontitleIV}{A Better Hammer!}
 
 \newcommand{\btVFill}{\vskip0pt plus 1filll}
 
@@ -56,18 +57,20 @@
 
 \frame{
   \frametitle{\sectiontitleI}
-  	
-\textbf{A Mechanical Design Problem}\\	
-		
-		As an engineer you are asked to design a structure. The geometry of this structures is simple but certain properties are critical. Also you want to spend as little as possible on materials.
-		
-	
-		
-		\includegraphics[scale=.35]{lecture3_fig1.png}\\
-		
-		
-		
-		You are required to design is a cone with a surface area of exactly $25 m^2$ to a tolerance of 0.1 $m^2$ and a height of exactly $1 m$. Your goal is to find the radius in meters.\\
+  
+\vspace{5mm}  	
+	\textbf{ Theoretical/Analytical Solution Techniques }
+			\begin{itemize}
+				\item solving the equation using exact mathematics \\
+				\item leads to an exact or {\it analytical} solution \\ 	\vspace{10mm}
+				
+			\end{itemize}
+	\ \textbf{ Numerical Solution Techniques }		
+			\begin{itemize}
+				\item  approximating the solution to the equation using varying methods, or {\it algorithms}  \\
+				\item leads to a approximate solution \\ 
+				\item a.k.a. {\it Numerical Method}\vspace{20mm}
+			\end{itemize}
 
 	
 } 
@@ -78,34 +81,52 @@
 \frame{
   \frametitle{\sectiontitleII}
 
-	What is the {\it mathematical model} of the cone?  
-  
-  \includegraphics[scale=.35]{lecture3_fig1.png}\\
-    \scalebox{1.2}{surface area, $s=\pi r l = \pi r \sqrt{h^2+r^2}$} \\
-     \scalebox{1.2}{volume, $v=\pi r^2 \frac{h}{3}$} \\
-  	
+		These scientists changed the world forever.
+		
+		\begin{itemize}
+			\item Isaac Newton, mathematician and physicist, 1642-1727
+			\item Joseph Raphson, English Mathematician, 1648-1715 \\
+		\end{itemize}
 
-  
+
+  \includegraphics[scale=.17]{newton_portrait.jpg}
+  \hspace{10mm}\includegraphics[scale=.30]{raphson_book.jpg}
   }
+
+\frame{
+  \frametitle{\sectiontitleII}
+
+	The Newton-Raphson method is a {\it shooting method}. \vspace{5mm}
+
+
+	\includegraphics[scale=.40]{topic3_fig1.png}
+
+}
+
 
 \section{\sectiontitleIII}
 
 \frame{
   \frametitle{\sectiontitleIII}
 
-	How are you going to solve this problem?
-	\vspace{50mm}
+	The method is derived from the Taylor series. \vspace{5mm} \\
+	
+	
+				\scalebox{1}{$f(x)\approx f(a)+f'(a)(x-a)+\frac{f''(a)}{2!}(x-a)^2+...+\frac{f^{(n)}(a)}{n!}(x-a)^{(n)}$} \vspace{50mm}
+		
   
   }
   
-  \section{\sectiontitleIV}
 
-\frame{
+\section{\sectiontitleIV}
+
+\frame{ \small
   \frametitle{\sectiontitleIV}
 
-	How are \underline{you} going to {\it design} the cone? \vspace{5mm}\\
-	\includegraphics[scale=.35]{lecture3_fig1.png}\\
-  
+	Now you have much better hammer. However, must be used properly... \vspace{3mm}\\
+\includegraphics[scale=.4]{topic3_fig2.png}
+	
+ \vspace{40mm}
   }
 
 
