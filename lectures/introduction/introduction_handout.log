@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  19 JAN 2024 12:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  19 JAN 2024 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**introduction
-(./introduction.tex
+**introduction_handout.tex
+(./introduction_handout.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1124,12 +1124,12 @@ Package hyperref Info: Option `pdfnewwindow' set `true' on input line 112.
 Package hyperref Info: Option `colorlinks' set `true' on input line 112.
 )
 \mybox=\box139
- (./introduction.aux
+ (./introduction_handout.aux
 
 LaTeX Warning: Label `sectionIIsubsectionI' multiply defined.
 
 )
-\openout1 = `introduction.aux'.
+\openout1 = `introduction_handout.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
@@ -1223,9 +1223,9 @@ LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
 
-(./introduction.out) (./introduction.out)
+(./introduction_handout.out) (./introduction_handout.out)
 \@outlinefile=\write6
-\openout6 = `introduction.out'.
+\openout6 = `introduction_handout.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 48.
@@ -1295,7 +1295,7 @@ ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count463
- (./introduction.nav)
+ (./introduction_handout.nav)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -1312,16 +1312,34 @@ Overfull \vbox (15.39632pt too high) detected at line 52
 
 ] [5
 
-] [6
-
 ]
-[7
+LaTeX Font Info:    Trying to load font information for U+msa on input line 125
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 125
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 12
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+) [6
+
+] [7
 
 ] [8
 
 ] [9
 
-] [10
+]
+[10
 
 ] [11
 
@@ -1370,30 +1388,30 @@ File: t1qcr.fd 2009/09/25 v1.2 font definition file for T1/qcr
 
 ]
 \tf@nav=\write7
-\openout7 = `introduction.nav'.
+\openout7 = `introduction_handout.nav'.
 
 \tf@toc=\write8
-\openout8 = `introduction.toc'.
+\openout8 = `introduction_handout.toc'.
 
 \tf@snm=\write9
-\openout9 = `introduction.snm'.
+\openout9 = `introduction_handout.snm'.
 
 
-(./introduction.aux)
+(./introduction_handout.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `introduction.out' has not changed.
+Package rerunfilecheck Info: File `introduction_handout.out' has not changed.
 (rerunfilecheck)             Checksum: A2422EA2734FCB4E8CF2E9E2E4FF0E21;938.
  ) 
 Here is how much of TeX's memory you used:
- 30091 strings out of 480247
- 604787 string characters out of 5896151
- 1066105 words of memory out of 5000000
- 47352 multiletter control sequences out of 15000+600000
- 482150 words of font info for 47 fonts, out of 8000000 for 9000
+ 30185 strings out of 480247
+ 606375 string characters out of 5896151
+ 1066121 words of memory out of 5000000
+ 47414 multiletter control sequences out of 15000+600000
+ 495262 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,19n,104p,388b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,19n,104p,400b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc} </home/thill/.texlive202
 1/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1000.600pk> </home/thill/.texlive20
 21/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.600pk> </home/thill/.texlive2
@@ -1408,9 +1426,9 @@ exlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/thill/.
 texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk> </home/thill/
 .texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0600.600pk></usr/share/t
 exmf/fonts/type1/public/tex-gyre/qcrr.pfb>
-Output written on introduction.pdf (27 pages, 203989 bytes).
+Output written on introduction_handout.pdf (27 pages, 200502 bytes).
 PDF statistics:
- 1491 PDF objects out of 1728 (max. 8388607)
+ 1479 PDF objects out of 1728 (max. 8388607)
  1019 compressed objects within 11 object streams
  84 named destinations out of 1000 (max. 500000)
  182 words of extra memory for PDF output out of 10000 (max. 10000000)

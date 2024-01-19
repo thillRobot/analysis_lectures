@@ -1,0 +1,484 @@
+% Lecture Template (handout) for ME3001 - Mechanical Engineering Analysis - Tennessee Technological University
+% Spring 2024 - condensing and streamlining lectures by combining topics into a single PDF under the module name
+% this will simplify file and link management as well as make lectures easier to use in class
+% - added image/ to clean directory and reduce redundancy, specific to module for now  
+
+% Module Name: - Introduction and MATLAB Review
+% Topic 1 - Introduction to Analysis
+% Topic 2 - MATLAB Overview
+% Topic 3 - Hello World 
+
+\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+
+%\usepackage{/home/tntech.edu/thill/courses/dmc/lectures/dmc_lectures}
+%\usepackage{/home/thill/courses/analysis_lectures/lectures/analysis_lectures}
+\usepackage{/mnt/c/Users/thill/Documents/courses/analysis_lectures/lectures/analysis_lectures}
+
+\author{ME3001 - Mechanical Engineering Analysis}
+
+\newcommand{\MNUM}{1\hspace{2mm}} % module number 
+\newcommand{\moduletitle}{Introduction and MATLAB Review}
+
+\newcommand{\sectionItitle}{Introduction to Analysis}
+\newcommand{\sectionIItitle}{MATLAB Overview}
+\newcommand{\sectionIIItitle}{Hello World}
+
+\newcommand{\sectionIsubsectionItitle}{Mechanical Engineering Analysis}
+\newcommand{\sectionIsubsectionIItitle}{Areas of Mechanical Engineering}
+\newcommand{\sectionIsubsectionIIItitle}{Mathematics and Engineering}
+\newcommand{\sectionIsubsectionIVtitle}{Major Topics}
+
+\newcommand{\sectionIIsubsectionItitle}{What is MATLAB?}
+\newcommand{\sectionIIsubsectionIItitle}{Why use it? Why Not?}
+\newcommand{\sectionIIsubsectionIIItitle}{Review Basic Use}
+\newcommand{\sectionIIsubsectionIVtitle}{Hello World}
+
+\newcommand{\sectionIIIsubsectionItitle}{What is a Program?}
+\newcommand{\sectionIIIsubsectionIItitle}{Writing Your First Program}
+\newcommand{\sectionIIIsubsectionIIItitle}{Step by Step Instructions}
+\newcommand{\sectionIIIsubsectionIVtitle}{-}
+
+% custom box
+\newsavebox{\mybox}
+
+\title{Lecture Module - \moduletitle}
+
+\date{Mechanical Engineering\vspc Tennessee Technological University}
+
+\begin{document}
+
+	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+
+	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+
+	% Module Outline
+	\begin{frame} 
+		\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
+
+		\begin{itemize}
+			\item Topic 1 - \hyperlink{sectionI}{\sectionItitle} \vspc % section I
+			\item Topic 2 - \hyperlink{sectionII}{\sectionIItitle} \vspc % section II
+			\item Topic 3 - \hyperlink{sectionIII}{\sectionIIItitle} \vspc % section III
+		\end{itemize}
+
+	\end{frame}
+
+	% section I
+	\section{\sectionItitle}\label{sectionI}
+
+		% section I Outline
+		\begin{frame} 
+			\large \textbf{Topic 1 - \sectionItitle} \vspace{3mm}\\
+
+			\begin{itemize}
+				\item \hyperlink{sectionIsubsectionI}{\sectionIsubsectionItitle} \vspc %  section I subsection I
+				\item \hyperlink{sectionIsubsectionII}{\sectionIsubsectionIItitle} \vspc % section I subsection II
+				\item \hyperlink{sectionIsubsectionIII}{\sectionIsubsectionIIItitle} \vspc % section I subsection III
+				\item \hyperlink{sectionIsubsectionIV}{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
+			\end{itemize}
+		\end{frame}
+		
+		% section I subsection I 
+		\subsection{\sectionIsubsectionItitle}\label{sectionIsubsectionI}
+
+			\begin{frame}
+				\frametitle{\sectionIsubsectionItitle}
+				\bigskip
+
+			    \begin{itemize}
+					\item Analysis \vspace{15mm}
+					\item Design
+				\end{itemize}  
+
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIsubsectionItitle}
+				\bigskip
+
+				Define {\it Analysis}: \\	
+				- detailed examination of the elements or structure of something, typically as a basis for discussion or interpretation. {\tiny -\href{https://www.merriam-webster.com/dictionary/analysis}{Merriam-Webster}} \vspace{5mm} \\ 
+
+				Define {\it Design}: \\
+				- A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process, or the result of that plan or specification in the form of a prototype, product or process. The verb to design expresses the process of developing a design. {\tiny -\href{https://en.wikipedia.org/wiki/Design}{Wikipedia}}\\
+
+				\btVFill
+			\end{frame}
+
+		% section I subsection II
+		\subsection{\sectionIsubsectionIItitle}\label{sectionIsubsectionII}
+
+			\begin{frame}
+				\frametitle{\sectionIsubsectionIItitle}
+				\bigskip
+
+				\textbf{This is not just another math class!}\\
+
+				\begin{itemize}
+					\item we will study \underline{\hspace{40mm}} of engineering systems and the \underline{\hspace{30mm}} and \underline{\hspace{30mm}} solutions to non-linear equations, systems of linear equations, and ordinary and partial differential equations \\
+					\item mathematical methods for solving mechanical engineering problems with modern computing tools\\
+					\item \underline{\hspace{40mm}}
+				\end{itemize}  
+
+				\btVFill
+			\end{frame}
+
+				%\btVFill
+			\begin{frame}
+				\frametitle{\sectionIsubsectionIItitle}
+				\bigskip
+
+				\begin{itemize}
+					\item \underline{\hspace{40mm}}\\
+					\item \underline{\hspace{40mm}}\\
+					\item \underline{\hspace{40mm}}\\
+					\item \underline{\hspace{40mm}}\\
+					\item \underline{\hspace{40mm}}\\
+				\end{itemize}  
+
+				\btVFill
+			\end{frame}
+
+		% section I subsection III
+		\subsection{\sectionIsubsectionIIItitle}\label{sectionIsubsectionIII}
+			\begin{frame} 
+				\frametitle{\sectionIsubsectionIIItitle}
+				\bigskip
+
+				We will be doing some {\it applied mathematics} in this class!
+				\begin{multicols}{2}
+				\begin{itemize}
+					\item \underline{\hspace{40mm}}\\
+					\item \underline{\hspace{40mm}} \\
+					\item \underline{\hspace{40mm}} \\
+					\item \underline{\hspace{40mm}} and \underline{\hspace{40mm}} \\
+					\item \underline{\hspace{40mm}} \\
+				\end{itemize}
+				\end{multicols} 
+
+				\btVFill
+			\end{frame}	
+
+		% section I subsection IV
+		\subsection{\sectionIsubsectionIVtitle}\label{sectionIsubsectionIV}	
+
+			\begin{frame}
+				\frametitle{\sectionIsubsectionIVtitle}
+				\bigskip
+
+				This class is different than a traditional mathematics class.\\ 
+				\begin{itemize}
+					\item By nature engineering problems are hard to solve on paper.\\
+					\item So, will be using calculators but we will also be using...\\
+					\item \hspace{1mm} \vspace{10mm}\\
+				\end{itemize}
+				
+		 		Modern Computing Tools\\ 		
+				\begin{itemize}
+					\item  \hspace{1mm} \vspace{5mm}\\
+					\item  \hspace{1mm} \vspace{5mm}\\
+					\item  \hspace{1mm} \vspace{5mm}\\
+				\end{itemize}
+
+				\btVFill
+			\end{frame}
+	
+	% Section II
+	\section{\sectionIItitle}\label{sectionII}
+
+		% section II Outline
+		\begin{frame}
+			\large \textbf{Topic 2 - \sectionIItitle} \vspace{3mm}\\
+
+			\begin{itemize}
+				\item \hyperlink{sectionIIsubsectionI}{\sectionIIsubsectionItitle} \vspc %  section II subsection I
+				\item \hyperlink{sectionIIsubsectionII}{\sectionIIsubsectionIItitle} \vspc % section II subsection II
+				\item \hyperlink{sectionIIsubsectionIII}{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
+				\item \hyperlink{sectionIIsubsectionIV}{\sectionIIsubsectionIVtitle} \vspc % section II subsection IV
+			\end{itemize}
+
+		\end{frame}
+
+		% section II subsection I
+		\subsection{\sectionIIsubsectionItitle}\label{sectionIIsubsectionI}
+
+			\begin{frame}[label=sectionIIsubsectionI]
+				\frametitle{\sectionIIsubsectionItitle}
+				\bigskip
+
+				\begin{itemize}
+					\item High Level programming language
+					\begin{itemize}
+						\item language written in \underline{\hspace{40mm}}
+						\item Interactive Development Environment written in \underline{\hspace{40mm}} 
+						\item Windows, Mac, and Linux compatible
+					\end{itemize}
+					\item {\it MAT}rix {\it LAB}oratory
+					\item {\it Technical Computing Language} - Mathworks
+				\end{itemize}	
+
+				\btVFill
+			\end{frame}
+
+		% section II subsection II
+		\subsection{\sectionIIsubsectionIItitle}\label{sectionIIsubsectionII}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIItitle}
+				\bigskip
+
+								\begin{itemize}
+					\item A powerful tool for engineers, scientists, and students
+					\begin{itemize}	
+						\item  optimized for floating point arithmetic and linear algebra
+						\item extensive library of mathematical functions and operations 
+						\item specialized functions and operations
+						\begin{itemize}
+						\begin{multicols}{2}
+							\item Aerospace
+							\item Robotics
+							\item Communications
+							\item Image/Signal Processing 
+							\item Embedded Systems and Controls
+						\end{multicols}
+						\end{itemize}
+						\item ability to use {\it symbolic programming }	
+					\end{itemize}
+					
+					\item Ease of Access and Community
+					\begin{itemize}
+						\item {\it Plug and Play}, it works out of the box
+						\item requires no programming experience to begin
+						\item online community for sharing code,  {\it MATLAB Central}
+					\end{itemize}
+				\end{itemize}
+				
+
+				\btVFill 
+			\end{frame}	
+
+		% section II subsection III
+		\subsection{\sectionIIsubsectionIIItitle}\label{sectionIIsubsectionIII}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{Useful Commands( type in Command Window)} \vspace{3mm}\\
+
+				\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  clear variables}} \vspace{3mm}\\
+				\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  clc}} \vspace{3mm}\\
+				\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  close all}} \vspace{3mm}\\
+				\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  }} \\
+
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{ Common Mathematics Functions} \vspace{3mm}\\	
+				\begin{itemize}
+					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} sqrt()}} \vspace{3mm}\\
+					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} exp()}} \vspace{3mm}\\
+					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log()}} \vspace{3mm}\\
+					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log2()}} \vspace{3mm}\\
+					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log10()}} \\
+				\end{itemize}	
+			
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{ Other Useful Functions} \\	
+				\begin{multicols}{2}	
+				\begin{itemize}
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} round()}} \\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} floor()}} \\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} int8()}} \\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} sign()}} \\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} mod()}} \\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} rem()}} \\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} fzero()}} \\
+				\end{itemize}	
+				\end{multicols}
+
+				\textbf{ Built-in Constants} \\		
+				\begin{multicols}{2}
+				\begin{itemize}
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} pi}} \vspace{1mm}\\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} i}} \vspace{1mm}\\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} j}} \vspace{1mm}\\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} inf}} \vspace{1mm}\\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} NaN}} \vspace{1mm}\\
+				\end{itemize}
+				\end{multicols}	
+			
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{The Built in Help } \vspace{3mm}\\
+				\begin{itemize}	
+					\item 	\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >> help fzero()}} \vspace{3mm}\\
+					\item use the help to get information about the built in functions  \vspace{3mm}\\
+					\item the full documentation is also available online  \vspace{3mm}\\
+				\end{itemize}	
+			
+				\btVFill 
+			\end{frame}
+
+		% section II subsection IV 
+		\subsection{\sectionIIsubsectionIVtitle}\label{sectionIIsubsectionIV}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+
+				This is the classic first exercise when learning a new programming language. \vspace{10mm}\\
+
+				\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >> Hello World}} \vspace{3mm}\\
+
+				\btVFill 
+			\end{frame}
+		
+	% Section III
+	\section{\sectionIIItitle}\label{sectionIII}
+
+		% section III Outline
+		\begin{frame}
+			\large \textbf{Topic 3 - \sectionIIItitle} \vspace{3mm}\\
+
+			\begin{itemize}
+				\item \hyperlink{sectionIIIsubsectionI}{\sectionIIIsubsectionItitle} \vspc %  section III subsection I
+				\item \hyperlink{sectionIIIsubsectionII}{\sectionIIIsubsectionIItitle} \vspc % section III subsection II
+				\item \hyperlink{sectionIIIsubsectionIII}{\sectionIIIsubsectionIIItitle} \vspc % section III subsection III
+				%\item \hyperlink{sectionIIIsubsectionIV}{\sectionIIIsubsectionIVtitle} \vspc % section III subsection IV
+			\end{itemize}
+
+		\end{frame}
+
+		% section III subsection I
+		\subsection{\sectionIIIsubsectionItitle}\label{sectionIIIsubsectionI}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionItitle}
+				\bigskip
+
+				\begin{itemize}
+					\item This word has several defintions. \\
+
+					\item  In MATLAB a program is referred to as a {\it script}	
+				\end{itemize}
+					
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionItitle}
+				\bigskip
+				\textbf{ You need to setup and manage a directory for this class!}
+				
+				\btVFill
+			\end{frame}
+
+		% section III subsection II
+		\subsection{\sectionIIIsubsectionIItitle}\label{sectionIIIsubsectionII}	
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIItitle}
+				\bigskip
+
+				\begin{enumerate}
+					\item Open the {\bf MATLAB} application.
+					\item In the {\it Editor} window. Click on the {\bf new } Button. Go down to {\bf script}.
+					\item Write a proper {\bf header} at the top of your script. Make sure to include your {\it Name}, the {\it Date}, the {\it Course}, and a {\it Description} of this program.
+					\item In the {\it Editor} window. Click on the {\bf save} button. Now you will need to name your file and save it in your directory structure.
+					\item Now you are going to start {\bf writing} your first program. 
+					\item {\bf Run} your program and {\it watch the magic}!
+				\end{enumerate}
+				
+				\btVFill
+			\end{frame}
+
+		% section III subsection III
+		\subsection{\sectionIIIsubsectionIIItitle}\label{sectionIIIsubsectionIII}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{Step 1} - Open the {\bf MATLAB} application.
+				
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{Step 2} - In the {\it Editor} window. Click on the {\bf new } Button. \vspace{3mm}\\ \hspace*{12mm}Go down to {\bf script}
+				
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{Step 3} - Write a proper {\bf header} at the top of your script. \vspace{3mm}\\ Make sure to include your {\it Name}, the {\it Date}, the {\it Course}, and a {\it Description} of this program.
+				
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{Step 4} - In the {\it Editor} window. Click on the {\bf save} button. \vspace{3mm}\\ Now you will need to name your file and save it in your directory structure.
+				
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{Step 5} - Now you are going to start {\bf writing} your first program. \vspace{3mm}\\ Make sure you are in the {\it Editor} window.
+				
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIIItitle}
+				\bigskip
+
+				\textbf{Step 6} - {\bf Run} your program and {\it watch the magic}!
+				
+				\btVFill
+			\end{frame}
+
+		% section III subsection IV
+		%\subsection{\sectionIIIsubsectionIVtitle}\label{sectionIIIsubsectionIV}	
+
+		%	\begin{frame}
+		%		\frametitle{\sectionIIIsubsectionIVtitle}
+		%		\bigskip
+				
+		%		\btVFill 
+		%	\end{frame}
+
+\end{document}
+
+
+
+
+
