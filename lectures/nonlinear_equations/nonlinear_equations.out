@@ -5,12 +5,14 @@
 \BOOKMARK [3][]{Outline0.1.4.9}{Example}{Outline0.1}% 5
 \BOOKMARK [2][]{Outline0.2}{The Newton-Raphson Method, Secant Method}{}% 6
 \BOOKMARK [3][]{Outline0.2.1.11}{Classification of Methods}{Outline0.2}% 7
-\BOOKMARK [3][]{Outline0.2.2.12}{Taylor Series Derivation}{Outline0.2}% 8
-\BOOKMARK [3][]{Outline0.2.3.13}{The Newton Raphson Method}{Outline0.2}% 9
-\BOOKMARK [3][]{Outline0.2.4.17}{The Finite Difference}{Outline0.2}% 10
-\BOOKMARK [2][]{Outline0.3}{The Bisection Method}{}% 11
-\BOOKMARK [3][]{Outline0.3.1.19}{Analytical vs. Numerical}{Outline0.3}% 12
-\BOOKMARK [3][]{Outline0.3.2.21}{A Bracketing Method: Graphical Explanation}{Outline0.3}% 13
-\BOOKMARK [3][]{Outline0.3.3.22}{Algorithm Description}{Outline0.3}% 14
-\BOOKMARK [2][]{Outline0.4}{Mechanical Design Problem}{}% 15
-\BOOKMARK [3][]{Outline0.4.1.29}{Problem Statement}{Outline0.4}% 16
+\BOOKMARK [3][]{Outline0.2.2.14}{Taylor Series Derivation}{Outline0.2}% 8
+\BOOKMARK [3][]{Outline0.2.3.16}{The Newton Raphson Method}{Outline0.2}% 9
+\BOOKMARK [3][]{Outline0.2.4.20}{The Finite Difference}{Outline0.2}% 10
+\BOOKMARK [3][]{Outline0.2.5.23}{Modified Newton-Raphson, Secant Method}{Outline0.2}% 11
+\BOOKMARK [2][]{Outline0.3}{The Bisection Method}{}% 12
+\BOOKMARK [3][]{Outline0.3.1.27}{Analytical vs. Numerical}{Outline0.3}% 13
+\BOOKMARK [3][]{Outline0.3.2.29}{A Bracketing Method: Graphical Explanation}{Outline0.3}% 14
+\BOOKMARK [3][]{Outline0.3.3.32}{Algorithm Description}{Outline0.3}% 15
+\BOOKMARK [2][]{Outline0.4}{Mechanical Design Problem}{}% 16
+\BOOKMARK [3][]{Outline0.4.1.36}{Problem Statement}{Outline0.4}% 17
+\BOOKMARK [3][]{Outline0.4.2.38}{Mathematical Model}{Outline0.4}% 18

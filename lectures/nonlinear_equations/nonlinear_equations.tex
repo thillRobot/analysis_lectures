@@ -216,6 +216,48 @@
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip
 
+				\vspace{5mm}  	
+				\textbf{ Theoretical/Analytical Solution Techniques }
+				\begin{itemize}
+					\item solving the equation using exact mathematics \\
+					\item leads to an exact or {\it analytical} solution \\ 	\vspace{10mm}
+				\end{itemize}
+				\textbf{ Numerical Solution Techniques }		
+				\begin{itemize}
+					\item  approximating the solution to the equation using varying methods, or {\it algorithms}  \\
+					\item leads to a approximate solution \\ 
+					\item a.k.a. {\it Numerical Method}\vspace{20mm}
+				\end{itemize}
+
+				\btVFill
+			\end{frame}
+
+			\begin{frame}[label=sectionIIsubsectionI]
+				\frametitle{\sectionIIsubsectionItitle}
+				\bigskip
+
+				These scientists changed the world forever.
+
+				\begin{itemize}
+					\item Isaac Newton, mathematician and physicist, 1642-1727
+					\item Joseph Raphson, English Mathematician, 1648-1715 \\
+					\item add Taylor to list \\
+				\end{itemize}
+
+				\includegraphics[scale=.17]{images/newton_portrait.jpg}
+				\hspace{10mm}\includegraphics[scale=.30]{images/raphson_book.jpg}
+
+				\btVFill
+			\end{frame}	
+
+			\begin{frame}[label=sectionIIsubsectionI]
+				\frametitle{\sectionIIsubsectionItitle}
+				\bigskip
+
+				The Newton-Raphson method is a {\it shooting method}. \vspace{5mm}
+
+				\includegraphics[scale=.40]{images/topic3_fig1.png}
+				
 				\btVFill
 			\end{frame}
 
@@ -226,8 +268,25 @@
 				\frametitle{\sectionIIsubsectionIItitle}
 				\bigskip
 
+				The method can be derived from the Taylor series. \vspace{5mm} \\
+	
+				\scalebox{1}{$f(x)\approx f(a)+f'(a)(x-a)+\frac{f''(a)}{2!}(x-a)^2+...+\frac{f^{(n)}(a)}{n!}(x-a)^{(n)}$} \vspace{50mm}
+		
 				\btVFill 
 			\end{frame}	
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIItitle} \small
+				\bigskip
+
+				The 4 possible sign (+/-) cases are handled by the algorithm. 
+
+				Now you have much better hammer. However, must be used properly... \vspace{3mm}\\
+				\includegraphics[scale=.35]{images/topic3_fig2.png}
+
+				\btVFill
+			\end{frame}		
+
 
 		% section II subsection III
 		\subsection{\sectionIIsubsectionIIItitle}\label{sectionIIsubsectionIII}
@@ -236,19 +295,49 @@
 				\frametitle{\sectionIIsubsectionIIItitle}
 				\bigskip
 
+				\textbf{Algorithm Summary:}
+				\begin{itemize}
+					\item - Step 1: start doing stuff 
+					\item - Step 2: do more stuff
+					\item - Step 3: keep doing stuff until you have the solution
+				\end{itemize}
 				\btVFill 
 			\end{frame}
 
 			\begin{frame}
-				\frametitle{\sectionIIsubsectionIIItitle}
+				\frametitle{\sectionIIsubsectionIIItitle}\small
 				\bigskip
+
+				\textbf{General Use Algorithm:} a much better hammer ...\vspcc
+
+				\underline{Pros:}
+				\begin{itemize}
+			    	\item can be used for many different equations
+			    	\item problem specific algebra not required to obtain value of solution 
+			    	\item executiion of numerical method is routine and can automated
+				\end{itemize} 
+
+				\underline{Cons:}
+				\begin{itemize}
+					\item problem definition can be the difficult
+					\item solution results and computation time dependent on initial estimation 
+					\item numerical solution must be computed for with defined equation parameters
+				\end{itemize}
 
 				\btVFill 
 			\end{frame}
 
 			\begin{frame}
-				\frametitle{\sectionIIsubsectionIIItitle}
+				\frametitle{\sectionIIsubsectionIIItitle} \scriptsize
 				\bigskip
+				
+				\textbf{4 General Use Cases}
+				\begin{itemize}
+					\item The general problem of solving for the root of a non linear equation can be extended to 4 useful 
+					variants. 
+					\item With careful equation setup, all cases can be solved with the same systematic routine. 	
+				\end{itemize}	
+				\includegraphics[scale=.3]{images/topic3_fig2.png}			
 			
 				\btVFill 
 			\end{frame}
@@ -267,8 +356,106 @@
 				\frametitle{\sectionIIsubsectionIVtitle}
 				\bigskip
 
+				Our goal is to write a computer program to automate the Newton-Raphson method. We want our program to be (1) robust to different inputs and (2) user friendly. 
+
 				\btVFill 
 			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+
+				\textbf{The Newton-Raphson method is not \PR{purely numerical}\BK, why?} \\
+				\begin{itemize}
+					\item  The Equation\vspace{3mm}	\\
+					\item  The Derivation\vspace{3mm}	\\
+				\end{itemize}
+				\textbf{How can we avoid this issue?} \vspace{10mm}\\
+
+				\textbf{{\it Hint:} Think about the title \PR{secant} \BK ...} \vspace{10mm}\\
+
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+
+				This idea or technique is the foundation of a family of methods known as the {\it \PN Finite Difference Methods}.
+
+				\begin{multicols}{3}
+
+					Forward\\
+					Difference\\
+					\includegraphics[scale=.14]{images/lecture4_fig1.png}\\
+
+					Backwards\\
+					Difference\\
+					\includegraphics[scale=.14]{images/lecture4_fig1.png}\\
+
+					Central\\
+					Difference\\
+					\includegraphics[scale=.14]{images/lecture4_fig1.png}\\
+				
+				\end{multicols}
+
+				\btVFill 
+			\end{frame}
+
+		% section II subsection V 
+		\subsection{\sectionIIsubsectionVtitle}\label{sectionIIsubsectionV}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionVtitle}
+				\bigskip
+
+				The {\PR secant} method is a modified version of the Newton-Raphson method which uses the Finite difference method to compute the slope values of the function to be solved. \\
+
+				\begin{multicols}{2}
+				Newton-Raphson
+				\includegraphics[scale=.22]{images/lecture4_fig1.png} 
+				Secant
+				\includegraphics[scale=.22]{images/lecture4_fig1.png}
+				\end{multicols}
+
+			
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionVtitle}
+				\bigskip
+
+				\textbf{Algorithm Summary:}
+				\begin{itemize}
+					\item - Step 1: start doing stuff 
+					\item - Step 2: do more stuff
+					\item - Step 3: keep doing stuff until you have the solution
+				\end{itemize}
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionVtitle}\small
+				\bigskip
+
+				\textbf{General Use Algorithm:} the secant method is a generalized, numerical tool for solving non linear equations \vspcc
+				\underline{Pros:}
+				\begin{itemize}
+			    	\item -
+			    	\item -
+			    	\item -
+				\end{itemize} 
+
+				\underline{Cons:}
+				\begin{itemize}
+					\item -
+					\item -
+					\item -
+				\end{itemize}
+				
+				\btVFill 
+			\end{frame}	
 		
 	% Section III
 	\section{\sectionIIItitle}\label{sectionIII}
@@ -292,6 +479,19 @@
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionItitle}
 				\bigskip
+
+				\vspace{5mm}  	
+				\textbf{ Theoretical/Analytical Solution Techniques }
+				\begin{itemize}
+					\item solving the equation using exact mathematics \\
+					\item leads to an exact or {\it analytical} solution \\ 	\vspace{10mm}
+				\end{itemize}
+				\textbf{ Numerical Solution Techniques }		
+				\begin{itemize}
+					\item  approximating the solution to the equation using varying methods, or {\it algorithms}  \\
+					\item leads to a approximate solution \\ 
+					\item a.k.a. {\it Numerical Method}\vspace{20mm}
+				\end{itemize}
 					
 				\btVFill
 			\end{frame}
@@ -310,6 +510,27 @@
 				\frametitle{\sectionIIIsubsectionIItitle}
 				\bigskip
 
+				The Bisection method is a {\it bracketing method}. \vspace{5mm}
+				\includegraphics[scale=.40]{images/topic3_fig1.png}
+
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIItitle}
+				\bigskip
+				
+				\includegraphics[scale=.40]{images/topic3_fig1.png}
+
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIItitle}
+				\bigskip
+					
+				\includegraphics[scale=.40]{images/topic3_fig1.png}
+				
 				\btVFill
 			\end{frame}
 
@@ -319,6 +540,13 @@
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
 				\bigskip
+
+				\begin{enumerate}
+					\item \vspace{5mm}
+					\item \vspace{5mm}
+					\item \vspace{5mm}
+					\item \vspace{5mm}
+				\end{enumerate}
 				
 				\btVFill
 			\end{frame}
@@ -326,37 +554,34 @@
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
 				\bigskip
-		
+
+				See MATLAB example.
+ 				
 				\btVFill
 			\end{frame}
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
 				\bigskip
+
+				\textbf{General Use Algorithm:} the bisection method can also be used to solve the general root finding problem \vspcc
+				\underline{Pros:}
+				\begin{itemize}
+			    	\item -
+			    	\item -
+			    	\item -
+				\end{itemize} 
+
+				\underline{Cons:}
+				\begin{itemize}
+					\item -
+					\item -
+					\item -
+				\end{itemize}
 				
 				\btVFill
 			\end{frame}
 
-			\begin{frame}
-				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
-
-				\btVFill
-			\end{frame}
-
-			\begin{frame}
-				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
-				
-				\btVFill
-			\end{frame}
-
-			\begin{frame}
-				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
-				
-				\btVFill
-			\end{frame}
 
 
 	% Section IV
@@ -381,7 +606,15 @@
 			\begin{frame}
 				\frametitle{\sectionIVsubsectionItitle}
 				\bigskip
+
+				\textbf{A Mechanical Design Problem}\\	
+		
+				As an engineer you are asked to design a structure. The geometry of this structures is simple but certain properties are critical. Also you want to spend as little as possible on materials.
 					
+				\includegraphics[scale=.35]{images/lecture3_fig1.png}\\
+					
+				You are required to design is a cone with a surface area of exactly $25 m^2$ to a tolerance of 0.1 $m^2$ and a height of exactly $1 m$. Your goal is to find the radius in meters.\\
+						
 				\btVFill
 			\end{frame}
 
@@ -389,8 +622,37 @@
 				\frametitle{\sectionIVsubsectionItitle}
 				\bigskip
 
+				What is the {\it mathematical model} of the cone?  
+
+				\includegraphics[scale=.35]{images/lecture3_fig1.png}\\
+				\scalebox{1.2}{surface area, $s=\pi r l = \pi r \sqrt{h^2+r^2}$} \\
+				\scalebox{1.2}{volume, $v=\pi r^2 \frac{h}{3}$} \\
+
 				\btVFill
 			\end{frame}
+
+		% section IV subsection II
+		\subsection{\sectionIVsubsectionIItitle}\label{sectionIVsubsectionII}
+
+			\begin{frame}
+				\frametitle{\sectionIVsubsectionItitle}
+				\bigskip
+
+				How are you going to solve this problem?
+				\vspace{50mm}	
+
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIVsubsectionItitle}
+				\bigskip
+
+				How are \underline{you} going to {\it design} the cone? \vspace{5mm}\\
+				\includegraphics[scale=.35]{images/lecture3_fig1.png}\\
+
+				\btVFill
+			\end{frame}	
 
 
 \end{document}
