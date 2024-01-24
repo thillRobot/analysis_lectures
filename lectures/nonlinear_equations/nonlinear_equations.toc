@@ -1,0 +1,16 @@
+\beamer@sectionintoc {1}{Solving Non-Linear Equations}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{What is a Non-Linear Equation ?}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Solving Non-linear Equations}{6}{0}{1}
+\beamer@subsectionintoc {1}{3}{Analytical vs. Numerical Methods}{8}{0}{1}
+\beamer@subsectionintoc {1}{4}{Example}{9}{0}{1}
+\beamer@sectionintoc {2}{The Newton-Raphson Method, Secant Method}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Classification of Methods}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Taylor Series Derivation}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{The Newton Raphson Method}{13}{0}{2}
+\beamer@subsectionintoc {2}{4}{The Finite Difference}{17}{0}{2}
+\beamer@sectionintoc {3}{The Bisection Method}{18}{0}{3}
+\beamer@subsectionintoc {3}{1}{Analytical vs. Numerical}{19}{0}{3}
+\beamer@subsectionintoc {3}{2}{A Bracketing Method: Graphical Explanation}{21}{0}{3}
+\beamer@subsectionintoc {3}{3}{Algorithm Description}{22}{0}{3}
+\beamer@sectionintoc {4}{Mechanical Design Problem}{28}{0}{4}
+\beamer@subsectionintoc {4}{1}{Problem Statement}{29}{0}{4}
