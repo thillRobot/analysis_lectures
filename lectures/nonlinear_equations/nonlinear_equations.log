@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.1)  23 JAN 2024 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.31)  24 JAN 2024 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -489,12 +489,6 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
-Package: sansmathaccent 2020/01/31
-
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
@@ -661,8 +655,8 @@ Package: amsthm 2017/10/31 v2.20.4
 \beamer@dimb=\dimen277
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/home/thill/courses/analysis_lectures/lectures/analysis_lectures.sty
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/home/tntech.edu/thill/courses/analysis_lectures/lectures/analysis_lectures.st
+y (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
@@ -1199,21 +1193,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 57.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 57.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 57.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 57
-.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 57
-.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 57.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 57
-.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1243,11 +1222,7 @@ Dictionary: translator-theorem-dictionary, Language: English
  (./nonlinear_equations.nav)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-Overfull \vbox (22.1306pt too high) detected at line 61
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2
 
@@ -1279,20 +1254,13 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 136.
-
-(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
 <images/lecture1_fig1.png, id=291, 421.575pt x 316.0608pt>
 File: images/lecture1_fig1.png Graphic file (type png)
 <use images/lecture1_fig1.png>
 Package pdftex.def Info: images/lecture1_fig1.png  used on input line 136.
 (pdftex.def)             Requested size: 189.70699pt x 142.22604pt.
 
-Overfull \vbox (2.22891pt too high) detected at line 136
+Overfull \vbox (2.22838pt too high) detected at line 136
  []
 
 [6
@@ -1334,12 +1302,12 @@ r (name{sectionIIsubsectionI}) has been already used, duplicate ignored
                    \relax 
 l.251 			\end{frame}
                     	
-<images/newton_portrait.jpg, id=523, 408.52625pt x 561.09625pt>
+<images/newton_portrait.jpg, id=522, 408.52625pt x 561.09625pt>
 File: images/newton_portrait.jpg Graphic file (type jpg)
 <use images/newton_portrait.jpg>
 Package pdftex.def Info: images/newton_portrait.jpg  used on input line 251.
 (pdftex.def)             Requested size: 69.44853pt x 95.3851pt.
-<images/raphson_book.jpg, id=524, 236.74655pt x 326.46103pt>
+<images/raphson_book.jpg, id=523, 236.74655pt x 326.46103pt>
 File: images/raphson_book.jpg Graphic file (type jpg)
 <use images/raphson_book.jpg>
 Package pdftex.def Info: images/raphson_book.jpg  used on input line 251.
@@ -1358,7 +1326,7 @@ l.262 			\end{frame}
                    \relax 
 l.262 			\end{frame}
                     
-<images/topic3_fig1.png, id=559, 702.59009pt x 316.73112pt>
+<images/topic3_fig1.png, id=558, 702.59009pt x 316.73112pt>
 File: images/topic3_fig1.png Graphic file (type png)
 <use images/topic3_fig1.png>
 Package pdftex.def Info: images/topic3_fig1.png  used on input line 262.
@@ -1550,13 +1518,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26606 strings out of 481239
- 527574 string characters out of 5920378
- 999487 words of memory out of 5000000
- 41110 multiletter control sequences out of 15000+600000
- 557040 words of font info for 84 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 67i,19n,83p,786b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 26234 strings out of 483183
+ 518071 string characters out of 5966292
+ 991458 words of memory out of 5000000
+ 40494 multiletter control sequences out of 15000+600000
+ 558773 words of font info for 83 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 62i,19n,73p,786b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{sectionIVsubsectionIV} has been referenced but do
 es not exist, replaced by a fixed one
 
@@ -1566,28 +1534,32 @@ s not exist, replaced by a fixed one
 pdfTeX warning (dest): name{sectionIIsubsectionVI} has been referenced but does
  not exist, replaced by a fixed one
 
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1
-095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfsx0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx08
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx144
-0.pfb>
-Output written on nonlinear_equations.pdf (39 pages, 650000 bytes).
+ </home/tntech.edu/thill/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecs
+x0800.600pk> </home/tntech.edu/thill/.texlive2019/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecsx1000.600pk> </home/tntech.edu/thill/.texlive2019/texmf-var/fonts/p
+k/ljfour/jknappen/ec/ecsi0600.600pk> </home/tntech.edu/thill/.texlive2019/texmf
+-var/fonts/pk/ljfour/jknappen/ec/ecsi0800.600pk> </home/tntech.edu/thill/.texli
+ve2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/tntech.edu/
+thill/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600pk> </home
+/tntech.edu/thill/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.6
+00pk> </home/tntech.edu/thill/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecsx1095.600pk> </home/tntech.edu/thill/.texlive2019/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecss1200.600pk> </home/tntech.edu/thill/.texlive2019/texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecsx1200.600pk> </home/tntech.edu/thill/.texlive2019/
+texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk> </home/tntech.edu/thill/.
+texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/tntech
+.edu/thill/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk> <
+/home/tntech.edu/thill/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx0
+600.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on nonlinear_equations.pdf (39 pages, 567146 bytes).
 PDF statistics:
- 1601 PDF objects out of 1728 (max. 8388607)
- 1497 compressed objects within 15 object streams
+ 2042 PDF objects out of 2073 (max. 8388607)
+ 1510 compressed objects within 16 object streams
  119 named destinations out of 1000 (max. 500000)
  254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
