@@ -15,7 +15,7 @@
 \newcommand{\COURNAME}{ME 3001-002}
 \newcommand{\CURRTERM}{Spring 2024} %Current Term
 \newcommand{\MNUM}{1} %Module Number
-\newcommand{\ANUM}{7} %Activity Number
+\newcommand{\ANUM}{8} %Activity Number
 \newcommand{\moduletitle}{Analytical and Numerical Solutions to ODEs}
 \newcommand{\activitytitle}{Catenary Cable} %Module Name
 \pagestyle{myheadings}
@@ -62,13 +62,25 @@
    The following displacement measurements we made through visual inspection of a physical system.  
 
 
-   \begin{tabular}{|c|c|} \hline
-   $x$&$y(x)$ \\ \hline
-   &\\ \hline 
+  \item[\textbf{\underline{Physical Properties:}}] \hfill \vspace{0mm}
+  
+  Weight per Unit Length
+ 	\[w_l = \]
+
+  \item[\textbf{\underline{Boundary Conditions:}}] \hfill \vspace{0mm}
+  
+  \[y(x=0)=0, \hspace{2mm} y'(x=0)=0 \]
+
+
+  \item[\textbf{\underline{Measured Data:}}] \hfill \vspace{0mm}
+ 
+   \begin{tabular}{|c|c|c|c|c|} \hline
+   $x$& & & &\\ \hline
+   $y$& & & &\\ \hline 
    \end{tabular}
 
 
-
+\newpage
 \item[\textbf{\underline{Activity:}}] \hfill \vspace{0mm}
 
 Write a MATLAB program to approximate the displacement function of the catenary cable $y(x)$ using a curve fit model of your choice. Two methods will be used to generate the curve.
@@ -77,11 +89,13 @@ Write a MATLAB program to approximate the displacement function of the catenary 
 	
 	\item The numerical data should be hardcoded into the program, and the program should run without using user input. 
 
-	\item Generate a curve fit function $y_1(x)$ to fit the data points with a model of your choice using the built-in MATLAB function {\it polyfit()} or other curve fitting tool. You may need to install the MATLAB Curve fitting Toolbox. 
+	\item Generate a curve fit function $y_1(x)$ to fit the data points with a model of your choice using the built-in MATLAB function {\it polyfit()} or other MATLAB curve fitting tool. You may need to install the MATLAB Curve fitting Toolbox. 
 
 	\item Generate a second curve fit function $y_2(x)$ to fit the data points with a model of your choice using a custom MATLAB program. Suggested methods are Lagrange polynomials or polynomials as linear systems. Clearly state if the model for is different from the model used in part 2.
 
 	\item Show the numerical data and both curve fits on the same figure. Use grid lines and label the axes.
+
+	\item Bonus: Find an analytical solution to the problem using the physical properties and boundary conditions. Show all steps, and include a reference if applicable. Add the analytical curve to the results figure from part 3. Does the solution agree with the measured data?
 
 \end{enumerate}
 
