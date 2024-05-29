@@ -1,0 +1,135 @@
+%\documentclass{beamer}
+\documentclass[handout]{beamer}
+\usepackage{beamerthemesplit}
+\usepackage{amsmath}
+\usepackage{listings}
+\beamertemplateballitem
+
+\title{Solution of Matrix Eigenvalue Problem}
+\author{Mike Renfro}
+%\author{Gautam Chandekar}
+\date{September 30, 2004}
+
+\begin{document}
+
+\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+
+\frame{\titlepage}
+
+\section*{Outlines}
+\subsection*{Part I: Review of Previous Lecture}
+\frame{
+  \nameslide{outline}
+  \frametitle{Review of Previous Lecture}
+  \tableofcontents[part=1]
+}
+
+\subsection*{Part II: Solution of Matrix Eigenvalue Problem}
+\frame{
+  \frametitle{Solution of Matrix Eigenvalue Problem}
+  \tableofcontents[part=2]
+}
+
+\part{Review of Previous Lecture}
+\frame{\partpage}
+
+\frame{
+  \frametitle{Review of Previous Lecture}
+
+  \begin{itemize}
+  \item<+-| alert@+> Jacobi Iteration Method
+  \item<+-| alert@+> Gauss-Seidel Iteration Method
+  \item<+-| alert@+> Use of Software Packages
+  \end{itemize}
+}
+
+\part{Solution of Matrix Eigenvalue Problem}
+\frame{\partpage}
+
+\section{Solution of Matrix Eigenvalue Problem}
+\subsection{Introduction}
+\frame{
+  \frametitle{Solution of Matrix Eigenvalue Problem: Introduction}
+
+  Consider a system of equations in algebraic form
+  \begin{align*}
+    (a_{11}-\lambda) x_1 + a_{12} x_2 + a_{13} x_3 + \cdots + a_{1n} x_n =& 0 \\
+    a_{21} x_1 + (a_{22}-\lambda) x_2 + a_{23} x_3 + \cdots + a_{2n} x_n =& 0 \\
+    \vdots{}& \\
+    a_{n1} x_1 + a_{n2} x_2 + a_{n3} x_3 + \cdots + (a_{nn}-\lambda) x_n =& 0 \\
+  \end{align*}
+  This is not a normal system of linear algebraic equations we're used
+  to. For one, there are $n$ equations, but $n+1$ unknowns (the $x_i$
+  values, and also $\lambda$).
+
+}
+
+\frame{
+  \frametitle{Other Forms of the Equations}
+
+  \begin{displaymath}
+    \left[ \begin{array}{cccc}
+        a_{11}-\lambda & a_{12} & \cdots & a_{1n} \\
+        a_{21} & a_{22}-\lambda & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{n1} & a_{n2} & \cdots & a_{nn}-\lambda
+      \end{array} \right]
+    \left\{ \begin{array}{c}
+        x_1 \\
+        x_2 \\
+        \vdots \\
+        x_n
+      \end{array} \right\} =
+    \left\{ \begin{array}{c}
+        0 \\
+        0 \\
+        \vdots \\
+        0
+      \end{array} \right\}
+  \end{displaymath}
+  \begin{displaymath}
+    \left( \left[ \begin{array}{cccc}
+          a_{11} & a_{12} & \cdots & a_{1n} \\
+          a_{21} & a_{22} & \cdots & a_{2n} \\
+          \vdots & \vdots & \ddots & \vdots \\
+          a_{n1} & a_{n2} & \cdots & a_{nn}
+        \end{array} \right] -
+      \lambda \left[ \begin{array}{cccc}
+          1 & 0 & \cdots & 0 \\
+          0 & 1 & \cdots & 0 \\
+          \vdots & \vdots & \ddots & \vdots \\
+          0 & 0 & \cdots & 1
+        \end{array} \right] \right)
+    \left\{ \begin{array}{c}
+        x_1 \\
+        x_2 \\
+        \vdots \\
+        x_n
+      \end{array} \right\} =
+    \left\{ \begin{array}{c}
+        0 \\
+        0 \\
+        \vdots \\
+        0
+      \end{array} \right\}
+  \end{displaymath}
+}
+
+\section{Homework}
+
+\frame[containsverbatim]{
+
+  \frametitle{Homework}
+  
+  Continue working on the Gauss-Seidel and other homework problems
+  already assigned.
+
+}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-command-default: "LaTeX PDF"
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,42 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Review}{3}{Review}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\sectionentry {2}{Analytical vs. Numerical Methods}{4}{Analytical vs. Numerical Methods}{0}}
+\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Analytical Method}}
+\headcommand {\slideentry {2}{1}{1}{4/4}{Analytical Method}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{5}{Numerical Solutions}}
+\headcommand {\slideentry {2}{2}{1}{5/5}{Numerical Solutions}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@sectionpages {4}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\sectionentry {3}{Engineering Example - Analytical Solution}{6}{Engineering Example - Analytical Solution}{0}}
+\headcommand {\beamer@subsectionpages {6}{5}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{6}{Problem Statement}}
+\headcommand {\slideentry {3}{1}{1}{6/6}{Problem Statement}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{7}{Separation of Variables}}
+\headcommand {\slideentry {3}{2}{1}{7/7}{Separation of Variables}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{8}{Solution}}
+\headcommand {\slideentry {3}{3}{1}{8/8}{Solution}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {3}{3}{2}{9/9}{Solution}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@partpages {1}{9}}
+\headcommand {\beamer@subsectionpages {8}{9}}
+\headcommand {\beamer@sectionpages {6}{9}}
+\headcommand {\beamer@documentpages {9}}
+\headcommand {\gdef \inserttotalframenumber {9}}

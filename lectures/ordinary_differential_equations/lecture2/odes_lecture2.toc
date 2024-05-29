@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{Review}{3}{0}{1}
+\beamer@sectionintoc {2}{Analytical vs. Numerical Methods}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Analytical Method}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Numerical Solutions}{5}{0}{2}
+\beamer@sectionintoc {3}{Engineering Example - Analytical Solution}{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{Problem Statement}{6}{0}{3}
+\beamer@subsectionintoc {3}{2}{Separation of Variables}{7}{0}{3}
+\beamer@subsectionintoc {3}{3}{Solution}{8}{0}{3}

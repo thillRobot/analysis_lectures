@@ -1,0 +1,12 @@
+\beamer@sectionintoc {1}{Definitions}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{What is a Differential Equation?}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Standard Form of an ODE}{4}{0}{1}
+\beamer@sectionintoc {2}{Classification}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Ordinary or Partial}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Order}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Degree}{7}{0}{2}
+\beamer@subsectionintoc {2}{4}{Linear or Non-Linear}{8}{0}{2}
+\beamer@sectionintoc {3}{Engineering Applications}{9}{0}{3}
+\beamer@sectionintoc {4}{Example}{10}{0}{4}
+\beamer@subsectionintoc {4}{1}{Example - Mathematical Model}{10}{0}{4}
+\beamer@subsectionintoc {4}{2}{Example - Solution}{11}{0}{4}
