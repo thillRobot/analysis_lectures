@@ -1,0 +1,16 @@
+\frametitle{\sectionIIsubsectionVtitle}
+				\bigskip
+
+				  \frametitle{MATLAB Solution (Results)}
+
+				  \begin{lstlisting}
+				>> rao_ex42
+				Omega =
+				   18.9634
+				   37.2879
+				X =
+				    1.0000    1.0000
+				    1.5616   -2.5616
+				  \end{lstlisting}
+
+				\btVFill
