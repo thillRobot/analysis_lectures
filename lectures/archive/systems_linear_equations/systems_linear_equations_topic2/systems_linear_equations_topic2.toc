@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
-\beamer@sectionintoc {2}{Multiplication of Conformible Matrices}{4}{0}{2}
-\beamer@sectionintoc {3}{Generalized Description of Multiplication}{5}{0}{3}
-\beamer@sectionintoc {4}{Exercise in MATLAB}{6}{0}{4}

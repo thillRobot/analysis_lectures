@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{What is a Non-Linear Equation ?}{3}{0}{1}
-\beamer@sectionintoc {2}{Solving Non-linear Equations}{5}{0}{2}
-\beamer@sectionintoc {3}{Analytical vs. Numerical Methods}{6}{0}{3}
-\beamer@sectionintoc {4}{Example}{7}{0}{4}

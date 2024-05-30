@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  29 MAY 2024 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  29 MAY 2024 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,8 +667,8 @@ Package: amsthm 2020/05/29 v2.20.6
 \beamer@dimb=\dimen283
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/mnt/c/Users/thill/Documents/courses/analysis_lectures/lectures/analysis_lectu
-res.sty (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(../analysis_lectures.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
@@ -1143,24 +1143,24 @@ LaTeX Warning: Label `sectionIIsubsectionI' multiply defined.
 )
 \openout1 = `systems_linear_equations.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1218,7 +1218,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 55.
+Package hyperref Info: Link coloring ON on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1231,56 +1231,56 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count462
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
 
 (./systems_linear_equations.out) (./systems_linear_equations.out)
 \@outlinefile=\write6
 \openout6 = `systems_linear_equations.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 55.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 55.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 53.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 55.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 55.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 55.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 55.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 55.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 55.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 55.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 55.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 55.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 55.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 55.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 53.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 55.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 55.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 55.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 53.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 55.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 55.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 55.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 55.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 55.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 53.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 55.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1319,20 +1319,20 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 ] [4
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 153
+LaTeX Font Info:    Trying to load font information for U+msa on input line 151
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 153
+LaTeX Font Info:    Trying to load font information for U+msb on input line 151
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 15
-3.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
@@ -1359,29 +1359,29 @@ pdfTeX warning (ext4): destination with the same identifier (name{sectionIIsubs
 ectionI}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.310 			\end{frame}
+l.308 			\end{frame}
                     ]pdfTeX warning (ext4): destination with the same identifie
 r (name{sectionIIsubsectionI<1>}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.326 			\end{frame}
+l.324 			\end{frame}
                     	pdfTeX warning (ext4): destination with the same identifie
 r (name{sectionIIsubsectionI}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.326 			\end{frame}
+l.324 			\end{frame}
                     	 [14
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{sectionIIsub
 sectionI<1>}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.334 			\end{frame}
+l.332 			\end{frame}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{sectionIIsubsectionI}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.334 			\end{frame}
+l.332 			\end{frame}
                      [15
 
 ] [16
@@ -1389,7 +1389,7 @@ l.334 			\end{frame}
 ] [17
 
 ]
-Overfull \hbox (16.26122pt too wide) detected at line 405
+Overfull \hbox (16.26122pt too wide) detected at line 403
 $ []$ 
  []
 
@@ -1415,7 +1415,7 @@ $ []$
 <images/lecture5_fig1.png, id=1045, 343.2825pt x 307.1475pt>
 File: images/lecture5_fig1.png Graphic file (type png)
 <use images/lecture5_fig1.png>
-Package pdftex.def Info: images/lecture5_fig1.png  used on input line 521.
+Package pdftex.def Info: images/lecture5_fig1.png  used on input line 519.
 (pdftex.def)             Requested size: 102.98553pt x 92.14496pt.
  [27
 
@@ -1423,7 +1423,7 @@ Package pdftex.def Info: images/lecture5_fig1.png  used on input line 521.
 <images/lecture5_fig2.png, id=1082, 355.3275pt x 306.39468pt>
 File: images/lecture5_fig2.png Graphic file (type png)
 <use images/lecture5_fig2.png>
-Package pdftex.def Info: images/lecture5_fig2.png  used on input line 535.
+Package pdftex.def Info: images/lecture5_fig2.png  used on input line 533.
 (pdftex.def)             Requested size: 106.59906pt x 91.91911pt.
 
 [28
@@ -1432,7 +1432,7 @@ Package pdftex.def Info: images/lecture5_fig2.png  used on input line 535.
 <images/lecture5_fig3.png, id=1118, 345.54094pt x 309.40594pt>
 File: images/lecture5_fig3.png Graphic file (type png)
 <use images/lecture5_fig3.png>
-Package pdftex.def Info: images/lecture5_fig3.png  used on input line 549.
+Package pdftex.def Info: images/lecture5_fig3.png  used on input line 547.
 (pdftex.def)             Requested size: 103.66307pt x 92.8225pt.
  [29
 
@@ -1440,7 +1440,7 @@ Package pdftex.def Info: images/lecture5_fig3.png  used on input line 549.
 <images/lecture5_fig4.png, id=1153, 355.3275pt x 310.15875pt>
 File: images/lecture5_fig4.png Graphic file (type png)
 <use images/lecture5_fig4.png>
-Package pdftex.def Info: images/lecture5_fig4.png  used on input line 564.
+Package pdftex.def Info: images/lecture5_fig4.png  used on input line 562.
 (pdftex.def)             Requested size: 106.59906pt x 93.04834pt.
  [30
 
@@ -1448,7 +1448,7 @@ Package pdftex.def Info: images/lecture5_fig4.png  used on input line 564.
 <images/lecture5_fig5.png, id=1188, 350.05782pt x 310.91156pt>
 File: images/lecture5_fig5.png Graphic file (type png)
 <use images/lecture5_fig5.png>
-Package pdftex.def Info: images/lecture5_fig5.png  used on input line 579.
+Package pdftex.def Info: images/lecture5_fig5.png  used on input line 577.
 (pdftex.def)             Requested size: 105.01814pt x 93.27417pt.
  [31
 
@@ -1496,10 +1496,10 @@ d.
 (rerunfilecheck)             Checksum: C6BE8F9FFC2C45CC8955BF5D49D21802;1413.
  ) 
 Here is how much of TeX's memory you used:
- 30304 strings out of 480247
- 608367 string characters out of 5896151
- 1071190 words of memory out of 5000000
- 47481 multiletter control sequences out of 15000+600000
+ 30309 strings out of 480247
+ 608091 string characters out of 5896151
+ 1071360 words of memory out of 5000000
+ 47486 multiletter control sequences out of 15000+600000
  498283 words of font info for 95 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,19n,104p,516b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
