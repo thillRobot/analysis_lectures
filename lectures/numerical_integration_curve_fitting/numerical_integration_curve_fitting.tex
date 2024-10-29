@@ -31,7 +31,7 @@
 
 \newcommand{\sectionIIsubsectionItitle}{Overview}
 \newcommand{\sectionIIsubsectionIItitle}{Fit Criteria}
-\newcommand{\sectionIIsubsectionIIItitle}{}
+\newcommand{\sectionIIsubsectionIIItitle}{Linear Least Squares}
 \newcommand{\sectionIIsubsectionIVtitle}{}
 
 \newcommand{\sectionIIIsubsectionItitle}{}
@@ -251,9 +251,13 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 				\frametitle{\sectionIIsubsectionIItitle} \small
 				\bigskip
 
-        
+        To fit a straight line to the data, we must find the values $a_o$ and $a_1$ that minimize the square of the error. First find the partial derivatives of the sqaured error and set these equal to zero
 
-				\btVFill 
+\[ S_r=\Sigma_{i=1}^ne_i^2=\left(y_i-a_0-a_1x_i\right)^2 \]
+    
+\[ \frac{\delta S_r}{\delta a_0}  \]
+
+			\btVFill 
 			\end{frame}	
 
 			\begin{frame}
