@@ -5,10 +5,10 @@
 % Fall 2024 - typeset Curve Fitting notes for the first timei
 
 % Module Name: - Lecture Module Template
-% Topic 1 - 
-% Topic 2 - 
-% Topic 3 - 
-% Topic 4 - 
+% Topic 1 - Overview and Motivation
+% Topic 2 - Linear Regression
+% Topic 3 - Polynomial Splines
+% Topic 4 - Lagrange Polynomial
 
 \documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
 
@@ -32,7 +32,7 @@
 \newcommand{\sectionIIsubsectionItitle}{Overview}
 \newcommand{\sectionIIsubsectionIItitle}{Fit Criteria}
 \newcommand{\sectionIIsubsectionIIItitle}{Linear Least Squares}
-\newcommand{\sectionIIsubsectionIVtitle}{}
+\newcommand{\sectionIIsubsectionIVtitle}{MATLAB Example}
 
 \newcommand{\sectionIIIsubsectionItitle}{}
 \newcommand{\sectionIIIsubsectionIItitle}{}
@@ -65,7 +65,7 @@
 			\item Topic 1 - \hyperlink{sectionI}{\sectionItitle} \vspc % section I
 			\item Topic 2 - \hyperlink{sectionII}{\sectionIItitle} \vspc % section II
 			\item Topic 3 - \hyperlink{sectionIII}{\sectionIIItitle} \vspc % section III
-			\item Topic 4 - \hyperlink{sectionIV}{\sectionIIItitle} \vspc % section IV
+			\item Topic 4 - \hyperlink{sectionIV}{\sectionIVtitle} \vspc % section IV
 		\end{itemize}
 
 	\end{frame}
@@ -143,43 +143,43 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 			\end{frame}
 
 
-		% section I subsection III
-		\subsection{\sectionIsubsectionIIItitle}\label{sectionIsubsectionIII}
-			\begin{frame} 
-				\frametitle{\sectionIsubsectionIIItitle}
-				\bigskip
+		% % section I subsection III
+		% \subsection{\sectionIsubsectionIIItitle}\label{sectionIsubsectionIII}
+			% \begin{frame} 
+				% \frametitle{\sectionIsubsectionIIItitle}
+				% \bigskip
 
 				
-				\btVFill
-			\end{frame}	
+				% \btVFill
+			% \end{frame}	
 
-			\begin{frame} 
-				\frametitle{\sectionIsubsectionIIItitle}
-				\bigskip
+			% \begin{frame} 
+				% \frametitle{\sectionIsubsectionIIItitle}
+				% \bigskip
 
 			 
-				\btVFill
-			\end{frame}	
+				% \btVFill
+			% \end{frame}	
 
 
-		% section I subsection IV
-		\subsection{\sectionIsubsectionIVtitle}\label{sectionIsubsectionIV}	
+		% % section I subsection IV
+		% \subsection{\sectionIsubsectionIVtitle}\label{sectionIsubsectionIV}	
 
-			\begin{frame}
-				\frametitle{\sectionIsubsectionIVtitle}
-				\bigskip
+			% \begin{frame}
+				% \frametitle{\sectionIsubsectionIVtitle}
+				% \bigskip
 
 
-				\btVFill
-			\end{frame}
+				% \btVFill
+			% \end{frame}
 	
-			\begin{frame}
-				\frametitle{\sectionIsubsectionIVtitle}
-				\bigskip
+			% \begin{frame}
+				% \frametitle{\sectionIsubsectionIVtitle}
+				% \bigskip
 
 
-				\btVFill
-			\end{frame}
+				% \btVFill
+			% \end{frame}
 
 
 	% Section II
@@ -212,16 +212,46 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 
         \[e=y-a_0-a_1x\]
   
-        The general problem is to find a function that minimizes the error  
+        The general problem is to find the coefficients of a function that minimizes the error  
   
 				\btVFill
 			\end{frame}
 
-			\begin{frame}[label=sectionIIsubsectionI]
-				\frametitle{\sectionIIsubsectionItitle}
-				\bigskip
+			% \begin{frame}[label=sectionIIsubsectionI]
+				% \frametitle{\sectionIIsubsectionItitle}
+				% \bigskip
 
-        To find the coefficents of the fit line, the minimization objective must be considered carefully. You might consider fitting a model that mimizes the error directly, but this will not work. The absolute value approach is also problematic.
+        % To find the coefficents of the fit line, the minimization objective must be considered carefully. You might consider fitting a model that mimizes the error directly, but this will not work. The absolute value approach is also problematic.
+
+          % \begin{itemize}
+            % \item \[\Sigma_{i=1}^n e_i = \left(y_i-a_0-a_1x_i\right)\] \vspace{3mm}
+            % \item \[\Sigma_{i=1}^n |e_i| = \left|y_i-a_0-a_1x_i\right|\] \vspace{3mm}
+          % \end{itemize}
+      
+ % To solve these issues, the common technique is to \underline{\hspace{25mm}} the error.
+          % \begin{itemize}
+             % \item \[\Sigma_{i=1}^n e_i^2 = \left(y_i-a_0-a_1x_i\right)^2\] \vspace{3mm}
+          % \end{itemize}
+
+				% \btVFill
+			% \end{frame}	
+
+			% \begin{frame}[label=sectionIIsubsectionI]
+				% \frametitle{\sectionIIsubsectionItitle}
+				% \bigskip
+
+				
+				% \btVFill
+			% \end{frame}
+
+		%section II subsection II
+		\subsection{\sectionIIsubsectionIItitle}\label{sectionIIsubsectionII}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIItitle} \small
+				\bigskip
+				
+				To find the coefficents of the fit line, the minimization objective must be considered carefully. You might consider fitting a model that mimizes the error directly, but this will not work. The absolute value approach is also problematic.
 
           \begin{itemize}
             \item \[\Sigma_{i=1}^n e_i = \left(y_i-a_0-a_1x_i\right)\] \vspace{3mm}
@@ -233,30 +263,7 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
              \item \[\Sigma_{i=1}^n e_i^2 = \left(y_i-a_0-a_1x_i\right)^2\] \vspace{3mm}
           \end{itemize}
 
-				\btVFill
-			\end{frame}	
-
-			\begin{frame}[label=sectionIIsubsectionI]
-				\frametitle{\sectionIIsubsectionItitle}
-				\bigskip
-
-				
-				\btVFill
-			\end{frame}
-
-		% section II subsection II
-		\subsection{\sectionIIsubsectionIItitle}\label{sectionIIsubsectionII}
-
-			\begin{frame}
-				\frametitle{\sectionIIsubsectionIItitle} \small
-				\bigskip
-
-        To fit a straight line to the data, we must find the values $a_o$ and $a_1$ that minimize the square of the error. First find the partial derivatives of the sqaured error and set these equal to zero
-
-\[ S_r=\Sigma_{i=1}^ne_i^2=\left(y_i-a_0-a_1x_i\right)^2 \]
-    
-\[ \frac{\delta S_r}{\delta a_0}  \]
-
+       
 			\btVFill 
 			\end{frame}	
 
@@ -275,6 +282,16 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIIItitle} \small
 				\bigskip
+				
+				To fit a straight line to the data, we must find the values $a_o$ and $a_1$ that minimize the square of the error. First find the partial derivatives of the sqaured error and set these equal to zero
+
+				\[ S_r=\Sigma_{i=1}^ne_i^2=\left(y_i-a_0-a_1x_i\right)^2 \]
+					
+				\[ \frac{\delta S_r}{\delta a_0} = -2 \Sigma\left( y_i - a_0 - a_1x_i \right) \]
+				\[ \frac{\delta S_r}{\delta a_1} = -2 \Sigma\left[ \left( y_i - a_0 - a_1x_i\right)x_i\right]\]
+
+				\[ 0 = \Sigma y_i - \Sigma a_0 - \Sigma a_1x_i \]
+				\[ 0 = \Sigma y_ix_i - \Sigma a_0x_i - \Sigma a_ix_i^2\]
 
 				
 				\btVFill 
@@ -283,6 +300,20 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIIItitle}\small
 				\bigskip
+	
+				Use $\Sigma a_0=na_0$ and the resulting equations can be solved as a linear system in terms of $a_0$, $a_1$
+				\[ 0 = \Sigma y_i - \Sigma a_0 - \Sigma a_1x_i \]
+				\[ 0 = \Sigma y_ix_i - \Sigma a_0x_i - \Sigma a_ix_i^2\]
+
+
+
+				This leads to the standard equations 
+				\[a_1= \frac{n\Sigma x_iy_i-\Sigma x_i \Sigma y_i}{n\Sigma x_i^2-\left(\Sigma x_i^2\right)} \]
+				\[a_0= a_0 \bar{y} -a_1\bar{x}\]
+				
+				This alternate form is also used
+				\[a_0=\frac{\Sigma x_i\Sigma x_i y_i-\Sigma x_i^2\Sigma y_i}{(\Sigma x_i)^2-N\Sigma x_i^2}\] 
+				\[a_1=\frac{\Sigma x_i\Sigma y_i-N\Sigma x_i y_i }{(\Sigma x_i)^2-N\Sigma x_i^2}\]
 
 
 				\btVFill 
@@ -295,6 +326,8 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIVtitle}
 				\bigskip
+				This standard technique is built into the MATLAB function {\it polyfit}. This function can also be used for higher order regression lines.
+				
 
 				
 				\btVFill 
