@@ -1,0 +1,17 @@
+\beamer@sectionintoc {1}{Overview and Motivation}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Problem Definition}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Engineering Applications}{6}{0}{1}
+\beamer@sectionintoc {2}{Linear Regression}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Overview}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{Fit Criteria}{9}{0}{2}
+\beamer@subsectionintoc {2}{3}{Linear Least Squares}{10}{0}{2}
+\beamer@subsectionintoc {2}{4}{MATLAB Example}{12}{0}{2}
+\beamer@sectionintoc {3}{Polynomial Splines}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{}{19}{0}{3}
+\beamer@subsectionintoc {3}{3}{}{21}{0}{3}
+\beamer@subsectionintoc {3}{4}{}{23}{0}{3}
+\beamer@sectionintoc {4}{Lagrange Polynomials}{25}{0}{4}
+\beamer@subsectionintoc {4}{1}{}{26}{0}{4}
+\beamer@subsectionintoc {4}{2}{}{27}{0}{4}
+\beamer@subsectionintoc {4}{3}{}{29}{0}{4}

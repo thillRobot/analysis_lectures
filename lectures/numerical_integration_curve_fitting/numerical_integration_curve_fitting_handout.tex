@@ -1,0 +1,574 @@
+% Lecture Template for ME3001 - Mechanical Engineering Analysis - Tennessee Technological University
+% Spring 2024 - condensing and streamlining lectures by combining topics into a single PDF under the module name
+% this will simplify file and link management as well as make lectures easier to use in class
+% - added image/ to clean directory and reduce redundancy, specific to module for now  
+% Fall 2024 - typeset Curve Fitting notes for the first time
+
+% Module Name: - Lecture Module Template
+% Topic 1 - Overview and Motivation
+% Topic 2 - Linear Regression
+% Topic 3 - Polynomial Splines
+% Topic 4 - Lagrange Polynomial
+
+\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+
+\usepackage{../analysis_lectures} % sty in the parent directory
+
+\author{ME3001 - Mechanical Engineering Analysis}
+
+\newcommand{\MNUM}{5\hspace{2mm}} % module number 
+\newcommand{\moduletitle}{Numerical Integration and Curve Fitting}
+
+\newcommand{\sectionItitle}{Overview and Motivation}
+\newcommand{\sectionIItitle}{Linear Regression}
+\newcommand{\sectionIIItitle}{Polynomial Splines}
+\newcommand{\sectionIVtitle}{Lagrange Polynomials}
+
+\newcommand{\sectionIsubsectionItitle}{Problem Definition}
+\newcommand{\sectionIsubsectionIItitle}{Engineering Applications}
+\newcommand{\sectionIsubsectionIIItitle}{}
+\newcommand{\sectionIsubsectionIVtitle}{}
+
+\newcommand{\sectionIIsubsectionItitle}{Overview}
+\newcommand{\sectionIIsubsectionIItitle}{Fit Criteria}
+\newcommand{\sectionIIsubsectionIIItitle}{Linear Least Squares}
+\newcommand{\sectionIIsubsectionIVtitle}{MATLAB Example}
+
+\newcommand{\sectionIIIsubsectionItitle}{}
+\newcommand{\sectionIIIsubsectionIItitle}{}
+\newcommand{\sectionIIIsubsectionIIItitle}{}
+\newcommand{\sectionIIIsubsectionIVtitle}{}
+
+\newcommand{\sectionIVsubsectionItitle}{}
+\newcommand{\sectionIVsubsectionIItitle}{}
+\newcommand{\sectionIVsubsectionIIItitle}{}
+\newcommand{\sectionIVsubsectionIVtitle}{}
+
+% custom box
+\newsavebox{\mybox}
+
+\title{Lecture Module - \moduletitle}
+
+\date{Mechanical Engineering\vspc Tennessee Technological University}
+
+\begin{document}
+  
+  \footnotesize
+	%\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+
+	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+
+	% Module Outline
+	\begin{frame} 
+		\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
+
+		\begin{itemize}
+			\item Topic 1 - \hyperlink{sectionI}{\sectionItitle} \vspc % section I
+			\item Topic 2 - \hyperlink{sectionII}{\sectionIItitle} \vspc % section II
+			\item Topic 3 - \hyperlink{sectionIII}{\sectionIIItitle} \vspc % section III
+			\item Topic 4 - \hyperlink{sectionIV}{\sectionIVtitle} \vspc % section IV
+		\end{itemize}
+
+	\end{frame}
+
+	% section I
+	\section{\sectionItitle}\label{sectionI}
+
+		% section I Outline
+		\begin{frame} 
+			\large \textbf{Topic 1 - \sectionItitle} \vspace{3mm}\\
+
+			\begin{itemize}
+				\item \hyperlink{sectionIsubsectionI}{\sectionIsubsectionItitle} \vspc %  section I subsection I
+				\item \hyperlink{sectionIsubsectionII}{\sectionIsubsectionIItitle} \vspc % section I subsection II
+				\item \hyperlink{sectionIsubsectionIII}{\sectionIsubsectionIIItitle} \vspc % section I subsection III
+				\item \hyperlink{sectionIsubsectionIV}{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
+			\end{itemize}
+		\end{frame}
+	
+
+		% section I subsection I 
+		\subsection{\sectionIsubsectionItitle}\label{sectionIsubsectionI}
+
+			\begin{frame}
+				\frametitle{\sectionIsubsectionItitle}
+				\bigskip
+  
+        \textbf{\small What is curve fitting}?
+        \vspace{2mm}\\
+        
+        - various techniques to fit a curve or function to discrete data \vspace{5mm}
+ 
+        - "Data is often given for discrete values along a continuum. However, you may require
+estimates at points between the discrete values" - \underline{ Numerical Methods for Engineers}, Chapra and Canale \vspace{5mm}\\ 			
+        - additional problem is to find a simpler form of a complicated function by fitting function to data sampled from original function
+	
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIsubsectionItitle} \footnotesize
+				\bigskip
+
+        \textbf{\small Two General Approaches}
+        \vspace{2mm}
+        \begin{itemize}
+          \item 1) Given data with random error, find a single curve that represents the overall trend of the data. \vspace{2mm}\\ 
+          -  "Because any individual data point may be incorrect, we make no effort to intersect every point" - \underline{ Numerical Methods for Engineers}, Chapra and Canale \vspace{1mm}\\
+          - Common method is {\it regression} (LSR) \vspace{3mm}\\
+        \item 2) Given data assumed to be precise or specified, find a curve that directly passes through each data point \vspace{1mm}\\
+          - Known as {\it interpolation}, {\it extrapolation} 
+			  \end{itemize}	
+				\btVFill
+			\end{frame}
+
+
+		% section I subsection II
+		\subsection{\sectionIsubsectionIItitle}\label{sectionIsubsectionII}
+
+			\begin{frame}
+				\frametitle{\sectionIsubsectionIItitle}
+				\bigskip
+        \textbf{\small Example Applications in Engineering}
+        \begin{itemize}
+          
+          \item Calibration Curves, Sensors and Instrumentation
+          \item Table Interpolation, Mechanics, Thermo, Statistics
+          \item Velocity Profile Generation, Dynamics of Machinery, Robotics
+        
+        \end{itemize}
+        \vspace{5mm}
+        \textbf{\small Two General Problems}        
+        \begin{itemize}
+          \item Trend Analysis - predictions from dataset using interpolation polynomial or LSR
+          \item Hypothesis Testing - compare predicted to measured data for model performance or selection
+        \end{itemize}
+				
+				\btVFill
+			\end{frame}
+
+
+		% % section I subsection III
+		% \subsection{\sectionIsubsectionIIItitle}\label{sectionIsubsectionIII}
+			% \begin{frame} 
+				% \frametitle{\sectionIsubsectionIIItitle}
+				% \bigskip
+
+				
+				% \btVFill
+			% \end{frame}	
+
+			% \begin{frame} 
+				% \frametitle{\sectionIsubsectionIIItitle}
+				% \bigskip
+
+			 
+				% \btVFill
+			% \end{frame}	
+
+
+		% % section I subsection IV
+		% \subsection{\sectionIsubsectionIVtitle}\label{sectionIsubsectionIV}	
+
+			% \begin{frame}
+				% \frametitle{\sectionIsubsectionIVtitle}
+				% \bigskip
+
+
+				% \btVFill
+			% \end{frame}
+	
+			% \begin{frame}
+				% \frametitle{\sectionIsubsectionIVtitle}
+				% \bigskip
+
+
+				% \btVFill
+			% \end{frame}
+
+
+	% Section II
+	\section{\sectionIItitle}\label{sectionII}
+
+		% section II Outline
+		\begin{frame}
+			\large \textbf{Topic 2 - \sectionIItitle} \vspace{3mm}\\
+
+			\begin{itemize}
+				\item \hyperlink{sectionIIsubsectionI}{\sectionIIsubsectionItitle} \vspc %  section II subsection I
+				\item \hyperlink{sectionIIsubsectionII}{\sectionIIsubsectionIItitle} \vspc % section II subsection II
+				\item \hyperlink{sectionIIsubsectionIII}{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
+				\item \hyperlink{sectionIIsubsectionIV}{\sectionIIsubsectionIVtitle} \vspc % section II 
+			\end{itemize}
+
+		\end{frame}
+
+		% section II subsection I
+		\subsection{\sectionIIsubsectionItitle}\label{sectionIIsubsectionI}
+
+			\begin{frame}[label=sectionIIsubsectionI]
+				\frametitle{\sectionIIsubsectionItitle}
+				\bigskip
+        Consider fitting a straight line to a dataset
+        \[(x_1, y_1), (x_2, y_2), ..., (x_n,y_n)\] 
+        with a function \[y=a_o+a_1\]
+
+        A value $y$ can be defined in terms of the function with an error term $e$
+
+        \[y=a_0+a_1+e\]
+
+        This can be rearranged to show the {\bf error} as
+
+        \[e=y-a_0-a_1x\]
+  
+        The goal is to find the coefficients of a function that minimizes the error  
+  
+				\btVFill
+			\end{frame}
+
+			% \begin{frame}[label=sectionIIsubsectionI]
+				% \frametitle{\sectionIIsubsectionItitle}
+				% \bigskip
+
+        % To find the coefficents of the fit line, the minimization objective must be considered carefully. You might consider fitting a model that mimizes the error directly, but this will not work. The absolute value approach is also problematic.
+
+          % \begin{itemize}
+            % \item \[\Sigma_{i=1}^n e_i = \left(y_i-a_0-a_1x_i\right)\] \vspace{3mm}
+            % \item \[\Sigma_{i=1}^n |e_i| = \left|y_i-a_0-a_1x_i\right|\] \vspace{3mm}
+          % \end{itemize}
+      
+ % To solve these issues, the common technique is to \underline{\hspace{25mm}} the error.
+          % \begin{itemize}
+             % \item \[\Sigma_{i=1}^n e_i^2 = \left(y_i-a_0-a_1x_i\right)^2\] \vspace{3mm}
+          % \end{itemize}
+
+				% \btVFill
+			% \end{frame}	
+
+			% \begin{frame}[label=sectionIIsubsectionI]
+				% \frametitle{\sectionIIsubsectionItitle}
+				% \bigskip
+
+				
+				% \btVFill
+			% \end{frame}
+
+		%section II subsection II
+		\subsection{\sectionIIsubsectionIItitle}\label{sectionIIsubsectionII}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIItitle}
+				\bigskip
+				
+				To find the coefficents of the fit line, the minimization objective must be considered carefully. You might consider fitting a model that mimizes the error directly, but this will not work. The absolute value approach is also problematic.
+\vspace{2mm}
+          \begin{itemize}
+            \item \[\Sigma_{i=1}^n e_i = \left(y_i-a_0-a_1x_i\right)\] \vspace{3mm}
+            \item \[\Sigma_{i=1}^n |e_i| = \left|y_i-a_0-a_1x_i\right|\] \vspace{3mm}
+          \end{itemize}
+ \vspace{3mm}    
+ To solve these issues, the common technique is to \underline{\hspace{25mm}} the error.\vspace{3mm}
+          \begin{itemize}
+             \item \[\Sigma_{i=1}^n e_i^2 = \left(y_i-a_0-a_1x_i\right)^2\] \vspace{3mm}
+          \end{itemize}
+
+       
+			\btVFill 
+			\end{frame}	
+
+		% section II subsection III
+		\subsection{\sectionIIsubsectionIIItitle}\label{sectionIIsubsectionIII}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIIItitle}
+				\bigskip
+				
+				To fit a straight line to the data, we must find the values $a_o$ and $a_1$ that minimize the square of the error. First find the partial derivatives of the sqaured error and set these equal to zero
+
+				\[ S_r=\Sigma_{i=1}^ne_i^2=\left(y_i-a_0-a_1x_i\right)^2 \]
+					
+				\[ \frac{\delta S_r}{\delta a_0} = -2 \Sigma\left( y_i - a_0 - a_1x_i \right) \]
+				\[ \frac{\delta S_r}{\delta a_1} = -2 \Sigma\left[ \left( y_i - a_0 - a_1x_i\right)x_i\right]\]
+
+				\[ 0 = \Sigma y_i - \Sigma a_0 - \Sigma a_1x_i \]
+				\[ 0 = \Sigma y_ix_i - \Sigma a_0x_i - \Sigma a_ix_i^2\]
+
+				
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIIItitle}
+				\bigskip
+	
+				Use $\Sigma a_0=na_0$ and the resulting equations can be solved as a linear system in terms of the coefficients $a_0$, $a_1$, and number of data points $n$. 
+				\[ 0 = \Sigma y_i - \Sigma a_0 - \Sigma a_1x_i \]
+				\[ 0 = \Sigma y_ix_i - \Sigma a_0x_i - \Sigma a_ix_i^2\]
+
+
+
+				This leads to the standard equations 
+				\[a_1= \frac{n\Sigma x_iy_i-\Sigma x_i \Sigma y_i}{n\Sigma x_i^2-\left(\Sigma x_i^2\right)} \]
+				\[a_0= \bar{y} -a_1\bar{x}\]
+				
+				This alternate form can be found by multipying by $1=\frac{-1}{-1}$
+				\[a_1=\frac{\Sigma x_i\Sigma y_i-n\Sigma x_i y_i }{(\Sigma x_i)^2-n\Sigma x_i^2}\]
+				\[a_0=\frac{\Sigma x_i\Sigma x_i y_i-\Sigma x_i^2\Sigma y_i}{(\Sigma x_i)^2-n\Sigma x_i^2}\] 
+
+				\btVFill 
+			\end{frame}
+
+
+		% section II subsection IV 
+		\subsection{\sectionIIsubsectionIVtitle}\label{sectionIIsubsectionIV}
+
+			\begin{frame}[fragile]
+				\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+				This standard technique is built into the MATLAB function {\it polyfit}. This function can also be used for higher order regression lines.
+				\begin{lstlisting}
+% ME3001, TNTech, Tristan Hill, October 29, 2024
+% Curve fitting with Linear Regression 
+% this program will
+% 1) generate dataset with random noise
+% 2) find best fit using 'linear least sqaures regression' from eqs in notes
+% 3) find best fit using LSR with MATLAB polyfit()
+clear; clc; close all  
+        \end{lstlisting}
+          
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+
+        \begin{lstlisting}
+% step 1) - generate dataset
+m=-3; b=1.5;
+error_scale=5;
+
+xdata=-5:.5:5;
+n=length(xdata);
+ydata=m*xdata+b+rand(1,n)*error_scale;
+
+figure(1); hold on
+plot(xdata,ydata,'o')
+grid on 
+        \end{lstlisting}
+
+				\btVFill 
+			\end{frame}
+		
+
+			\begin{frame}[fragile]
+				\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+
+        \begin{lstlisting}
+% step 2) - fit line with LSR equations
+a1=(n*sum(xdata.*ydata)-sum(xdata)*sum(ydata))/...
+    (n*sum(xdata.^2)-sum(xdata.^2))
+a0=sum(ydata)/n
+
+% compare with equations from ME3023
+a1=(sum(xdata)*sum(ydata)-n*sum(xdata.*ydata))/...
+    (sum(xdata)^2-n*sum(xdata.^2))
+a0=(sum(xdata)*sum(xdata.*ydata)-sum(xdata.^2)*sum(ydata))/...
+    (sum(xdata)^2-n*sum(xdata.^2))          
+        \end{lstlisting}
+
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+
+        \begin{lstlisting}
+% compute and plot values on the best fit line
+xfit=-5:.1:5;
+yfit=a1*xfit+a0;
+
+plot(xfit,yfit,'-')
+
+% step 3) - fit line with LSR in MATLAB
+A=polyfit(xdata,ydata,1) % get second the coefficients
+
+pfit=A(2)+A(1)*xfit;  % calculate points on curve
+plot(xfit,pfit,':g','LineWidth',5)
+        \end{lstlisting}
+
+        Download {\it linear\_regression\_example1.m} for the complete program.
+				\btVFill 
+			\end{frame}
+
+	% Section III
+	\section{\sectionIIItitle}\label{sectionIII}
+
+		% section III Outline
+		\begin{frame}
+			\large \textbf{Topic 3 - \sectionIIItitle} \vspace{3mm}\\
+
+			\begin{itemize}
+				\item \hyperlink{sectionIIIsubsectionI}{\sectionIIIsubsectionItitle} \vspc %  section III subsection I
+				\item \hyperlink{sectionIIIsubsectionII}{\sectionIIIsubsectionIItitle} \vspc % section III subsection II
+				\item \hyperlink{sectionIIIsubsectionIII}{\sectionIIIsubsectionIIItitle} \vspc % section III subsection III
+				\item \hyperlink{sectionIIIsubsectionIV}{\sectionIIIsubsectionIVtitle} \vspc % section III subsection IV
+			\end{itemize}
+
+		\end{frame}
+
+
+		% section III subsection I
+		\subsection{\sectionIIIsubsectionItitle}\label{sectionIIIsubsectionI}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionItitle}
+				\bigskip
+
+			  	
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionItitle}
+				\bigskip
+
+			  
+				\btVFill
+			\end{frame}
+
+
+		% section III subsection II
+		\subsection{\sectionIIIsubsectionIItitle}\label{sectionIIIsubsectionII}	
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIItitle}
+				\bigskip
+
+				
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIItitle}
+				\bigskip
+				
+
+				\btVFill
+			\end{frame}
+
+
+		% section III subsection III
+		\subsection{\sectionIIIsubsectionIIItitle}\label{sectionIIIsubsectionIII}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIIItitle}
+				\bigskip
+
+
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIIItitle}
+				\bigskip
+
+
+				\btVFill
+			\end{frame}
+
+
+		% section III subsection IV
+		\subsection{\sectionIIIsubsectionIVtitle}\label{sectionIIIsubsectionIV}
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIVtitle}
+				\bigskip
+
+
+				\btVFill
+			\end{frame}	
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIVtitle} \small
+				\bigskip
+
+
+				\btVFill
+			\end{frame}	
+
+	
+	% Section IV
+	\section{\sectionIVtitle}\label{sectionIV}
+
+		% section IV Outline
+		\begin{frame}
+			\large \textbf{Topic 3 - \sectionIVtitle} \vspace{3mm}\\
+
+			\begin{itemize}
+				\item \hyperlink{sectionIVsubsectionI}{\sectionIVsubsectionItitle} \vspc %  section IV subsection I
+				\item \hyperlink{sectionIVsubsectionII}{\sectionIVsubsectionIItitle} \vspc % section IV subsection II
+				\item \hyperlink{sectionIVsubsectionIII}{\sectionIVsubsectionIIItitle} \vspc % section IV subsection III
+				\item \hyperlink{sectionIVsubsectionIV}{\sectionIVsubsectionIVtitle} \vspc % section IV subsection IV
+			\end{itemize}
+
+		\end{frame}
+
+		% section IV subsection I
+		\subsection{\sectionIVsubsectionItitle}\label{sectionIVsubsectionI}
+
+			\begin{frame}
+				\frametitle{\sectionIVsubsectionItitle}
+				\bigskip
+
+		
+				\btVFill
+			\end{frame}
+
+		% section IV subsection II
+		\subsection{\sectionIVsubsectionIItitle}\label{sectionIVsubsectionII}
+
+			\begin{frame}
+				\frametitle{\sectionIVsubsectionIItitle}
+				\bigskip
+
+
+				\btVFill
+			\end{frame}
+
+			\begin{frame}
+				\frametitle{\sectionIVsubsectionIItitle}
+				\bigskip
+
+
+				\btVFill
+			\end{frame}	
+
+
+		% section IV subsection III
+		\subsection{\sectionIVsubsectionIIItitle}\label{sectionIVsubsectionIII}
+
+			\begin{frame}
+				\frametitle{\sectionIVsubsectionIIItitle}
+				\bigskip
+
+				
+				\btVFill
+			\end{frame}	
+
+			\begin{frame}
+				\frametitle{\sectionIVsubsectionIIItitle}
+				\bigskip
+
+				
+				\btVFill
+			\end{frame}	
+
+\end{document}
+
+
+
+
+
