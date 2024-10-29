@@ -2,6 +2,7 @@
 % Spring 2024 - condensing and streamlining lectures by combining topics into a single PDF under the module name
 % this will simplify file and link management as well as make lectures easier to use in class
 % - added image/ to clean directory and reduce redundancy, specific to module for now  
+% Fall 2024 - typeset Curve Fitting notes for the first timei
 
 % Module Name: - Lecture Module Template
 % Topic 1 - 
@@ -18,18 +19,18 @@
 \newcommand{\MNUM}{5\hspace{2mm}} % module number 
 \newcommand{\moduletitle}{Numerical Integration and Curve Fitting}
 
-\newcommand{\sectionItitle}{}
-\newcommand{\sectionIItitle}{}
-\newcommand{\sectionIIItitle}{}
-\newcommand{\sectionIVtitle}{}
+\newcommand{\sectionItitle}{Overview and Motivation}
+\newcommand{\sectionIItitle}{Linear Regression}
+\newcommand{\sectionIIItitle}{Polynomial Splines}
+\newcommand{\sectionIVtitle}{Lagrange Polynomials}
 
-\newcommand{\sectionIsubsectionItitle}{}
-\newcommand{\sectionIsubsectionIItitle}{}
+\newcommand{\sectionIsubsectionItitle}{Problem Definition}
+\newcommand{\sectionIsubsectionIItitle}{Engineering Applications}
 \newcommand{\sectionIsubsectionIIItitle}{}
 \newcommand{\sectionIsubsectionIVtitle}{}
 
-\newcommand{\sectionIIsubsectionItitle}{}
-\newcommand{\sectionIIsubsectionIItitle}{}
+\newcommand{\sectionIIsubsectionItitle}{Overview}
+\newcommand{\sectionIIsubsectionIItitle}{Fit Criteria}
 \newcommand{\sectionIIsubsectionIIItitle}{}
 \newcommand{\sectionIIsubsectionIVtitle}{}
 
@@ -91,8 +92,15 @@
 			\begin{frame}
 				\frametitle{\sectionIsubsectionItitle}
 				\bigskip
-
-				
+  
+        \textbf{What is curve fitting}?
+        
+        - various techniques to fit a curve or function to discrete data \vspace{5mm}
+ 
+        - "Data is often given for discrete values along a continuum. However, you may require
+estimates at points between the discrete values" - \underline{ Numerical Methods for Engineers}, Chapra and Canale \vspace{5mm}\\ 			
+        - additional problem is to find a simpler form of a complicated function by fitting function to data sampled from original function
+	
 				\btVFill
 			\end{frame}
 
@@ -100,7 +108,12 @@
 				\frametitle{\sectionIsubsectionItitle}
 				\bigskip
 
-				
+        \textbf{Two General Approaches}
+        \begin{itemize}
+          \item 1) Given data with random error, find a single curve that represents the overall trend of the data. \vspace{2mm}\\ 
+          -  "Because any individual data point may be incorrect, we make no effort to intersect every point" - \underline{ Numerical Methods for Engineers}, Chapra and Canale \vspc 
+        \item 2) Given data assumed to be precise or specified, find a curve that directly passes through each data point \vspace{5mm}\\ 
+			  \end{itemize}	
 				\btVFill
 			\end{frame}
 
@@ -111,7 +124,20 @@
 			\begin{frame}
 				\frametitle{\sectionIsubsectionIItitle} \small
 				\bigskip
+        \textbf{Example Applications in Engineering}
+        \begin{itemize}
+          
+          \item Calibration Curves, Sensors and Instrumentation
+          \item Table Interpolation, Mechanics, Thermo, Statistics
+          \item Velocity Profile Generation, Dynamics of Machinery, Robotics
+        
+        \end{itemize}
 
+        \textbf{Two General Problems}        
+        \begin{itemize}
+          \item Trend Analysis - predictions from dataset using interpolation polynomial or lsr
+          \item Hypothesis Testing - compare predicted to measured data for model performance or selection
+        \end{itemize}
 				
 				\btVFill
 			\end{frame}
@@ -178,7 +204,15 @@
 			\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip
+        Consider fitting a straight line to a dataset
+        \[(x_1, y_1), (x_2, y_2), ..., (x_n,y_n)\] 
+        with a function \[y=a_o+a_1+e\]
 
+        This can be rearranged to show the {\bf error} as
+
+        \[e=y-a_0-a_1x\]
+  
+        The general problem is to find a function that minimizes the error  
   
 				\btVFill
 			\end{frame}
@@ -187,6 +221,17 @@
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip
 
+        To find the coefficents of the fit line, the minimization objective must be considered carefully. You might consider fitting a model that mimizes the error directly, but this will not work. The absolute value approach is also problematic.
+
+          \begin{itemize}
+            \item \[\Sigma_{i=1}^n e_i = \left(y_i-a_0-a_1x_i\right)\] \vspace{3mm}
+            \item \[\Sigma_{i=1}^n |e_i| = \left|y_i-a_0-a_1x_i\right|\] \vspace{3mm}
+          \end{itemize}
+      
+ To solve these issues, the common technique is to \underline{\hspace{25mm}} the error.
+          \begin{itemize}
+             \item \[\Sigma_{i=1}^n e_i^2 = \left(y_i-a_0-a_1x_i\right)^2\] \vspace{3mm}
+          \end{itemize}
 
 				\btVFill
 			\end{frame}	
@@ -206,6 +251,7 @@
 				\frametitle{\sectionIIsubsectionIItitle} \small
 				\bigskip
 
+        
 
 				\btVFill 
 			\end{frame}	
