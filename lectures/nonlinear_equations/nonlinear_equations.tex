@@ -11,9 +11,7 @@
 
 \documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
 
-\usepackage{/home/tntech.edu/thill/courses/analysis_lectures/lectures/analysis_lectures}
-%\usepackage{/home/thill/courses/analysis_lectures/lectures/analysis_lectures}
-%\usepackage{/mnt/c/Users/thill/Documents/courses/analysis_lectures/lectures/analysis_lectures}
+\usepackage{../analysis_lectures}
 
 \author{ME3001 - Mechanical Engineering Analysis}
 
@@ -240,13 +238,14 @@
 
 				\begin{itemize}
 					\item Isaac Newton, mathematician and physicist, 1642-1727
-					\item Joseph Raphson, English Mathematician, 1648-1715 \\
-					\item add Taylor to list \\
+					\item Joseph Raphson, mathematician, 1648-1715 \\
+					\item Brook Taylor, mathematician, 1685-1731 \\
 				\end{itemize}
 
 				\includegraphics[scale=.17]{images/newton_portrait.jpg}
-				\hspace{10mm}\includegraphics[scale=.30]{images/raphson_book.jpg}
-
+				%\hspace{10mm}\includegraphics[scale=.30]{images/raphson_book.jpg}
+				\hspace{10mm}\includegraphics[scale=.40]{images/Joseph-Raphson-1648-1715.png}
+				\hspace{10mm}\includegraphics[scale=.30]{images/BTaylor.jpg}
 				\btVFill
 			\end{frame}	
 
@@ -297,9 +296,11 @@
 
 				\textbf{Algorithm Summary:}
 				\begin{itemize}
-					\item - Step 1: start doing stuff 
-					\item - Step 2: do more stuff
-					\item - Step 3: keep doing stuff until you have the solution
+					\item - Step 1: choose an initial estimate of the root value, $x_0$  
+					\item - Step 2: calculate an updated estimate of the root value using the derived formula \vspace{2mm} \\
+						\[ x_{1}=x_0 + \Delta x = x_0 - \frac{f(x_0)}{f'(x_0)} \]
+					\item - Step 3: calculate improved estimates until the solution meets exit condtion(s)
+						\[ x_{i+1}=x_i + \Delta x_i = x_i - \frac{f(x_i)}{f'(x_i)} \]
 				\end{itemize}
 				\btVFill 
 			\end{frame}
@@ -428,9 +429,11 @@
 
 				\textbf{Algorithm Summary:}
 				\begin{itemize}
-					\item - Step 1: start doing stuff 
-					\item - Step 2: do more stuff
-					\item - Step 3: keep doing stuff until you have the solution
+						\item - Step 1: choose an initial estimate of the root value, $x_0$  
+					\item - Step 2: calculate an updated estimate of the root value using the derived formula \vspace{2mm} \\
+						\[ x_{1}=x_0 + \Delta x = x_0 -  \]
+					\item - Step 3: calculate improved estimates until the solution meets exit condtion(s)
+						\[ x_{i+1}=x_i + \Delta x_i = x_i -  \]
 				\end{itemize}
 				\btVFill 
 			\end{frame}

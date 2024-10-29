@@ -190,3 +190,19 @@
 
 \newcommand{\COMMA}{\raisebox{-0.1em}{,}}
 \newcommand{\COMMAKey}{\keystroke{\COMMA}}
+
+
+\usepackage{xparse}
+
+\NewDocumentCommand{\getenv}{om}
+ {
+  \sys_get_shell:nnN { kpsewhich ~ --var-value ~ #2 } { } \l_tmpa_tl
+  \tl_trim_spaces:N \l_tmpa_tl
+  \IfNoValueTF { #1 }
+   {
+    \tl_use:N \l_tmpa_tl
+   }
+   {
+    \tl_set_eq:NN #1 \l_tmpa_tl
+   }
+ }

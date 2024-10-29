@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.31)  24 JAN 2024 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  3 SEP 2024 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -655,8 +655,8 @@ Package: amsthm 2017/10/31 v2.20.4
 \beamer@dimb=\dimen277
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/home/tntech.edu/thill/courses/analysis_lectures/lectures/analysis_lectures.st
-y (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(../analysis_lectures.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
@@ -1055,22 +1055,22 @@ LaTeX Warning: Label `sectionIIsubsectionI' multiply defined.
 )
 \openout1 = `nonlinear_equations_handout.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1130,7 +1130,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box140
-Package hyperref Info: Link coloring ON on input line 57.
+Package hyperref Info: Link coloring ON on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1143,56 +1143,56 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count367
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \nameref on input line 55.
 
 (./nonlinear_equations_handout.out) (./nonlinear_equations_handout.out)
 \@outlinefile=\write6
 \openout6 = `nonlinear_equations_handout.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 57.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 57.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 55.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 57.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 57.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 55.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 57.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 57.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 57.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 55.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 57.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 57.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 57.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 55.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 57.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 57.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 57.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 55.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 57.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 57.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 55.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 57.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 55.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 57.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 57.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 57.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 57.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 57.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 57.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1229,7 +1229,7 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 ] [3
 
 ]
-Overfull \vbox (5.24405pt too high) detected at line 113
+Overfull \vbox (5.24405pt too high) detected at line 111
  []
 
 [4
@@ -1237,19 +1237,19 @@ Overfull \vbox (5.24405pt too high) detected at line 113
 ] [5
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 136
+LaTeX Font Info:    Trying to load font information for U+msa on input line 134
 .
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 136
+LaTeX Font Info:    Trying to load font information for U+msb on input line 134
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
-6.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
@@ -1257,10 +1257,10 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 <images/lecture1_fig1.png, id=291, 421.575pt x 316.0608pt>
 File: images/lecture1_fig1.png Graphic file (type png)
 <use images/lecture1_fig1.png>
-Package pdftex.def Info: images/lecture1_fig1.png  used on input line 136.
+Package pdftex.def Info: images/lecture1_fig1.png  used on input line 134.
 (pdftex.def)             Requested size: 189.70699pt x 142.22604pt.
 
-Overfull \vbox (2.22838pt too high) detected at line 136
+Overfull \vbox (2.22838pt too high) detected at line 134
  []
 
 [6
@@ -1273,14 +1273,14 @@ Overfull \vbox (2.22838pt too high) detected at line 136
 <images/lecture1_fig3.png, id=398, 413.8662pt x 314.6154pt>
 File: images/lecture1_fig3.png Graphic file (type png)
 <use images/lecture1_fig3.png>
-Package pdftex.def Info: images/lecture1_fig3.png  used on input line 192.
+Package pdftex.def Info: images/lecture1_fig3.png  used on input line 190.
 (pdftex.def)             Requested size: 165.54353pt x 125.84392pt.
  [9
 
  <./images/lecture1_fig3.png (PNG copy)>] [10
 
 ]
-Overfull \vbox (28.67728pt too high) detected at line 233
+Overfull \vbox (28.67728pt too high) detected at line 231
  []
 
 [11
@@ -1290,63 +1290,69 @@ ectionI}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.233 			\end{frame}
+l.231 			\end{frame}
                     ]pdfTeX warning (ext4): destination with the same identifie
 r (name{sectionIIsubsectionI<1>}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.251 			\end{frame}
+l.250 			\end{frame}
                     	pdfTeX warning (ext4): destination with the same identifie
 r (name{sectionIIsubsectionI}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.251 			\end{frame}
+l.250 			\end{frame}
                     	
 <images/newton_portrait.jpg, id=522, 408.52625pt x 561.09625pt>
 File: images/newton_portrait.jpg Graphic file (type jpg)
 <use images/newton_portrait.jpg>
-Package pdftex.def Info: images/newton_portrait.jpg  used on input line 251.
+Package pdftex.def Info: images/newton_portrait.jpg  used on input line 250.
 (pdftex.def)             Requested size: 69.44853pt x 95.3851pt.
-<images/raphson_book.jpg, id=523, 236.74655pt x 326.46103pt>
-File: images/raphson_book.jpg Graphic file (type jpg)
-<use images/raphson_book.jpg>
-Package pdftex.def Info: images/raphson_book.jpg  used on input line 251.
-(pdftex.def)             Requested size: 71.0245pt x 97.93906pt.
+<images/Joseph-Raphson-1648-1715.png, id=523, 208.78pt x 269.33958pt>
+File: images/Joseph-Raphson-1648-1715.png Graphic file (type png)
+<use images/Joseph-Raphson-1648-1715.png>
+Package pdftex.def Info: images/Joseph-Raphson-1648-1715.png  used on input lin
+e 250.
+(pdftex.def)             Requested size: 83.5105pt x 107.73392pt.
+<images/BTaylor.jpg, id=525, 281.05pt x 341.275pt>
+File: images/BTaylor.jpg Graphic file (type jpg)
+<use images/BTaylor.jpg>
+Package pdftex.def Info: images/BTaylor.jpg  used on input line 250.
+(pdftex.def)             Requested size: 84.31564pt x 102.38329pt.
  [12
 
- <./images/newton_portrait.jpg> <./images/raphson_book.jpg>]pdfTeX warning (ext
-4): destination with the same identifier (name{sectionIIsubsectionI<1>}) has be
-en already used, duplicate ignored
+ <./images/newton_portrait.jpg> <./images/Joseph-Raphson-1648-1715.png> <./imag
+es/BTaylor.jpg>]pdfTeX warning (ext4): destination with the same identifier (na
+me{sectionIIsubsectionI<1>}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.262 			\end{frame}
+l.261 			\end{frame}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{sectionIIsubsectionI}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.262 			\end{frame}
+l.261 			\end{frame}
                     
-<images/topic3_fig1.png, id=558, 702.59009pt x 316.73112pt>
+<images/topic3_fig1.png, id=561, 702.59009pt x 316.73112pt>
 File: images/topic3_fig1.png Graphic file (type png)
 <use images/topic3_fig1.png>
-Package pdftex.def Info: images/topic3_fig1.png  used on input line 262.
+Package pdftex.def Info: images/topic3_fig1.png  used on input line 261.
 (pdftex.def)             Requested size: 281.03105pt x 126.69019pt.
  [13
 
  <./images/topic3_fig1.png>]
-Overfull \vbox (17.82921pt too high) detected at line 276
+Overfull \vbox (17.82921pt too high) detected at line 275
  []
 
 [14
 
 ]
-<images/topic3_fig2.png, id=638, 734.01183pt x 449.9593pt>
+<images/topic3_fig2.png, id=640, 734.01183pt x 449.9593pt>
 File: images/topic3_fig2.png Graphic file (type png)
 <use images/topic3_fig2.png>
-Package pdftex.def Info: images/topic3_fig2.png  used on input line 288.
+Package pdftex.def Info: images/topic3_fig2.png  used on input line 287.
 (pdftex.def)             Requested size: 256.90799pt x 157.4881pt.
 
-Overfull \vbox (11.2605pt too high) detected at line 288
+Overfull \vbox (11.2605pt too high) detected at line 287
  []
 
 [15
@@ -1358,10 +1364,10 @@ Overfull \vbox (11.2605pt too high) detected at line 288
 ]
 File: images/topic3_fig2.png Graphic file (type png)
 <use images/topic3_fig2.png>
-Package pdftex.def Info: images/topic3_fig2.png  used on input line 343.
+Package pdftex.def Info: images/topic3_fig2.png  used on input line 342.
 (pdftex.def)             Requested size: 220.20525pt x 134.98882pt.
 
-Overfull \vbox (2.78143pt too high) detected at line 343
+Overfull \vbox (2.78143pt too high) detected at line 342
  []
 
 [18
@@ -1373,31 +1379,31 @@ Overfull \vbox (2.78143pt too high) detected at line 343
 ] [21
 
 ]
-<images/lecture4_fig1.png, id=888, 707.64375pt x 423.5825pt>
+<images/lecture4_fig1.png, id=890, 707.64375pt x 423.5825pt>
 File: images/lecture4_fig1.png Graphic file (type png)
 <use images/lecture4_fig1.png>
-Package pdftex.def Info: images/lecture4_fig1.png  used on input line 403.
+Package pdftex.def Info: images/lecture4_fig1.png  used on input line 402.
 (pdftex.def)             Requested size: 99.06944pt x 59.30113pt.
 
-Overfull \hbox (3.30615pt too wide) in paragraph at lines 403--403
+Overfull \hbox (3.30615pt too wide) in paragraph at lines 402--402
 [][]  
  []
 
 File: images/lecture4_fig1.png Graphic file (type png)
 <use images/lecture4_fig1.png>
-Package pdftex.def Info: images/lecture4_fig1.png  used on input line 403.
+Package pdftex.def Info: images/lecture4_fig1.png  used on input line 402.
 (pdftex.def)             Requested size: 99.06944pt x 59.30113pt.
 
-Overfull \hbox (3.30615pt too wide) in paragraph at lines 403--403
+Overfull \hbox (3.30615pt too wide) in paragraph at lines 402--402
 [][]  
  []
 
 File: images/lecture4_fig1.png Graphic file (type png)
 <use images/lecture4_fig1.png>
-Package pdftex.def Info: images/lecture4_fig1.png  used on input line 403.
+Package pdftex.def Info: images/lecture4_fig1.png  used on input line 402.
 (pdftex.def)             Requested size: 99.06944pt x 59.30113pt.
 
-Overfull \hbox (3.30615pt too wide) in paragraph at lines 403--403
+Overfull \hbox (3.30615pt too wide) in paragraph at lines 402--402
 [][]  
  []
 
@@ -1406,19 +1412,19 @@ Overfull \hbox (3.30615pt too wide) in paragraph at lines 403--403
  <./images/lecture4_fig1.png>]
 File: images/lecture4_fig1.png Graphic file (type png)
 <use images/lecture4_fig1.png>
-Package pdftex.def Info: images/lecture4_fig1.png  used on input line 423.
+Package pdftex.def Info: images/lecture4_fig1.png  used on input line 422.
 (pdftex.def)             Requested size: 155.6821pt x 93.18843pt.
 File: images/lecture4_fig1.png Graphic file (type png)
 <use images/lecture4_fig1.png>
-Package pdftex.def Info: images/lecture4_fig1.png  used on input line 423.
+Package pdftex.def Info: images/lecture4_fig1.png  used on input line 422.
 (pdftex.def)             Requested size: 155.6821pt x 93.18843pt.
 
-Overfull \hbox (7.03717pt too wide) in paragraph at lines 423--423
+Overfull \hbox (7.03717pt too wide) in paragraph at lines 422--422
 [] 
  []
 
 
-Overfull \hbox (7.03717pt too wide) in paragraph at lines 423--423
+Overfull \hbox (7.03717pt too wide) in paragraph at lines 422--422
 []  
  []
 
@@ -1431,7 +1437,7 @@ Overfull \hbox (7.03717pt too wide) in paragraph at lines 423--423
 ] [26
 
 ]
-Overfull \vbox (28.67728pt too high) detected at line 497
+Overfull \vbox (28.67728pt too high) detected at line 499
  []
 
 [27
@@ -1441,21 +1447,21 @@ Overfull \vbox (28.67728pt too high) detected at line 497
 ]
 File: images/topic3_fig1.png Graphic file (type png)
 <use images/topic3_fig1.png>
-Package pdftex.def Info: images/topic3_fig1.png  used on input line 517.
+Package pdftex.def Info: images/topic3_fig1.png  used on input line 519.
 (pdftex.def)             Requested size: 281.03105pt x 126.69019pt.
  [29
 
 ]
 File: images/topic3_fig1.png Graphic file (type png)
 <use images/topic3_fig1.png>
-Package pdftex.def Info: images/topic3_fig1.png  used on input line 526.
+Package pdftex.def Info: images/topic3_fig1.png  used on input line 528.
 (pdftex.def)             Requested size: 281.03105pt x 126.69019pt.
  [30
 
 ]
 File: images/topic3_fig1.png Graphic file (type png)
 <use images/topic3_fig1.png>
-Package pdftex.def Info: images/topic3_fig1.png  used on input line 535.
+Package pdftex.def Info: images/topic3_fig1.png  used on input line 537.
 (pdftex.def)             Requested size: 281.03105pt x 126.69019pt.
  [31
 
@@ -1468,13 +1474,13 @@ Package pdftex.def Info: images/topic3_fig1.png  used on input line 535.
 ] [35
 
 ]
-<images/lecture3_fig1.png, id=1378, 295.85532pt x 238.64156pt>
+<images/lecture3_fig1.png, id=1380, 295.85532pt x 238.64156pt>
 File: images/lecture3_fig1.png Graphic file (type png)
 <use images/lecture3_fig1.png>
-Package pdftex.def Info: images/lecture3_fig1.png  used on input line 619.
+Package pdftex.def Info: images/lecture3_fig1.png  used on input line 621.
 (pdftex.def)             Requested size: 103.5509pt x 83.52579pt.
 
-Overfull \vbox (2.27571pt too high) detected at line 619
+Overfull \vbox (2.27571pt too high) detected at line 621
  []
 
 [36
@@ -1482,7 +1488,7 @@ Overfull \vbox (2.27571pt too high) detected at line 619
  <./images/lecture3_fig1.png>]
 File: images/lecture3_fig1.png Graphic file (type png)
 <use images/lecture3_fig1.png>
-Package pdftex.def Info: images/lecture3_fig1.png  used on input line 632.
+Package pdftex.def Info: images/lecture3_fig1.png  used on input line 634.
 (pdftex.def)             Requested size: 103.5509pt x 83.52579pt.
  [37
 
@@ -1491,7 +1497,7 @@ Package pdftex.def Info: images/lecture3_fig1.png  used on input line 632.
 ]
 File: images/lecture3_fig1.png Graphic file (type png)
 <use images/lecture3_fig1.png>
-Package pdftex.def Info: images/lecture3_fig1.png  used on input line 655.
+Package pdftex.def Info: images/lecture3_fig1.png  used on input line 657.
 (pdftex.def)             Requested size: 103.5509pt x 83.52579pt.
  [39
 
@@ -1505,12 +1511,12 @@ Package pdftex.def Info: images/lecture3_fig1.png  used on input line 655.
 \tf@snm=\write9
 \openout9 = `nonlinear_equations_handout.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 658.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 658.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 660.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 660.
 
 (./nonlinear_equations_handout.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 658.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 658.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 660.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 660.
 Package rerunfilecheck Info: File `nonlinear_equations_handout.out' has not cha
 nged.
 (rerunfilecheck)             Checksum: 7D5E3CC06CB985FFAEACA6CC7DBA9EFA;1311.
@@ -1520,10 +1526,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26234 strings out of 483183
- 518215 string characters out of 5966292
- 991474 words of memory out of 5000000
- 40494 multiletter control sequences out of 15000+600000
+ 26245 strings out of 483183
+ 518051 string characters out of 5966292
+ 991544 words of memory out of 5000000
+ 40504 multiletter control sequences out of 15000+600000
  558773 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,19n,73p,794b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1558,10 +1564,10 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on nonlinear_equations_handout.pdf (39 pages, 567146 bytes).
+Output written on nonlinear_equations_handout.pdf (39 pages, 841030 bytes).
 PDF statistics:
- 2042 PDF objects out of 2073 (max. 8388607)
+ 2044 PDF objects out of 2073 (max. 8388607)
  1510 compressed objects within 16 object streams
  119 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 

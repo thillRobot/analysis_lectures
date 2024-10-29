@@ -1,0 +1,538 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% Lecture Template for ME3001-001-Tristan Hill - Spring 2017 - Fall 2017 - Fall 2020
+% Mechanical Engineering Analysis with MATLAB
+% Module 4 - Eigenvalues and Eigenvectors
+% Topic 1 - What is an Eigen Value?
+
+\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+
+\usepackage{../analysis_lectures}
+
+\newcommand{\MNUM}{3\hspace{2mm}} % Module number
+\newcommand{\TNUM}{1\hspace{2mm}} % Topic number 
+\newcommand{\moduletitle}{Eigenvalues and Eigenvectors} % Titles and Stuff
+\newcommand{\topictitle}{What is an Eigenvalue and Eigenvector?} 
+
+\newcommand{\sectiontitleI}{Mathematical Definition of Eigenvalue and Eigenvector} % More Titles and Stuff
+\newcommand{\sectiontitleII}{Standard form Eigenvalue Problem}
+\newcommand{\sectiontitleIII}{The Geometrical Explanation}
+\newcommand{\sectiontitleIV}{A Simple Example by Hand}
+
+
+\author{ME3001 - Mechanical Engineering Analysis}
+\title{Module \MNUM - \moduletitle}
+\date{Mechanical Engineering\vspc Tennessee Technological University}
+
+\begin{document}
+
+\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+
+\frame{\titlepage \hspace{12mm} These notes came from Mike Renfro. Thanks Mike.}
+
+
+\section*{Outlines}
+
+\subsection*{Solution of Matrix Eigenvalue Problem}
+\frame{
+  \frametitle{Solution of Matrix Eigenvalue Problem}
+  \tableofcontents[part=1]
+
+ 
+  
+  
+}
+
+\part{Solution of Matrix Eigenvalue Problem}
+\frame{\partpage}
+
+
+\section{Standard Matrix Eigenvalue Problem}
+\subsection{Introduction}
+\frame{
+  \frametitle{Standard Matrix Eigenvalue Problem: Introduction}
+
+  Consider a system of equations in algebraic form
+  \begin{align*}
+    (a_{11}-\lambda) x_1 + a_{12} x_2 + a_{13} x_3 + \cdots + a_{1n} x_n =& 0 \\
+    a_{21} x_1 + (a_{22}-\lambda) x_2 + a_{23} x_3 + \cdots + a_{2n} x_n =& 0 \\
+    \vdots{}& \\
+    a_{n1} x_1 + a_{n2} x_2 + a_{n3} x_3 + \cdots + (a_{nn}-\lambda) x_n =& 0 \\
+  \end{align*}
+  This is not a normal system of linear algebraic equations we're used
+  to. For one, there are $n$ equations, but $n+1$ unknowns (the $x_i$
+  values, and also $\lambda$). This particular system of equations is
+  known as \emph{the standard eigenvalue problem}.
+
+}
+
+\subsection{Other Forms of the Standard Eigenvalue Problem}
+\frame{
+  \frametitle{Form 1}
+  
+  The three forms shown are all algebraically equivalent. Any system
+  of equations that can be expressed in these forms is a standard
+  eigenvalue problem.
+
+  \begin{displaymath}
+    \left[ \begin{array}{cccc}
+        a_{11}-\lambda & a_{12} & \cdots & a_{1n} \\
+        a_{21} & a_{22}-\lambda & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{n1} & a_{n2} & \cdots & a_{nn}-\lambda
+      \end{array} \right]
+    \left\{ \begin{array}{c}
+        x_1 \\
+        x_2 \\
+        \vdots \\
+        x_n
+      \end{array} \right\} =
+    \left\{ \begin{array}{c}
+        0 \\
+        0 \\
+        \vdots \\
+        0
+      \end{array} \right\}
+  \end{displaymath}
+}
+\frame{
+  \frametitle{Form 2}
+  \begin{displaymath}
+    \left( \left[ \begin{array}{cccc}
+          a_{11} & a_{12} & \cdots & a_{1n} \\
+          a_{21} & a_{22} & \cdots & a_{2n} \\
+          \vdots & \vdots & \ddots & \vdots \\
+          a_{n1} & a_{n2} & \cdots & a_{nn}
+        \end{array} \right] -
+      \lambda \left[ \begin{array}{cccc}
+          1 & 0 & \cdots & 0 \\
+          0 & 1 & \cdots & 0 \\
+          \vdots & \vdots & \ddots & \vdots \\
+          0 & 0 & \cdots & 1
+        \end{array} \right] \right)
+    \left\{ \begin{array}{c}
+        x_1 \\
+        x_2 \\
+        \vdots \\
+        x_n
+      \end{array} \right\} =
+    \left\{ \begin{array}{c}
+        0 \\
+        0 \\
+        \vdots \\
+        0
+      \end{array} \right\}
+  \end{displaymath}
+  \begin{displaymath}
+    \left( \left[A\right] - \lambda \left[ I \right] \right) \left\{ x \right\} = \left\{ 0 \right\}
+  \end{displaymath}
+}
+\frame{
+  \frametitle{Form 3}
+  \begin{displaymath}
+    \left[ \begin{array}{cccc}
+        a_{11} & a_{12} & \cdots & a_{1n} \\
+        a_{21} & a_{22} & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{n1} & a_{n2} & \cdots & a_{nn}
+      \end{array} \right]
+    \left\{ \begin{array}{c}
+        x_1 \\
+        x_2 \\
+        \vdots \\
+        x_n
+      \end{array} \right\} =
+    \lambda
+    \left\{ \begin{array}{c}
+        x_1 \\
+        x_2 \\
+        \vdots \\
+        x_n
+      \end{array} \right\}
+  \end{displaymath}
+  \begin{displaymath}
+    \left[ A \right] \left\{ x \right\} = \lambda \left\{ x \right\}
+  \end{displaymath}
+}
+
+\subsection{Solvability of the Standard Eigenvalue Problem}
+\frame{
+  \frametitle{Solvability of the Standard Eigenvalue Problem}
+  Recall form 2 of the standard eigenvalue problem:
+  \begin{displaymath}
+    \left( \left[A\right] - \lambda \left[ I \right] \right) \left\{ x \right\} = \left\{ 0 \right\}
+  \end{displaymath}
+  This system of equations has a solution for values of $\lambda$ that
+  cause the determinant of the coefficient matrix to equal 0, that is:
+  \begin{displaymath}
+    \left| \left[ A \right] - \lambda \left[ I \right] \right| = 0
+  \end{displaymath}
+}
+
+\frame{
+  \frametitle{Characteristic Equation}
+  
+  Expanding out all the terms of the previous determinant
+  \begin{displaymath}
+    \left| \begin{array}{cccc}
+        a_{11}-\lambda & a_{12} & \cdots & a_{1n} \\
+        a_{21} & a_{22}-\lambda & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{n1} & a_{n2} & \cdots & a_{nn}-\lambda
+      \end{array} \right| = 0
+  \end{displaymath}
+  yields a long polynomial in terms of $\lambda$. This polynomial will
+  be $n$th order, and will therefore have $n$ roots, each of which may
+  be real or complex.
+
+}
+
+\section{General Eigenvalue Problem}
+\subsection{Introduction}
+\frame{
+  \frametitle{General Eigenvalue Problem: Introduction}
+  
+  Many physical systems do not automatically present themselves as a
+  standard eigenvalue problem, even though they can be reformatted as
+  a standard eigenvalue problem. The form of a \emph{general
+    eigenvalue problem} is
+  \begin{displaymath}
+    \left[ A \right] \left\{ x \right\} = \lambda \left[ B \right] \left\{ x \right\}
+  \end{displaymath}
+  where $[A]$ and $[B]$ are symmetric matrices of size $n \times n$.
+
+}
+
+\subsection{General Eigenvalue Problem Example}
+\frame{
+  \frametitle{General Eigenvalue Problem Example}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      A forging hammer of mass $m_2$ is mounted on a concrete
+      foundation block of mass $m_1$. The stiffnesses of the springs
+      underneath the forging hammer and the foundation block are given
+      by $k_2$ and $k_1$, respectively.
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \pgfimage[width=0.9\textwidth]{fig41a}
+    \end{column}
+  \end{columns}
+  
+}
+
+\frame{
+  \frametitle{General Eigenvalue Problem Example}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      The system undergoes simple harmonic motion at one of its
+      natural frequencies $\omega$. That is:
+      \begin{displaymath}
+        x_1(t) = \cos ( \omega t + \phi_1 )
+      \end{displaymath}
+      \begin{displaymath}
+        x_2(t) = \cos ( \omega t + \phi_2 )
+      \end{displaymath}
+      \begin{displaymath}
+        a_1(t) = - \omega^2 x_1(t)
+      \end{displaymath}
+      \begin{displaymath}
+        a_2(t) = - \omega^2 x_2(t)
+      \end{displaymath}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \pgfimage[width=0.9\textwidth]{fig41a}
+    \end{column}
+  \end{columns}
+
+}
+
+\frame{
+  \frametitle{General Eigenvalue Problem Example}
+
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      Each mass in the system obeys Newton's second law of motion,
+      that is:
+      \begin{displaymath}
+        \Sigma F = m a
+      \end{displaymath}
+      Forces on the foundation block:
+      \begin{itemize}
+      \item forces from the lower springs, which counteracts motion in
+        the $x$ direction at an amount $-k_1 x_1$
+      \item forces from the upper springs, which act according to the
+        amount of relative displacement of the masses $m_1$ and $m_2$:
+        $-k_2 (x_1 - x_2)$
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \pgfimage[width=0.9\textwidth]{fig41b}
+    \end{column}
+  \end{columns}
+
+}
+
+\frame{
+  \frametitle{General Eigenvalue Problem Example}
+
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      The equilibrium equation for the foundation mass is then
+      \begin{align*}
+        \Sigma F &= m a \\
+        -k_1 x_1 -k_2 (x_1 - x_2) &= m_1 a \\
+        (-k_2 - k_1) x_1 + k_2 x_2 &= m_1 a \\
+        (-k_2 - k_1) x_1 + k_2 x_2 &= -m_1 \omega^2 x_1 \\
+        (k_1 + k_2) x_1 - k_2 x_2 &= m_1 \omega^2 x_1
+      \end{align*}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \pgfimage[width=0.9\textwidth]{fig41b}
+    \end{column}
+  \end{columns}
+
+}
+
+\frame{
+  \frametitle{General Eigenvalue Problem Example}
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      Similarly, the equilibrium equation for the forging hammer mass
+      is
+      \begin{align*}
+        -k_2 x_1 + k_2 x_2 &= m_2 \omega^2 x_2
+      \end{align*}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \pgfimage[width=0.9\textwidth]{fig41b}
+    \end{column}
+  \end{columns}
+} 
+
+\frame{
+  \frametitle{General Eigenvalue Problem Example}
+
+  So the two equations of motion are
+  \begin{align*}
+    (k_1 + k_2) x_1 - k_2 x_2 &= m_1 \omega^2 x_1 \\
+    -k_2 x_1 + k_2 x_2 &= m_2 \omega^2 x_2
+  \end{align*}
+  or in matrix form
+  \begin{displaymath}
+    \left[ \begin{array}{cc}
+        k_1 + k_2 & -k_2 \\
+        -k_2 & k_2
+      \end{array} \right]
+    \left\{ \begin{array}{c}
+        x_1 \\
+        x_2
+      \end{array} \right\} =
+    \omega^2
+    \left[ \begin{array}{cc}
+        m_1 & 0 \\
+        0 & m_2
+      \end{array} \right]
+    \left\{ \begin{array}{c}
+        x_1 \\
+        x_2
+    \end{array} \right\}
+  \end{displaymath}
+  
+  This is a general eigenvalue problem
+  \begin{displaymath}
+    [A]\{x\} = \lambda [B] \{x\}
+  \end{displaymath}
+  where $[A]$ is the spring matrix, $\{x\}$ is the vector of $x$
+  values, $\lambda$ is $\omega^2$, and $[B]$ is the mass matrix.
+
+}
+
+\section{Eigenvalue Solutions in MATLAB}
+\subsection{Standard Eigenvalue Problems}
+\frame{
+  \frametitle{Eigenvalue Solutions in MATLAB: Standard Problems}
+  
+  The design of a mechanical component requires that the maximum
+  principal stress to be less than the material strength. For a
+  component subjected to arbitrary loads, the principal stresses
+  $\sigma$ are given by the solution of the equation
+  \begin{displaymath}
+    \left[ \begin{array}{ccc}
+        \sigma_{xx} & \tau_{xy} & \tau_{xz} \\
+        \tau_{xy} & \sigma_{yy} & \tau_{yz} \\
+        \tau_{xz} & \tau_{yz} & \sigma_{zz}
+    \end{array} \right]
+    \left\{ \begin{array}{c}
+        l_x \\
+        l_y \\
+        l_z
+      \end{array} \right\} =
+    \sigma
+    \left\{ \begin{array}{c}
+        l_x \\
+        l_y \\
+        l_z
+      \end{array} \right\}
+  \end{displaymath}
+  where the $\sigma$ values represent normal stresses in the $x$, $y$,
+  and $z$ directions, and the $\tau$ values represent shear stresses
+  in the $xy$, $xz$, and $yz$ planes. The $l$ values represent
+  direction cosines that define the principal planes on which the
+  principal stress occurs.
+
+}
+
+\frame{
+  \frametitle{Eigenvalue Solutions in MATLAB: Standard Problems}
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      Determine the principal stresses and principal planes in a
+      machine component for the following stress condition
+      \begin{displaymath}
+        \left[ \begin{array}{ccc}
+            \sigma_{xx} & \tau_{xy} & \tau_{xz} \\
+            \tau_{xy} & \sigma_{yy} & \tau_{yz} \\
+            \tau_{xz} & \tau_{yz} & \sigma_{zz}
+          \end{array} \right] =
+        \left[ \begin{array}{rrr}
+            10 & 4 & -6 \\
+            4 & -6 & 8 \\
+            -6 & 8 & 14
+          \end{array} \right] \text{~MPa}
+      \end{displaymath}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \pgfimage[width=0.9\textwidth]{fig413}
+    \end{column}
+  \end{columns}
+
+}
+
+\frame[containsverbatim]{
+  \frametitle{MATLAB Solution}
+  \begin{lstlisting}
+clear all
+sigma=[10  4 -6
+        4 -6  8
+       -6  8 14];
+[dirs,stresses]=eig(sigma);
+% diag(A) extracts the elements of the
+% [A] matrix along the diagonal
+principalStressList=diag(stresses)
+principalDirs=dirs
+  \end{lstlisting}
+}
+
+\frame[containsverbatim]{
+  \frametitle{MATLAB Solution}
+  \begin{lstlisting}
+>> rao_p431
+principalStressList =
+  -10.4828
+    9.3181
+   19.1647
+principalDirs =
+   -0.2792    0.8343   -0.4754
+    0.8905    0.4102    0.1970
+   -0.3594    0.3683    0.8574
+  \end{lstlisting}
+}
+
+\subsection{General Eigenvalue Problems}
+\frame{
+  \frametitle{Eigenvalue Solutions in MATLAB: General Problems}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      Solve the forging hammer problem for the following values:
+      \begin{itemize}
+      \item $m_1 = 20000 \text{~kg}$
+      \item $m_2 = 5000 \text{~kg}$
+      \item $k_1 = 1 \times 10^7 \text{~N/m}$
+      \item $k_2 = 5 \times 10^6 \text{~N/m}$
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \pgfimage[width=0.9\textwidth]{fig41a}
+    \end{column}
+  \end{columns}
+}
+
+\frame{
+  \frametitle{Solving Eigenvalue Problems in MATLAB}
+  
+  Solving this eigenvalue problem will yield 2 eigenvalues equal to
+  the square of the system's natural frequencies, and 2 corresponding
+  $x$ vector values that show the relative displacements of the $m_1$
+  and $m_2$ masses at those frequencies.
+
+}
+
+\frame[containsverbatim]{
+  \frametitle{MATLAB Solution (Part 1)}
+
+  \begin{lstlisting}
+clear all;
+% Define spring constants and masses
+% for hammer and foundation block
+k1=1e7;
+k2=5e6;
+m1=20000;
+m2=5000;
+
+% Define system stiffness matrix
+K=[k1+k2 -k2
+     -k2  k2];
+% Define system mass matrix
+M=[m1  0
+    0 m2];
+  \end{lstlisting}
+
+}
+
+\frame[containsverbatim]{
+
+  \frametitle{MATLAB Solution (Part 2)}
+
+  \begin{lstlisting}
+% Solve general eigenvalue problem
+[X,Omega2]=eig(K,M);
+% diag(A) extracts the elements of the
+% [A] matrix along the diagonal
+Omega=diag(sqrt(Omega2));
+% Scale column 1 of the [X] matrix by
+% the row 1, column 1 X value
+X(:,1)=X(:,1)/X(1,1);
+% Scale column 2 of the [X] matrix by
+% the row 1, column 2 X value
+X(:,2)=X(:,2)/X(1,2);
+
+Omega
+X
+  \end{lstlisting}
+
+}
+
+\frame[containsverbatim]{
+
+  \frametitle{MATLAB Solution (Results)}
+
+  \begin{lstlisting}
+>> rao_ex42
+Omega =
+   18.9634
+   37.2879
+X =
+    1.0000    1.0000
+    1.5616   -2.5616
+  \end{lstlisting}
+}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-command-default: "LaTeX PDF"
+%%% TeX-master: t
+%%% End:
