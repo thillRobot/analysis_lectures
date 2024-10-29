@@ -52,8 +52,7 @@
 \date{Mechanical Engineering\vspc Tennessee Technological University}
 
 \begin{document}
-  
-  \footnotesize
+
 	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 
 	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
@@ -94,8 +93,7 @@
 				\frametitle{\sectionIsubsectionItitle}
 				\bigskip
   
-        \textbf{\small What is curve fitting}?
-        \vspace{2mm}\\
+        \textbf{What is curve fitting}?
         
         - various techniques to fit a curve or function to discrete data \vspace{5mm}
  
@@ -107,17 +105,14 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 			\end{frame}
 
 			\begin{frame}
-				\frametitle{\sectionIsubsectionItitle} \footnotesize
+				\frametitle{\sectionIsubsectionItitle} \small
 				\bigskip
 
-        \textbf{\small Two General Approaches}
-        \vspace{2mm}
+        \textbf{Two General Approaches}
         \begin{itemize}
           \item 1) Given data with random error, find a single curve that represents the overall trend of the data. \vspace{2mm}\\ 
-          -  "Because any individual data point may be incorrect, we make no effort to intersect every point" - \underline{ Numerical Methods for Engineers}, Chapra and Canale \vspace{1mm}\\
-          - Common method is {\it regression} (LSR) \vspace{3mm}\\
-        \item 2) Given data assumed to be precise or specified, find a curve that directly passes through each data point \vspace{1mm}\\
-          - Known as {\it interpolation}, {\it extrapolation} 
+          -  "Because any individual data point may be incorrect, we make no effort to intersect every point" - \underline{ Numerical Methods for Engineers}, Chapra and Canale \vspc 
+        \item 2) Given data assumed to be precise or specified, find a curve that directly passes through each data point \vspace{5mm}\\ 
 			  \end{itemize}	
 				\btVFill
 			\end{frame}
@@ -127,9 +122,9 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 		\subsection{\sectionIsubsectionIItitle}\label{sectionIsubsectionII}
 
 			\begin{frame}
-				\frametitle{\sectionIsubsectionIItitle}
+				\frametitle{\sectionIsubsectionIItitle} \small
 				\bigskip
-        \textbf{\small Example Applications in Engineering}
+        \textbf{Example Applications in Engineering}
         \begin{itemize}
           
           \item Calibration Curves, Sensors and Instrumentation
@@ -137,10 +132,10 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
           \item Velocity Profile Generation, Dynamics of Machinery, Robotics
         
         \end{itemize}
-        \vspace{5mm}
-        \textbf{\small Two General Problems}        
+
+        \textbf{Two General Problems}        
         \begin{itemize}
-          \item Trend Analysis - predictions from dataset using interpolation polynomial or LSR
+          \item Trend Analysis - predictions from dataset using interpolation polynomial or lsr
           \item Hypothesis Testing - compare predicted to measured data for model performance or selection
         \end{itemize}
 				
@@ -211,17 +206,13 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 				\bigskip
         Consider fitting a straight line to a dataset
         \[(x_1, y_1), (x_2, y_2), ..., (x_n,y_n)\] 
-        with a function \[y=a_o+a_1\]
-
-        A value $y$ can be defined in terms of the function with an error term $e$
-
-        \[y=a_0+a_1+e\]
+        with a function \[y=a_o+a_1+e\]
 
         This can be rearranged to show the {\bf error} as
 
         \[e=y-a_0-a_1x\]
   
-        The goal is to find the coefficients of a function that minimizes the error  
+        The general problem is to find the coefficients of a function that minimizes the error  
   
 				\btVFill
 			\end{frame}
@@ -257,17 +248,17 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 		\subsection{\sectionIIsubsectionIItitle}\label{sectionIIsubsectionII}
 
 			\begin{frame}
-				\frametitle{\sectionIIsubsectionIItitle}
+				\frametitle{\sectionIIsubsectionIItitle} \small
 				\bigskip
 				
 				To find the coefficents of the fit line, the minimization objective must be considered carefully. You might consider fitting a model that mimizes the error directly, but this will not work. The absolute value approach is also problematic.
-\vspace{2mm}
+
           \begin{itemize}
             \item \[\Sigma_{i=1}^n e_i = \left(y_i-a_0-a_1x_i\right)\] \vspace{3mm}
             \item \[\Sigma_{i=1}^n |e_i| = \left|y_i-a_0-a_1x_i\right|\] \vspace{3mm}
           \end{itemize}
- \vspace{3mm}    
- To solve these issues, the common technique is to \underline{\hspace{25mm}} the error.\vspace{3mm}
+      
+ To solve these issues, the common technique is to \underline{\hspace{25mm}} the error.
           \begin{itemize}
              \item \[\Sigma_{i=1}^n e_i^2 = \left(y_i-a_0-a_1x_i\right)^2\] \vspace{3mm}
           \end{itemize}
@@ -276,11 +267,20 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 			\btVFill 
 			\end{frame}	
 
+			\begin{frame}
+				\frametitle{\sectionIIsubsectionIItitle} \small
+				\bigskip
+
+
+				\btVFill
+			\end{frame}		
+
+
 		% section II subsection III
 		\subsection{\sectionIIsubsectionIIItitle}\label{sectionIIsubsectionIII}
 
 			\begin{frame}
-				\frametitle{\sectionIIsubsectionIIItitle}
+				\frametitle{\sectionIIsubsectionIIItitle} \small
 				\bigskip
 				
 				To fit a straight line to the data, we must find the values $a_o$ and $a_1$ that minimize the square of the error. First find the partial derivatives of the sqaured error and set these equal to zero
@@ -298,10 +298,10 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 			\end{frame}
 
 			\begin{frame}
-				\frametitle{\sectionIIsubsectionIIItitle}
+				\frametitle{\sectionIIsubsectionIIItitle}\small
 				\bigskip
 	
-				Use $\Sigma a_0=na_0$ and the resulting equations can be solved as a linear system in terms of the coefficients $a_0$, $a_1$, and number of data points $n$. 
+				Use $\Sigma a_0=na_0$ and the resulting equations can be solved as a linear system in terms of $a_0$, $a_1$
 				\[ 0 = \Sigma y_i - \Sigma a_0 - \Sigma a_1x_i \]
 				\[ 0 = \Sigma y_ix_i - \Sigma a_0x_i - \Sigma a_ix_i^2\]
 
@@ -309,11 +309,12 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 
 				This leads to the standard equations 
 				\[a_1= \frac{n\Sigma x_iy_i-\Sigma x_i \Sigma y_i}{n\Sigma x_i^2-\left(\Sigma x_i^2\right)} \]
-				\[a_0= \bar{y} -a_1\bar{x}\]
+				\[a_0= a_0 \bar{y} -a_1\bar{x}\]
 				
-				This alternate form can be found by multipying by $1=\frac{-1}{-1}$
-				\[a_1=\frac{\Sigma x_i\Sigma y_i-n\Sigma x_i y_i }{(\Sigma x_i)^2-n\Sigma x_i^2}\]
-				\[a_0=\frac{\Sigma x_i\Sigma x_i y_i-\Sigma x_i^2\Sigma y_i}{(\Sigma x_i)^2-n\Sigma x_i^2}\] 
+				This alternate form is also used
+				\[a_0=\frac{\Sigma x_i\Sigma x_i y_i-\Sigma x_i^2\Sigma y_i}{(\Sigma x_i)^2-N\Sigma x_i^2}\] 
+				\[a_1=\frac{\Sigma x_i\Sigma y_i-N\Sigma x_i y_i }{(\Sigma x_i)^2-N\Sigma x_i^2}\]
+
 
 				\btVFill 
 			\end{frame}
