@@ -1,0 +1,46 @@
+% ME3001, TNTech
+
+% this program will
+% - generate dataset with random noise
+% - find best fit using 'linear regression' from eqs in notes
+% - find best fit using MATLAB polyfit()
+clear; clc; close all
+
+% step1 - generate dataset
+m=-3;
+b=1.5;
+error=5;
+
+xdata=-5:.5:5;
+n=length(xdata);
+ydata=m*xdata+b+rand(1,n)*error;
+
+figure(1); hold on
+plot(xdata,ydata,'o')
+grid on
+
+% step 2 - fit line with LSR equations (from me3023)
+a1=(n*sum(xdata.*ydata)-sum(xdata)*sum(ydata))/(n*sum(xdata.^2)-sum(xdata.^2))
+a0=sum(ydata)/n
+
+a1=(sum(xdata)*sum(ydata)-n*sum(xdata.*ydata))/(sum(xdata)^2-n*sum(xdata.^2))
+a0=(sum(xdata)*sum(xdata.*ydata)-sum(xdata.^2)*sum(ydata))/(sum(xdata)^2-n*sum(xdata.^2))
+
+xfit=-5:.1:5;
+yfit=a1*xfit+a0;
+
+plot(xfit,yfit,'-')
+
+% step 3 - perform linear regression in MATLAB
+A=polyfit(xdata,ydata,1)
+
+pfit=A(2)+A(1)*xfit;
+plot(xfit,pfit,':g','LineWidth',5)
+
+% perform cubic regression in MATLAB, check for issue
+% y=a3x^3+a2x^2+a1x+a0
+A=polyfit(xdata,ydata,3)
+
+pfit=A(4)+A(3)*xfit+A(2)*xfit.^2+A(1)*xfit.^3;
+plot(xfit,pfit,':c','LineWidth',5)
+

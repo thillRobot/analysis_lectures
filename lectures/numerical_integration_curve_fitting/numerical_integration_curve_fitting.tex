@@ -54,7 +54,7 @@
 \begin{document}
   
   \footnotesize
-	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+	%\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 
 	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
 
@@ -322,24 +322,86 @@ estimates at points between the discrete values" - \underline{ Numerical Methods
 		% section II subsection IV 
 		\subsection{\sectionIIsubsectionIVtitle}\label{sectionIIsubsectionIV}
 
-			\begin{frame}
+			\begin{frame}[fragile]
 				\frametitle{\sectionIIsubsectionIVtitle}
 				\bigskip
 				This standard technique is built into the MATLAB function {\it polyfit}. This function can also be used for higher order regression lines.
-				
-
-				
+				\begin{lstlisting}
+% ME3001, TNTech, Tristan Hill, October 29, 2024
+% Curve fitting with Linear Regression 
+% this program will
+% 1) generate dataset with random noise
+% 2) find best fit using 'linear least sqaures regression' from eqs in notes
+% 3) find best fit using LSR with MATLAB polyfit()
+clear; clc; close all  
+        \end{lstlisting}
+          
 				\btVFill 
 			\end{frame}
 
-			\begin{frame}
+			\begin{frame}[fragile]
 				\frametitle{\sectionIIsubsectionIVtitle}
 				\bigskip
 
+        \begin{lstlisting}
+% step 1) - generate dataset
+m=-3; b=1.5;
+error_scale=5;
+
+xdata=-5:.5:5;
+n=length(xdata);
+ydata=m*xdata+b+rand(1,n)*error_scale;
+
+figure(1); hold on
+plot(xdata,ydata,'o')
+grid on 
+        \end{lstlisting}
 
 				\btVFill 
 			\end{frame}
 		
+
+			\begin{frame}[fragile]
+				\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+
+        \begin{lstlisting}
+% step 2) - fit line with LSR equations
+a1=(n*sum(xdata.*ydata)-sum(xdata)*sum(ydata))/...
+    (n*sum(xdata.^2)-sum(xdata.^2))
+a0=sum(ydata)/n
+
+% compare with equations from ME3023
+a1=(sum(xdata)*sum(ydata)-n*sum(xdata.*ydata))/...
+    (sum(xdata)^2-n*sum(xdata.^2))
+a0=(sum(xdata)*sum(xdata.*ydata)-sum(xdata.^2)*sum(ydata))/...
+    (sum(xdata)^2-n*sum(xdata.^2))          
+        \end{lstlisting}
+
+				\btVFill 
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+
+        \begin{lstlisting}
+% compute and plot values on the best fit line
+xfit=-5:.1:5;
+yfit=a1*xfit+a0;
+
+plot(xfit,yfit,'-')
+
+% step 3) - fit line with LSR in MATLAB
+A=polyfit(xdata,ydata,1) % get second the coefficients
+
+pfit=A(2)+A(1)*xfit;  % calculate points on curve
+plot(xfit,pfit,':g','LineWidth',5)
+        \end{lstlisting}
+
+        Download {\it linear\_regression\_example1.m} for the complete program.
+				\btVFill 
+			\end{frame}
 
 	% Section III
 	\section{\sectionIIItitle}\label{sectionIII}

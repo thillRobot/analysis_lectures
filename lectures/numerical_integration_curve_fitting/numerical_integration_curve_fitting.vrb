@@ -1,0 +1,19 @@
+\frametitle{\sectionIIsubsectionIVtitle}
+				\bigskip
+
+        \begin{lstlisting}
+% compute and plot values on the best fit line
+xfit=-5:.1:5;
+yfit=a1*xfit+a0;
+
+plot(xfit,yfit,'-')
+
+% step 3) - fit line with LSR in MATLAB
+A=polyfit(xdata,ydata,1) % get second the coefficients
+
+pfit=A(2)+A(1)*xfit;  % calculate points on curve
+plot(xfit,pfit,':g','LineWidth',5)
+        \end{lstlisting}
+
+        Download {\it linear\_regression\_example1.m} for the complete program.
+				\btVFill
