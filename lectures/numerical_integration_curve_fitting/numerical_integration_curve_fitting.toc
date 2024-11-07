@@ -11,7 +11,7 @@
 \beamer@subsectionintoc {3}{2}{Polynomial Splines}{19}{0}{3}
 \beamer@subsectionintoc {3}{3}{Linear Splines}{21}{0}{3}
 \beamer@subsectionintoc {3}{4}{Cubic Splines}{23}{0}{3}
-\beamer@sectionintoc {4}{Lagrange Polynomials}{27}{0}{4}
-\beamer@subsectionintoc {4}{1}{}{28}{0}{4}
-\beamer@subsectionintoc {4}{2}{}{29}{0}{4}
-\beamer@subsectionintoc {4}{3}{}{31}{0}{4}
+\beamer@sectionintoc {4}{Lagrange Polynomials}{30}{0}{4}
+\beamer@subsectionintoc {4}{1}{}{31}{0}{4}
+\beamer@subsectionintoc {4}{2}{}{32}{0}{4}
+\beamer@subsectionintoc {4}{3}{}{34}{0}{4}

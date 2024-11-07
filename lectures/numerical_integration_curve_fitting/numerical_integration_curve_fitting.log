@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.20)  7 NOV 2024 01:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.20)  7 NOV 2024 02:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1462,6 +1462,11 @@ Overfull \hbox (2.42072pt too wide) has occurred while \output is active
 [25
 
 ]
+Overfull \hbox (3.72133pt too wide) detected at line 564
+$ []$ 
+ []
+
+
 Overfull \hbox (2.42072pt too wide) has occurred while \output is active
  [][][][][][] []  
  []
@@ -1483,6 +1488,11 @@ Overfull \hbox (2.42072pt too wide) has occurred while \output is active
 [28
 
 ]
+Overfull \hbox (27.80809pt too wide) detected at line 598
+$ []$ 
+ []
+
+
 Overfull \hbox (2.42072pt too wide) has occurred while \output is active
  [][][][][][] []  
  []
@@ -1511,6 +1521,27 @@ Overfull \hbox (2.42072pt too wide) has occurred while \output is active
 [32
 
 ]
+Overfull \hbox (2.42072pt too wide) has occurred while \output is active
+ [][][][][][] []  
+ []
+
+[33
+
+]
+Overfull \hbox (2.42072pt too wide) has occurred while \output is active
+ [][][][][][] []  
+ []
+
+[34
+
+]
+Overfull \hbox (2.42072pt too wide) has occurred while \output is active
+ [][][][][][] []  
+ []
+
+[35
+
+]
 \tf@nav=\write7
 \openout7 = `numerical_integration_curve_fitting.nav'.
 
@@ -1520,24 +1551,24 @@ Overfull \hbox (2.42072pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `numerical_integration_curve_fitting.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 627.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 627.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 666.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 666.
  (./numerical_integration_curve_fitting.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 627.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 627.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 666.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 666.
 Package rerunfilecheck Info: File `numerical_integration_curve_fitting.out' has
  not changed.
-(rerunfilecheck)             Checksum: FC6210CB61AC396379E259ABF0BBCDC1;1054.
+(rerunfilecheck)             Checksum: A1E2AB7D814EACB9D69A52A5497B9413;1054.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27329 strings out of 481239
- 533430 string characters out of 5920377
+ 27341 strings out of 481239
+ 533541 string characters out of 5920377
  1017697 words of memory out of 5000000
- 41846 multiletter control sequences out of 15000+600000
+ 41852 multiletter control sequences out of 15000+600000
  556299 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,19n,83p,798b,1736s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1551,34 +1582,36 @@ pdfTeX warning (dest): name{sectionIsubsectionIII} has been referenced but does
  not exist, replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi
-9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfsx0600.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfsx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></us
-r/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sftt0900.pfb>
-Output written on numerical_integration_curve_fitting.pdf (32 pages, 389980 byt
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi100
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfsx0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0900.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.p
+fb>
+Output written on numerical_integration_curve_fitting.pdf (35 pages, 415533 byt
 es).
 PDF statistics:
- 1352 PDF objects out of 1440 (max. 8388607)
- 1263 compressed objects within 13 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 1465 PDF objects out of 1728 (max. 8388607)
+ 1370 compressed objects within 14 object streams
+ 109 named destinations out of 1000 (max. 500000)
  200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
