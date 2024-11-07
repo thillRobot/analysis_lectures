@@ -21,7 +21,7 @@
 
 \newcommand{\sectionItitle}{Overview and Motivation}
 \newcommand{\sectionIItitle}{Linear Regression}
-\newcommand{\sectionIIItitle}{Polynomial Splines}
+\newcommand{\sectionIIItitle}{Interpolation and Splines}
 \newcommand{\sectionIVtitle}{Lagrange Polynomials}
 
 \newcommand{\sectionIsubsectionItitle}{Problem Definition}
@@ -34,10 +34,10 @@
 \newcommand{\sectionIIsubsectionIIItitle}{Linear Least Squares}
 \newcommand{\sectionIIsubsectionIVtitle}{MATLAB Example}
 
-\newcommand{\sectionIIIsubsectionItitle}{}
-\newcommand{\sectionIIIsubsectionIItitle}{}
-\newcommand{\sectionIIIsubsectionIIItitle}{}
-\newcommand{\sectionIIIsubsectionIVtitle}{}
+\newcommand{\sectionIIIsubsectionItitle}{Polynomial Interpolation Functions}
+\newcommand{\sectionIIIsubsectionIItitle}{Polynomial Splines}
+\newcommand{\sectionIIIsubsectionIIItitle}{Linear Splines}
+\newcommand{\sectionIIIsubsectionIVtitle}{Cubic Splines}
 
 \newcommand{\sectionIVsubsectionItitle}{}
 \newcommand{\sectionIVsubsectionIItitle}{}
@@ -466,27 +466,38 @@ plot(xfit,pfit,':g','LineWidth',5)
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
 				\bigskip
-
+        
+        Consider fitting a {\bf spline} function consisting of multiple linear functions to a set of prescribed data. \\
+        
+        \begin{itemize}
+          \item the function must pass through each data point $\left(x_i,f_i\right)$
+          \item each interval is defined by a spline function $s_i(x)$
+          \[s_i\left(x\right)=a_i+b_i(x-x_i) \]
+          \[a_i=f_i\] \[b_i=\frac{f_{i+1}-f_i}{x_{i+1}-x_i}\]
+          \item the $(x-x_i)$ term handles the shift to the $i^{th}$ spline function
+          \item substitute $b_i$ into $s_i(x)$ to get the following description of the spline
+          \[s_i\left(x\right)=f_i+\left(\frac{f_{i+1}-f_i}{x_{i+1}-x_i}\right)\left(x-x_i\right) \]
+        \end{itemize}
 
 				\btVFill
-			\end{frame}
+        \tiny{Derivation: \underline{Applied Numerical Methods with MATLAB} Steven Chapra}
+			
+    \end{frame}
 
-			\begin{frame}
+		\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
 				\bigskip
-
-
-				\btVFill
-			\end{frame}
-
-
+        
+			
+    \end{frame}
 		% section III subsection IV
 		\subsection{\sectionIIIsubsectionIVtitle}\label{sectionIIIsubsectionIV}
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIVtitle}
 				\bigskip
-
+        
+        "Cubic splines are most commonly used in practice" - Chapra and Canale
 
 				\btVFill
 			\end{frame}	
@@ -494,8 +505,7 @@ plot(xfit,pfit,':g','LineWidth',5)
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIVtitle} \small
 				\bigskip
-
-
+        
 				\btVFill
 			\end{frame}	
 
