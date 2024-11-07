@@ -467,11 +467,11 @@ plot(xfit,pfit,':g','LineWidth',5)
 				\frametitle{\sectionIIIsubsectionIIItitle}
 				\bigskip
         
-        Consider fitting a {\bf spline} function consisting of multiple linear functions to a set of prescribed data. \\
+        Fit a {\bf spline} function consisting of multiple {\it linear} functions to a set of data. \\
         
         \begin{itemize}
-          \item the function must pass through each data point $\left(x_i,f_i\right)$
-          \item each interval is defined by a spline function $s_i(x)$
+          \item the spline must pass through $n$ data points $\left(x_i,f_i \right)_{i=1,2,...,n}$
+          \item $n-1$ intervals are defined by spline functions $s_i(x)_{i=1,2,...,n-1}$
           \[s_i\left(x\right)=a_i+b_i(x-x_i) \]
           \[a_i=f_i\] \[b_i=\frac{f_{i+1}-f_i}{x_{i+1}-x_i}\]
           \item the $(x-x_i)$ term handles the shift to the $i^{th}$ spline function
@@ -497,19 +497,67 @@ plot(xfit,pfit,':g','LineWidth',5)
 				\frametitle{\sectionIIIsubsectionIVtitle}
 				\bigskip
         
-        "Cubic splines are most commonly used in practice" - Chapra and Canale
-
+        "Cubic splines are most commonly used in practice" \vspcc
+          
+        Fit a {\bf spline} function consisting of multiple {\it cubic} functions to the data
+       
+        \begin{itemize}
+          \item the spline must pass through $n$ data points $\left(x_i,f_i \right)_{i=1,2,...,n}$ 
+          \item $n-1$ intervals are defined by spline functions $s_i(x)_{i=1,2,...,n-1}$
+          \[s_i\left(x\right)=a_i+b_i\left(x-x_i\right)+c_i\left(x-x_i\right)^2+d_i\left(x-x_i\right)^3\]
+          \item coeficients $a_i,b_i,c_i,d_i$ must be found $\implies 4\left(n-1\right)$ unknowns 
+          \item the slope at each point must match for a smooth spline  
+          \item two additional conditions are required due to no slope match at ends
+          \[2*\left(n-1\right)+2*\left(n-1\right)-2+2=4\left(n-1\right)\]
+       \end{itemize}            
+ 
 				\btVFill
 			\end{frame}	
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIVtitle} \small
 				\bigskip
+
+        The functions passes through all the data points
+        \[s_i\left(x\right)=a_i+b_i\left(x-x_i\right)+c_i\left(x-x_i\right)^2+d_i\left(x-x_i\right)^3\]
+        \[s_i\left(x_i\right)=f_i\]       
+        \[f_i=a_i+b_i\left(x_i-x_i\right)+c_i\left(x_i-x_i\right)^2+d_i\left(x_i-x_i\right)^3=a_i\]
+        The $a_i$ coeficients can be replaced with the function values $f_i$
+        \[f_i=a_i\]
+        \[s_i\left(x\right)=f_i+b_i\left(x-x_i\right)+c_i\left(x-x_i\right)^2+d_i\left(x-x_i\right)^3\]
+        Define the $i^{th}$ stepsize for convenience
+        \[h_i=x_{i+1}-x_i\]
+        \btVFill
+			\end{frame}	
+
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIVtitle} \small
+				\bigskip
         
+        The function values are equal at each point
+        \[f_i+b_i\left(h_i\right)+c_i\left(h_i\right)^2+d_i\left(h_i\right)^3=f_{i+1}\]
+      
+        The slope (first derivative) matches at each point between intervals 
+        \[s_i'\left(x\right)=b_i+2c_i\left(x-x_i\right)+3d_i\left(x-x_i\right)^2\]
+        \[b_i+2c_i\left(x_{i+1}-x_i\right)+3d_i\left(x_{i+1}-x_i\right)^2\]
+        \[= b_{i+1}+2c_{i+1}\left(x_{i+1}-x_{i+1}\right)+d_{i+1}\left(x_{i+1}-x_{i+1}\right)\] 
+        \[\implies b_i+2c_ih_i+3d_ih_i^2=b_{i+1}\]
+  
+        The second derivative is also matches at the nodes for a {\it natural spline} 
+        \[s_i''\left(x\right)=2c_i+6d_i\left(x-x_i\right)\]
+        \[2c_i + 6d_ih_i=2c_{i+1} + 6d_i\left(x_{i+1}-x_{i+1}\right) \implies d_i=\frac{c_{i+1}-c_i}{3h_i}\]
+
+        \btVFill
+			\end{frame}	
+	
+			\begin{frame}
+				\frametitle{\sectionIIIsubsectionIVtitle} \small
+				\bigskip
+
+
 				\btVFill
 			\end{frame}	
 
-	
 	% Section IV
 	\section{\sectionIVtitle}\label{sectionIV}
 
