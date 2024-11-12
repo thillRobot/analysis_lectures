@@ -3,8 +3,8 @@
 % this will simplify file and link management as well as make lectures easier to use in class
 % - added image/ to clean directory and reduce redundancy, specific to module for now  
 
-% Module Name: - Lecture Module Template
-% Topic 1 - 
+% Module Name: Ordinary Differential Equations
+% Topic 1 - Review and Classification
 % Topic 2 - 
 % Topic 3 - 
 % Topic 4 - 
@@ -15,13 +15,13 @@
 
 \author{ME3001 - Mechanical Engineering Analysis}
 
-\newcommand{\MNUM}{3\hspace{2mm}} % module number 
-\newcommand{\moduletitle}{Numerical Integration and Curve Fitting}
+\newcommand{\MNUM}{4\hspace{2mm}} % module number 
+\newcommand{\moduletitle}{Ordinary Differential Equations}
 
-\newcommand{\sectionItitle}{}
-\newcommand{\sectionIItitle}{}
-\newcommand{\sectionIIItitle}{}
-\newcommand{\sectionIVtitle}{}
+\newcommand{\sectionItitle}{What is a Differential Equation?}
+\newcommand{\sectionIItitle}{Standard Form of an ODE}
+\newcommand{\sectionIIItitle}{Classification}
+\newcommand{\sectionIVtitle}{Examples}
 
 \newcommand{\sectionIsubsectionItitle}{}
 \newcommand{\sectionIsubsectionIItitle}{}
@@ -92,17 +92,21 @@
 				\frametitle{\sectionIsubsectionItitle}
 				\bigskip
 
-				
-				\btVFill
-			\end{frame}
-
-			\begin{frame}
-				\frametitle{\sectionIsubsectionItitle}
-				\bigskip
+				\frametitle{What is a Differential Equation?}
+				  {\it Definition:\vspace{3mm}\\}
+				  A {\bf differential equation} is an equation which describes a function \vspace{3mm}\\and one or more of its \underline{\hspace{50mm}} of the \vspace{3mm}\\ \underline{\hspace{50mm}}\hspace{3mm}\underline{\hspace{50mm}}\vspace{5mm} \\ with respect to the \underline{\hspace{60mm}}.
 
 				
 				\btVFill
 			\end{frame}
+
+			% \begin{frame}
+			% 	\frametitle{\sectionIsubsectionItitle}
+			% 	\bigskip
+
+				
+			% 	\btVFill
+			% \end{frame}
 
 
 		% section I subsection II
@@ -111,6 +115,16 @@
 			\begin{frame}
 				\frametitle{\sectionIsubsectionIItitle} \small
 				\bigskip
+
+				  Ordinary Differential Equations are written in the following form.\vspace{3mm}\\
+
+\scalebox{1.2}{$a_n\frac{dy^{(n)}}{d^{(n)}x}+a_{n-1}\frac{dy^{(n-1)}}{d^{(n-1)}x}+...+a_{2}\frac{dy^{2}}{d^{2}x}+a_{1}\frac{dy}{dx}+a_0y=f(x)$}	\vspace{0mm}\\		
+
+The apostrophe is commonly used for the derivative. \vspace{2mm}\\
+
+\scalebox{1.2}{$a_ny^{(n)}+a_{n-1}y^{(n-1)}+...+a_2y'' +a_1y'+a_0y=f(x)$} \vspace{3mm}\\
+
+If time is the independent variable the equation changes slightly. \vspace{2mm}\\
 
 				
 				\btVFill
@@ -123,6 +137,12 @@
 				\frametitle{\sectionIsubsectionIIItitle}
 				\bigskip
 
+				\frametitle{Is the differential equation ordinary or partial?}
+
+An {\bf ordinary} differential equation has \underline{\hspace{20mm}} independent \vspc variable and \underline{\hspace{20mm}} dependent variable. \vspace{10mm}\\
+
+A {\bf partial} differential equation has \underline{\hspace{50mm}} \vspc independent variable  \underline{\hspace{20mm}}  dependent variable. \vspace{10mm}\\
+
 				
 				\btVFill
 			\end{frame}	
@@ -131,9 +151,46 @@
 				\frametitle{\sectionIsubsectionIIItitle}
 				\bigskip
 
+				\frametitle{What is the order of the equation?}
+  
+The {\bf order} of a differential equation is the \vspace{3mm}\\ \underline{\hspace{50mm}}\hspace{3mm}\underline{\hspace{50mm}} \vspace{5mm}\\ present in the equation. \vspace{3mm}\\	
+
 			 
 				\btVFill
 			\end{frame}	
+
+			\begin{frame} 
+				\frametitle{\sectionIsubsectionIIItitle}
+				\bigskip
+
+				  \frametitle{What is the degree of the equation?}
+
+The {\bf degree} of a differential equation is the \underline{\hspace{30mm}}\hspace{3mm} \vspace{5mm}\\ of its highest derivative, after the equation has been made rational \vspace{5mm}\\ and integral in all of its derivatives. \vspace{3mm}\\
+
+			 
+				\btVFill
+			\end{frame}	
+
+			\begin{frame} 
+				\frametitle{\sectionIsubsectionIIItitle}
+				\bigskip
+
+				\frametitle{Is the differential equation linear or non-linear?}
+
+An ordinary differential equation is \underline{\hspace{30mm}} if the following statements are true. \vspace{5mm}\\
+
+\begin{enumerate}
+\item {\it The dependent variable and its derivatives are of the first degree.} \vspace{3mm}\\
+
+\item {\it The coefficients are constants or dependent on the independent variable.}\vspace{3mm}\\
+\end{enumerate}
+
+If either rule is broken, the equation is \underline{\hspace{10mm}}-\underline{\hspace{30mm}}.
+
+			 
+				\btVFill
+			\end{frame}	
+
 
 
 		% section I subsection IV
@@ -144,6 +201,17 @@
 				\bigskip
 
 
+Differential equations are used to describe physical systems in many areas of engineering. An equation that represents a physical (or theoretical) system is known as a \underline{\hspace{50mm}}\hspace{3mm}\underline{\hspace{50mm}}.\vspace{3mm}\\
+\begin{itemize}
+
+	\item Solid Mechanics \vspace{3mm}\\
+	\item Kinematics and Dynamics \vspace{3mm}\\
+	\item Heat Transfer and Thermodynamics \vspace{3mm}\\
+	\item Fluid Mechanics
+			
+\end{itemize}
+
+
 				\btVFill
 			\end{frame}
 	
@@ -151,8 +219,42 @@
 				\frametitle{\sectionIsubsectionIVtitle}
 				\bigskip
 
+				\begin {multicols}{2}
+
+Newton's Second Law \vspace{2mm}\\
+
+$\Sigma {\bf F}=m {\bf a}$ \vspace{2mm}\\
+
+leads  to an {\it equation of motion}.  \vspace{2mm}\\
+
+$\dot{y}+\frac{c}{m}y=f(t)$
+
+ \includegraphics[scale=0.15]{images/ferrari.jpg}\\
+ 
+ \end{multicols} 
+
 
 				\btVFill
+			\end{frame}
+
+
+ 			\begin{frame}
+ 				\frametitle{\sectionIsubsectionIVtitle}
+ 				\bigskip
+
+				\begin {multicols}{2}
+
+The {\bf solution} to a differential equation describes the \vspace{2mm}\\ \underline{\hspace{40mm}}\hspace{2mm}\underline{\hspace{40mm}} as a function \vspace{2mm}\\of the \underline{\hspace{40mm}}\hspace{2mm}\underline{\hspace{40mm}}.  \vspace{5mm}\\
+
+
+	\includegraphics[scale=0.10]{images/lecture1_fig2.png} \hspace{10mm} \includegraphics[scale=0.10]{images/lecture1_fig2.png}\vspace{2mm}\\
+	
+	%\includegraphics[scale=0.1]{lecture1_fig2.png}\\	
+	
+There are many different methods for finding the solution.
+
+\end{multicols} 
+ 				\btVFill
 			\end{frame}
 
 
