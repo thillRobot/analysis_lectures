@@ -1,4 +1,4 @@
-% Lecture Template (handout) for ME3001 - Mechanical Engineering Analysis - Tennessee Technological University
+% Lecture Template for ME3001 - Mechanical Engineering Analysis - Tennessee Technological University
 % Spring 2024 - condensing and streamlining lectures by combining topics into a single PDF under the module name
 % this will simplify file and link management as well as make lectures easier to use in class
 % - added image/ to clean directory and reduce redundancy, specific to module for now  
@@ -7,6 +7,15 @@
 % Topic 1 - Introduction to Analysis
 % Topic 2 - MATLAB Overview
 % Topic 3 - Hello World 
+
+ % this does not work, might never work w Beamer :(
+ % \DocumentMetadata{
+ %   lang        = de,
+ %   pdfstandard = ua-2,
+ %   pdfstandard = a-4f, %or a-4
+ %   tagging=on,
+ %   tagging-setup={math/setup=mathml-SE} 
+ % }
 
 \documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
 
@@ -81,14 +90,19 @@
 
 			\begin{frame}
 				\frametitle{\sectionIsubsectionItitle}
-				\bigskip
-
-			    \begin{itemize}
-					\item Analysis \vspace{15mm}
-					\item Design
-				\end{itemize}  
-
-				\btVFill
+				%\bigskip
+        
+         \begin{multicols}{2}
+			  
+           Consider you are an engineer working on a robot. 
+           \begin{itemize}
+					  \item Analysis %\vspace{15mm}
+					  \item Design 
+				  \end{itemize}  
+          %\vspace*{5mm}
+            \includegraphics[scale=0.04]{images/switchweld_robot_clutter.png}
+				  \end{multicols}
+          \btVFill
 			\end{frame}
 
 			\begin{frame}
@@ -114,9 +128,9 @@
 				\textbf{This is not just another math class!}\\
 
 				\begin{itemize}
-					\item we will study \underline{\hspace{40mm}} of engineering systems and the \underline{\hspace{30mm}} and \underline{\hspace{30mm}} solutions to non-linear equations, systems of linear equations, and ordinary and partial differential equations \\
+					\item we will study mathematical modeling of engineering systems and the theoretical and numerical solutions to non-linear equations, systems of linear equations, and ordinary and partial differential equations \\
 					\item mathematical methods for solving mechanical engineering problems with modern computing tools\\
-					\item \underline{\hspace{40mm}}
+					\item we can solve the \large{BIG} problems!
 				\end{itemize}  
 
 				\btVFill
@@ -128,11 +142,11 @@
 				\bigskip
 
 				\begin{itemize}
-					\item \underline{\hspace{40mm}}\\
-					\item \underline{\hspace{40mm}}\\
-					\item \underline{\hspace{40mm}}\\
-					\item \underline{\hspace{40mm}}\\
-					\item \underline{\hspace{40mm}}\\
+					\item Statics and Mechanics\\
+					\item Rigid Body Dynamics\\
+					\item Fluid Dynamics\\
+					\item Thermodynamics and Heat Transfer\\
+					\item Vibrations\\
 				\end{itemize}  
 
 				\btVFill
@@ -147,11 +161,11 @@
 				We will be doing some {\it applied mathematics} in this class!
 				\begin{multicols}{2}
 				\begin{itemize}
-					\item \underline{\hspace{40mm}}\\
-					\item \underline{\hspace{40mm}} \\
-					\item \underline{\hspace{40mm}} \\
-					\item \underline{\hspace{40mm}} and \underline{\hspace{40mm}} \\
-					\item \underline{\hspace{40mm}} \\
+					\item Algebra and Arithmetic\\
+					\item Matrix\slash Linear Algebra \\
+					\item Calculus \\
+					\item Ordinary and Partial \\Differential Equations \\
+					\item The Fourier Series \\
 				\end{itemize}
 				\end{multicols} 
 
@@ -208,8 +222,8 @@
 				\begin{itemize}
 					\item High Level programming language
 					\begin{itemize}
-						\item language written in \underline{\hspace{40mm}}
-						\item Interactive Development Environment written in \underline{\hspace{40mm}} 
+						\item language written in C++
+						\item Interactive Development Environment written in JAVA 
 						\item Windows, Mac, and Linux compatible
 					\end{itemize}
 					\item {\it MAT}rix {\it LAB}oratory
