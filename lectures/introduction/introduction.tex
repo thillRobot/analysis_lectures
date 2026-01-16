@@ -8,6 +8,15 @@
 % Topic 2 - MATLAB Overview
 % Topic 3 - Hello World 
 
+ % this does not work, might never work w Beamer :(
+ % \DocumentMetadata{
+ %   lang        = de,
+ %   pdfstandard = ua-2,
+ %   pdfstandard = a-4f, %or a-4
+ %   tagging=on,
+ %   tagging-setup={math/setup=mathml-SE} 
+ % }
+
 \documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
 
 \usepackage{../analysis_lectures}
@@ -81,14 +90,19 @@
 
 			\begin{frame}
 				\frametitle{\sectionIsubsectionItitle}
-				\bigskip
-
-			    \begin{itemize}
-					\item Analysis \vspace{15mm}
-					\item Design
-				\end{itemize}  
-
-				\btVFill
+				%\bigskip
+        
+         \begin{multicols}{2}
+			  
+           Consider you are an engineer working on a robot. 
+           \begin{itemize}
+					  \item Analysis %\vspace{15mm}
+					  \item Design 
+				  \end{itemize}  
+          %\vspace*{5mm}
+            \includegraphics[scale=0.04]{images/switchweld_robot_clutter.png}
+				  \end{multicols}
+          \btVFill
 			\end{frame}
 
 			\begin{frame}
