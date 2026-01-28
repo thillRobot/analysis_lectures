@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  3 SEP 2024 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  28 JAN 2026 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1026,14 +1026,14 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 112.
+(hyperref)                setting the option has no effect on input line 113.
 
-Package hyperref Info: Option `unicode' set `false' on input line 112.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 112.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 112.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 112.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 112.
-Package hyperref Info: Option `colorlinks' set `true' on input line 112.
+Package hyperref Info: Option `unicode' set `false' on input line 113.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 113.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 113.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 113.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 113.
+Package hyperref Info: Option `colorlinks' set `true' on input line 113.
 )
 \mybox=\box138
  (./nonlinear_equations.aux
@@ -1219,10 +1219,8 @@ ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count368
- (./nonlinear_equations.nav)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ (./nonlinear_equations.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.m
+ap}
 
 ] [2
 
@@ -1336,7 +1334,7 @@ l.261 			\end{frame}
 File: images/topic3_fig1.png Graphic file (type png)
 <use images/topic3_fig1.png>
 Package pdftex.def Info: images/topic3_fig1.png  used on input line 261.
-(pdftex.def)             Requested size: 281.03105pt x 126.69019pt.
+(pdftex.def)             Requested size: 245.91022pt x 110.85754pt.
  [13
 
  <./images/topic3_fig1.png>]
@@ -1351,11 +1349,7 @@ File: images/topic3_fig2.png Graphic file (type png)
 <use images/topic3_fig2.png>
 Package pdftex.def Info: images/topic3_fig2.png  used on input line 287.
 (pdftex.def)             Requested size: 256.90799pt x 157.4881pt.
-
-Overfull \vbox (11.2605pt too high) detected at line 287
- []
-
-[15
+ [15
 
  <./images/topic3_fig2.png>] [16
 
@@ -1524,10 +1518,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26245 strings out of 483183
- 517907 string characters out of 5966292
- 992528 words of memory out of 5000000
- 40504 multiletter control sequences out of 15000+600000
+ 26242 strings out of 483183
+ 517772 string characters out of 5966292
+ 985437 words of memory out of 5000000
+ 40503 multiletter control sequences out of 15000+600000
  558773 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,19n,73p,782b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1562,7 +1556,7 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on nonlinear_equations.pdf (39 pages, 842990 bytes).
+Output written on nonlinear_equations.pdf (39 pages, 845406 bytes).
 PDF statistics:
  2047 PDF objects out of 2073 (max. 8388607)
  1510 compressed objects within 16 object streams
