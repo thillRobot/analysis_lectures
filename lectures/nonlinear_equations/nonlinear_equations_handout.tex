@@ -251,11 +251,11 @@
 
 			\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle}
-				\bigskip
+				\bigskip\small
 
-				The Newton-Raphson method is a {\it shooting method}. \vspace{5mm}
+				The Newton-Raphson method uses the slope at a point to approximate the solution. The process is repeated until the approximate solution meets a given tolerance. \vspace{5mm}
 
-				\includegraphics[scale=.40]{images/topic3_fig1.png}
+				\includegraphics[scale=.35]{images/topic3_fig1.png}
 				
 				\btVFill
 			\end{frame}
@@ -278,9 +278,9 @@
 				\frametitle{\sectionIIsubsectionIItitle} \small
 				\bigskip
 
-				The 4 possible sign (+/-) cases are handled by the algorithm. 
+				The 4 possible sign (+/-) cases are handled by the algorithm. \vspace{3mm}\\
 
-				Now you have much better hammer. However, must be used properly... \vspace{3mm}\\
+			%	Now you have much better hammer. However, must be used properly... \vspace{3mm}\\
 				\includegraphics[scale=.35]{images/topic3_fig2.png}
 
 				\btVFill
@@ -294,11 +294,13 @@
 				\frametitle{\sectionIIsubsectionIIItitle}
 				\bigskip
 
-				\textbf{Algorithm Summary:} \vspace{3mm}\\
+				\textbf{Algorithm Summary:}
 				\begin{itemize}
-					\item - Step 1:  \vspace{10mm}\\  
-					\item - Step 2:  \vspace{10mm}\\  
-					\item - Step 3: 
+					\item - Step 1: choose an initial estimate of the root value, $x_0$  
+					\item - Step 2: calculate an updated estimate of the root value using the derived formula \vspace{2mm} \\
+						\[ x_{1}=x_0 + \Delta x = x_0 - \frac{f(x_0)}{f'(x_0)} \]
+					\item - Step 3: calculate improved estimates until the solution meets exit condtion(s)
+						\[ x_{i+1}=x_i + \Delta x_i = x_i - \frac{f(x_i)}{f'(x_i)} \]
 				\end{itemize}
 				\btVFill 
 			\end{frame}
@@ -425,14 +427,13 @@
 				\frametitle{\sectionIIsubsectionVtitle}
 				\bigskip
 
-				\textbf{Algorithm Summary:}\vspace{3mm}\\
+				\textbf{Algorithm Summary:}
 				\begin{itemize}
-					\item - Step 1: \vspace{10mm}\\  
-					
-					\item - Step 2:  \vspace{10mm}\\ 
-						
-					\item - Step 3: 
-						
+						\item - Step 1: choose an initial estimate of the root value, $x_0$  
+					\item - Step 2: calculate an updated estimate of the root value using the derived formula \vspace{2mm} \\
+						\[ x_{1}=x_0 + \Delta x = x_0 -  \]
+					\item - Step 3: calculate improved estimates until the solution meets exit condtion(s)
+						\[ x_{i+1}=x_i + \Delta x_i = x_i -  \]
 				\end{itemize}
 				\btVFill 
 			\end{frame}
