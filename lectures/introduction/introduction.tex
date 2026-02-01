@@ -9,15 +9,17 @@
 % Topic 3 - Hello World 
 
  % this does not work, might never work w Beamer :(
- % \DocumentMetadata{
- %   lang        = de,
- %   pdfstandard = ua-2,
- %   pdfstandard = a-4f, %or a-4
- %   tagging=on,
- %   tagging-setup={math/setup=mathml-SE} 
- % }
+\DocumentMetadata{
+  lang        = de,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f, %or a-4
+  tagging=on,
+  tagging-setup={math/setup=mathml-SE} 
+}
 
-\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+%\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+%\documentclass[fleqn]{ltx-talk} % for presentation (has nav buttons at bottom)
+\documentclass{ltx-talk} % for presentation (has nav buttons at bottom)
 
 \usepackage{../analysis_lectures}
 
@@ -56,8 +58,12 @@
 
 	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 
-	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
-
+	%\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+	\begin{frame}
+		%\titlepage
+		This is the title page
+		%{\center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+	\end{frame}
 	% Module Outline
 	\begin{frame} 
 		\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
@@ -107,7 +113,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIsubsectionItitle}
-				\bigskip
+				%\bigskip
 
 				Define {\it Analysis}: \\	
 				- detailed examination of the elements or structure of something, typically as a basis for discussion or interpretation. {\tiny -\href{https://www.merriam-webster.com/dictionary/analysis}{Merriam-Webster}} \vspace{5mm} \\ 
@@ -123,7 +129,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIsubsectionIItitle}
-				\bigskip
+				%\bigskip
 
 				\textbf{This is not just another math class!}\\
 
@@ -139,7 +145,7 @@
 				%\btVFill
 			\begin{frame}
 				\frametitle{\sectionIsubsectionIItitle}
-				\bigskip
+				%\bigskip
 
 				\begin{itemize}
 					\item Statics and Mechanics\\
@@ -156,7 +162,7 @@
 		\subsection{\sectionIsubsectionIIItitle}\label{sectionIsubsectionIII}
 			\begin{frame} 
 				\frametitle{\sectionIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
 				We will be doing some {\it applied mathematics} in this class!
 				\begin{multicols}{2}
@@ -177,7 +183,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIsubsectionIVtitle}
-				\bigskip
+				%\bigskip
 
 				This class is different than a traditional mathematics class.\\ 
 				\begin{itemize}
@@ -217,7 +223,7 @@
 
 			\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle}
-				\bigskip
+				%\bigskip
 
 				\begin{itemize}
 					\item High Level programming language
@@ -238,7 +244,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIItitle}
-				\bigskip
+				%\bigskip
 
 								\begin{itemize}
 					\item A powerful tool for engineers, scientists, and students
@@ -275,7 +281,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
 				\textbf{Useful Commands( type in Command Window)} \vspace{3mm}\\
 
@@ -289,7 +295,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
 				\textbf{ Common Mathematics Functions} \vspace{3mm}\\	
 				\begin{itemize}
@@ -336,7 +342,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
 				\textbf{The Built in Help } \vspace{3mm}\\
 				\begin{itemize}	
@@ -353,7 +359,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIVtitle}
-				\bigskip
+				%\bigskip
 
 				This is the classic first exercise when learning a new programming language. \vspace{10mm}\\
 
@@ -383,7 +389,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionItitle}
-				\bigskip
+				%\bigskip
 
 				\begin{itemize}
 					\item This word has several defintions. \\
@@ -407,7 +413,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIItitle}
-				\bigskip
+				%\bigskip
 
 				\begin{enumerate}
 					\item Open the {\bf MATLAB} application.
@@ -426,7 +432,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
 				\textbf{Step 1} - Open the {\bf MATLAB} application.
 				
@@ -435,8 +441,8 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
-
+				%\bigskip
+%
 				\textbf{Step 2} - In the {\it Editor} window. Click on the {\bf new } Button. \vspace{3mm}\\ \hspace*{12mm}Go down to {\bf script}
 				
 				\btVFill
@@ -444,7 +450,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
 				\textbf{Step 3} - Write a proper {\bf header} at the top of your script. \vspace{3mm}\\ Make sure to include your {\it Name}, the {\it Date}, the {\it Course}, and a {\it Description} of this program.
 				
@@ -453,7 +459,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
 				\textbf{Step 4} - In the {\it Editor} window. Click on the {\bf save} button. \vspace{3mm}\\ Now you will need to name your file and save it in your directory structure.
 				
@@ -462,7 +468,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
 				\textbf{Step 5} - Now you are going to start {\bf writing} your first program. \vspace{3mm}\\ Make sure you are in the {\it Editor} window.
 				
@@ -471,26 +477,10 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
 				\textbf{Step 6} - {\bf Run} your program and {\it watch the magic}!
 				
 				\btVFill
 			\end{frame}
-
-		% section III subsection IV
-		%\subsection{\sectionIIIsubsectionIVtitle}\label{sectionIIIsubsectionIV}	
-
-		%	\begin{frame}
-		%		\frametitle{\sectionIIIsubsectionIVtitle}
-		%		\bigskip
-				
-		%		\btVFill 
-		%	\end{frame}
-
 \end{document}
-
-
-
-
-
