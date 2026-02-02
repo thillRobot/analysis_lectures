@@ -18,8 +18,8 @@
 \usepackage[fleqn]{nccmath}
 
 
-\usepackage{beamerthemesplit}
-\beamertemplateballitem
+%\usepackage{beamerthemesplit}
+%\beamertemplateballitem
 
 \usepackage{amsmath}
 \usepackage{keystroke}
@@ -125,12 +125,12 @@
 \newcommand{\GD}{\color{TTUgold}}
 
 % beamer colors
-\setbeamercolor{palette primary}{bg=TTUpurple,fg=TTUgold}
-\setbeamercolor{palette secondary}{bg=black,fg=TTUgold}
-\setbeamercolor{palette tertiary}{bg=black,fg=TTUpurple}
-\setbeamercolor{palette quaternary}{bg=TTUgold,fg=black}
-\setbeamercolor{structure}{fg=TTUpurple} % itemize, enumerate, etc
-\setbeamercolor{section in toc}{fg=TTUpurple} % TOC sections
+%\setbeamercolor{palette primary}{bg=TTUpurple,fg=TTUgold}
+%\setbeamercolor{palette secondary}{bg=black,fg=TTUgold}
+%\setbeamercolor{palette tertiary}{bg=black,fg=TTUpurple}
+%\setbeamercolor{palette quaternary}{bg=TTUgold,fg=black}
+%\setbeamercolor{structure}{fg=TTUpurple} % itemize, enumerate, etc
+%\setbeamercolor{section in toc}{fg=TTUpurple} % TOC sections
 
 % Mathematics Commands
 \newcommand{\Lagr}{\mathcal{L}} % lagrangian
@@ -195,15 +195,15 @@
 
 \usepackage{xparse}
 
-\NewDocumentCommand{\getenv}{om}
- {
-  \sys_get_shell:nnN { kpsewhich ~ --var-value ~ #2 } { } \l_tmpa_tl
-  \tl_trim_spaces:N \l_tmpa_tl
-  \IfNoValueTF { #1 }
-   {
-    \tl_use:N \l_tmpa_tl
-   }
-   {
-    \tl_set_eq:NN #1 \l_tmpa_tl
-   }
- }
+%	\NewDocumentCommand{\getenv}{om}
+%	 {
+%	  \sys_get_shell:nnN { kpsewhich ~ --var-value ~ #2 } { } \l_tmpa_tl
+%	  \tl_trim_spaces:N \l_tmpa_tl
+%	  \IfNoValueTF { #1 }
+%	   {
+%	    \tl_use:N \l_tmpa_tl
+%	   }
+%	   {
+%	    \tl_set_eq:NN #1 \l_tmpa_tl
+%	   }
+%	 }

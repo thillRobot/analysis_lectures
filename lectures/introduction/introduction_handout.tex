@@ -9,15 +9,16 @@
 % Topic 3 - Hello World 
 
  % this does not work, might never work w Beamer :(
- % \DocumentMetadata{
- %   lang        = de,
- %   pdfstandard = ua-2,
- %   pdfstandard = a-4f, %or a-4
- %   tagging=on,
- %   tagging-setup={math/setup=mathml-SE} 
- % }
+\DocumentMetadata{
+  lang        = de,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f, %or a-4
+  tagging=on,
+  tagging-setup={math/setup=mathml-SE} 
+}
 
-\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+%\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+\documentclass[fleqn]{ltx-talk} % for presentation (has nav buttons at bottom)
 
 \usepackage{../analysis_lectures}
 
@@ -48,166 +49,169 @@
 % custom box
 \newsavebox{\mybox}
 
-\title{Lecture Module - \moduletitle}
+\title{Lecture Module -moduletitle}
 
 \date{Mechanical Engineering\vspc Tennessee Technological University}
 
 \begin{document}
 
-	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+	\begin{frame}
+		%\titlepage
+		
+		\begin{framed}\Large\textbf{Module \MNUM - \moduletitle}\end{framed}
+	\end{frame}
 
-	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
 
-	% Module Outline
-	\begin{frame} 
-		\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
+	\begin{frame}
+		
+		\large\textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
 
 		\begin{itemize}
-			\item Topic 1 - \hyperlink{sectionI}{\sectionItitle} \vspc % section I
-			\item Topic 2 - \hyperlink{sectionII}{\sectionIItitle} \vspc % section II
-			\item Topic 3 - \hyperlink{sectionIII}{\sectionIIItitle} \vspc % section III
+			\item Topic 1 - \hyperref[sectionI]{\sectionItitle} \vspc % section I
+			\item Topic 2 - \hyperref[sectionII]{\sectionIItitle} \vspc % section II
+			\item Topic 3 -\hyperref[sectionIII]{\sectionIIItitle} \vspc % section III
 		\end{itemize}
 
 	\end{frame}
 
 	% section I
+	%\section{\sectionItitle}\label{sectionI}
 	\section{\sectionItitle}\label{sectionI}
 
 		% section I Outline
 		\begin{frame} 
-			\large \textbf{Topic 1 - \sectionItitle} \vspace{3mm}\\
+			\large\textbf{Topic 1 - \sectionItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperlink{sectionIsubsectionI}{\sectionIsubsectionItitle} \vspc %  section I subsection I
-				\item \hyperlink{sectionIsubsectionII}{\sectionIsubsectionIItitle} \vspc % section I subsection II
-				\item \hyperlink{sectionIsubsectionIII}{\sectionIsubsectionIIItitle} \vspc % section I subsection III
-				\item \hyperlink{sectionIsubsectionIV}{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
+				\item \hyperref[sectionIsubsectionI]{\sectionIsubsectionItitle} \vspc %  section I subsection I
+				\item \hyperref[sectionIsubsectionII]{\sectionIsubsectionIItitle} \vspc % section I subsection II
+				\item \hyperref[sectionIsubsectionIII]{\sectionIsubsectionIIItitle} \vspc % section I subsection III
+				\item \hyperref[sectionIsubsectionIV]{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
 			\end{itemize}
 		\end{frame}
 		
-		% section I subsection I 
-		\subsection{\sectionIsubsectionItitle}\label{sectionIsubsectionI}
+	% section I subsection I 
+	\subsection{\sectionIsubsectionItitle}\label{sectionIsubsectionI}
 
-			\begin{frame}
-				\frametitle{\sectionIsubsectionItitle}
-				%\bigskip
+		\begin{frame}
+			\frametitle{\sectionIsubsectionItitle}
+			%\bigskip
         
-         \begin{multicols}{2}
+         		\begin{multicols}{2}
 			  
-           Consider you are an engineer working on a robot. 
-           \begin{itemize}
-					  \item Analysis %\vspace{15mm}
-					  \item Design 
-				  \end{itemize}  
-          %\vspace*{5mm}
-            \includegraphics[scale=0.04]{images/switchweld_robot_clutter.png}
-				  \end{multicols}
-          \btVFill
-			\end{frame}
+           		Consider you are an engineer working on a robot. 
+           		\begin{itemize}
+				\item Analysis %\vspace{15mm}
+				\item Design 
+			\end{itemize}  
+          		%\vspace*{5mm}
+				\includegraphics[scale=0.04, alt={a photograph of a cobot welding machine}]{images/switchweld_robot_clutter.png}
+			\end{multicols}
+          		\btVFill
+		\end{frame}
 
-			\begin{frame}
-				\frametitle{\sectionIsubsectionItitle}
-				\bigskip
+		\begin{frame}
+			\frametitle{\sectionIsubsectionItitle}
+				%\bigskip
 
-				Define {\it Analysis}: \\	
-				- detailed examination of the elements or structure of something, typically as a basis for discussion or interpretation. {\tiny -\href{https://www.merriam-webster.com/dictionary/analysis}{Merriam-Webster}} \vspace{5mm} \\ 
+			Define {\itshape Analysis}:\	
+				- detailed examination of the elements or structure of something, typically as a basis for discussion or interpretation. {\tiny -\href{https://www.merriam-webster.com/dictionary/analysis}{Merriam-Webster}}\vspace{5mm} \\ 
 
-				Define {\it Design}: \\
+			Define {\itshape Design}:\
 				- A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process, or the result of that plan or specification in the form of a prototype, product or process. The verb to design expresses the process of developing a design. {\tiny -\href{https://en.wikipedia.org/wiki/Design}{Wikipedia}}\\
 
-				\btVFill
-			\end{frame}
+			\btVFill
+		\end{frame}
+	% section I subsection II
+	\subsection{\sectionIsubsectionIItitle}\label{sectionIsubsectionII}
 
-		% section I subsection II
-		\subsection{\sectionIsubsectionIItitle}\label{sectionIsubsectionII}
+		\begin{frame}
+			\frametitle{\sectionIsubsectionIItitle}
+			%\bigskip
 
-			\begin{frame}
-				\frametitle{\sectionIsubsectionIItitle}
-				\bigskip
+			\textbf{This is not just another math class!}\\
 
-				\textbf{This is not just another math class!}\\
+			\begin{itemize}
+				\item we will study mathematical modeling of engineering systems and the theoretical and numerical solutions to non-linear equations, systems of linear equations, and ordinary and partial differential equations\\
+				\item mathematical methods for solving mechanical engineering problems with modern computing tools\\
+				\item we can solve thelarge{BIG} problems!
+			\end{itemize}  
 
-				\begin{itemize}
-					\item we will study mathematical modeling of engineering systems and the theoretical and numerical solutions to non-linear equations, systems of linear equations, and ordinary and partial differential equations \\
-					\item mathematical methods for solving mechanical engineering problems with modern computing tools\\
-					\item we can solve the \large{BIG} problems!
-				\end{itemize}  
+			\btVFill
+		\end{frame}
 
-				\btVFill
-			\end{frame}
+			%\btVFill
+		\begin{frame}
+			\frametitle{\sectionIsubsectionIItitle}
+			%\bigskip
 
-				%\btVFill
-			\begin{frame}
-				\frametitle{\sectionIsubsectionIItitle}
-				\bigskip
+			\begin{itemize}
+				\item Statics and Mechanics\\
+				\item Rigid Body Dynamics\\
+				\item Fluid Dynamics\\
+				\item Thermodynamics and Heat Transfer\\
+				\item Vibrations\\
+			\end{itemize}  
 
-				\begin{itemize}
-					\item Statics and Mechanics\\
-					\item Rigid Body Dynamics\\
-					\item Fluid Dynamics\\
-					\item Thermodynamics and Heat Transfer\\
-					\item Vibrations\\
-				\end{itemize}  
+			\btVFill
+		\end{frame}
 
-				\btVFill
-			\end{frame}
+	% section I subsection III
+	\subsection{\sectionIsubsectionIIItitle}\label{sectionIsubsectionIII}
+		\begin{frame} 
+			\frametitle{\sectionIsubsectionIIItitle}
+			%\bigskip
 
-		% section I subsection III
-		\subsection{\sectionIsubsectionIIItitle}\label{sectionIsubsectionIII}
-			\begin{frame} 
-				\frametitle{\sectionIsubsectionIIItitle}
-				\bigskip
+			We will be doing some {\itshape applied mathematics} in this class!
+			\begin{multicols}{2}
+			\begin{itemize}
+				\item Algebra and Arithmetic\\
+				\item Matrix\slash Linear Algebra\\
+				\item Calculus\\
+				\item Ordinary and Partial Differential Equations \\
+				\item The Fourier Series\\
+			\end{itemize}
+			\end{multicols} 
 
-				We will be doing some {\it applied mathematics} in this class!
-				\begin{multicols}{2}
-				\begin{itemize}
-					\item Algebra and Arithmetic\\
-					\item Matrix\slash Linear Algebra \\
-					\item Calculus \\
-					\item Ordinary and Partial \\Differential Equations \\
-					\item The Fourier Series \\
-				\end{itemize}
-				\end{multicols} 
+			\btVFill
+		\end{frame}	
 
-				\btVFill
-			\end{frame}	
+	% section I subsection IV
+	\subsection{\sectionIsubsectionIVtitle}\label{sectionIsubsectionIV}	
 
-		% section I subsection IV
-		\subsection{\sectionIsubsectionIVtitle}\label{sectionIsubsectionIV}	
+		\begin{frame}
+			\frametitle{\sectionIsubsectionIVtitle}
+			%\bigskip
 
-			\begin{frame}
-				\frametitle{\sectionIsubsectionIVtitle}
-				\bigskip
+			This class is different than a traditional mathematics class.\\ 
+			\begin{itemize}
+				\item By nature engineering problems are hard to solve on paper.\\
+				\item So, will be using calculators but we will also be using...\\
+				\item \hspace{1mm} \vspace{10mm}\\
+			\end{itemize}
+			
+	 		Modern Computing Tools\\ 		
+			\begin{itemize}
+				\item \hspace{1mm} \vspace{5mm}\\
+				\item \hspace{1mm} \vspace{5mm}\\
+				\item \hspace{1mm} \vspace{5mm}\\
+			\end{itemize}
 
-				This class is different than a traditional mathematics class.\\ 
-				\begin{itemize}
-					\item By nature engineering problems are hard to solve on paper.\\
-					\item So, will be using calculators but we will also be using...\\
-					\item \hspace{1mm} \vspace{10mm}\\
-				\end{itemize}
-				
-		 		Modern Computing Tools\\ 		
-				\begin{itemize}
-					\item  \hspace{1mm} \vspace{5mm}\\
-					\item  \hspace{1mm} \vspace{5mm}\\
-					\item  \hspace{1mm} \vspace{5mm}\\
-				\end{itemize}
+			\btVFill
+		\end{frame}
 
-				\btVFill
-			\end{frame}
-	
 	% Section II
 	\section{\sectionIItitle}\label{sectionII}
 
 		% section II Outline
 		\begin{frame}
-			\large \textbf{Topic 2 - \sectionIItitle} \vspace{3mm}\\
+			\large\textbf{Topic 2 - \sectionIItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperlink{sectionIIsubsectionI}{\sectionIIsubsectionItitle} \vspc %  section II subsection I
-				\item \hyperlink{sectionIIsubsectionII}{\sectionIIsubsectionIItitle} \vspc % section II subsection II
-				\item \hyperlink{sectionIIsubsectionIII}{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
-				\item \hyperlink{sectionIIsubsectionIV}{\sectionIIsubsectionIVtitle} \vspc % section II subsection IV
+				\item \hyperref[sectionIIsubsectionI]{\sectionIIsubsectionItitle} \vspc %  section II subsection I
+				\item \hyperref[sectionIIsubsectionII]{\sectionIIsubsectionIItitle} \vspc % section II subsection II
+				\item \hyperref[sectionIIsubsectionIII]{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
+				\item \hyperref[sectionIIsubsectionIV]{\sectionIIsubsectionIVtitle} \vspc % section II subsection IV
 			\end{itemize}
 
 		\end{frame}
@@ -215,9 +219,10 @@
 		% section II subsection I
 		\subsection{\sectionIIsubsectionItitle}\label{sectionIIsubsectionI}
 
-			\begin{frame}[label=sectionIIsubsectionI]
+			%\begin{frame}[label=sectionIIsubsectionI]
+			\begin{frame}
 				\frametitle{\sectionIIsubsectionItitle}
-				\bigskip
+				%\bigskip
 
 				\begin{itemize}
 					\item High Level programming language
@@ -226,8 +231,8 @@
 						\item Interactive Development Environment written in JAVA 
 						\item Windows, Mac, and Linux compatible
 					\end{itemize}
-					\item {\it MAT}rix {\it LAB}oratory
-					\item {\it Technical Computing Language} - Mathworks
+					\item {\itshape MAT}rix {\itshape LAB}oratory
+					\item {\itshape Technical Computing Language} - Mathworks
 				\end{itemize}	
 
 				\btVFill
@@ -238,7 +243,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIItitle}
-				\bigskip
+				%\bigskip
 
 								\begin{itemize}
 					\item A powerful tool for engineers, scientists, and students
@@ -255,14 +260,14 @@
 							\item Embedded Systems and Controls
 						\end{multicols}
 						\end{itemize}
-						\item ability to use {\it symbolic programming }	
+						\item ability to use {\itshape symbolic programming }	
 					\end{itemize}
 					
 					\item Ease of Access and Community
 					\begin{itemize}
-						\item {\it Plug and Play}, it works out of the box
+						\item {\itshape Plug and Play}, itshape works out of the box
 						\item requires no programming experience to begin
-						\item online community for sharing code,  {\it MATLAB Central}
+						\item online community for sharing code,  {\itshape MATLAB Central}
 					\end{itemize}
 				\end{itemize}
 				
@@ -275,29 +280,29 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
-				\textbf{Useful Commands( type in Command Window)} \vspace{3mm}\\
+				\textbf{Useful Commands( type in Command Window)}vspace{3mm}\\
 
-				\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  clear variables}} \vspace{3mm}\\
-				\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  clc}} \vspace{3mm}\\
-				\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  close all}} \vspace{3mm}\\
-				\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >>  }} \\
+				\scalebox{1.25}{{\fontfamily{qcr}\selectfont \hspace{5mm} >>  clear variables}} \vspace{3mm}\\
+				\scalebox{1.25}{{\fontfamily{qcr}\selectfont \hspace{5mm} >>  clc}} \vspace{3mm}\\
+				\scalebox{1.25}{{\fontfamily{qcr}\selectfont \hspace{5mm} >>  close all}} \vspace{3mm}\\
+				\scalebox{1.25}{{\fontfamily{qcr}\selectfont \hspace{5mm} >>  }} \\
 
 				\btVFill 
 			\end{frame}
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
-				\textbf{ Common Mathematics Functions} \vspace{3mm}\\	
+				\textbf{ Common Mathematics Functions}vspace{3mm}\\	
 				\begin{itemize}
-					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} sqrt()}} \vspace{3mm}\\
-					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} exp()}} \vspace{3mm}\\
-					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log()}} \vspace{3mm}\\
-					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log2()}} \vspace{3mm}\\
-					\item \scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log10()}} \\
+					\item\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} sqrt()}} \vspace{3mm}\\
+					\item\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} exp()}} \vspace{3mm}\\
+					\item\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log()}} \vspace{3mm}\\
+					\item\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log2()}} \vspace{3mm}\\
+					\item\scalebox{1.25}{{\fontfamily{qcr}\selectfont  \hspace{5mm} log10()}} \\
 				\end{itemize}	
 			
 				\btVFill 
@@ -307,27 +312,27 @@
 				\frametitle{\sectionIIsubsectionIIItitle}
 				\bigskip
 
-				\textbf{ Other Useful Functions} \\	
+				\textbf{ Other Useful Functions}\	
 				\begin{multicols}{2}	
 				\begin{itemize}
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} round()}} \\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} floor()}} \\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} int8()}} \\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} sign()}} \\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} mod()}} \\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} rem()}} \\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} fzero()}} \\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} round()}} \\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} floor()}} \\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} int8()}} \\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} sign()}} \\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} mod()}} \\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} rem()}} \\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} fzero()}} \\
 				\end{itemize}	
 				\end{multicols}
 
-				\textbf{ Built-in Constants} \\		
+				\textbf{ Built-in Constants}\		
 				\begin{multicols}{2}
 				\begin{itemize}
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} pi}} \vspace{1mm}\\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} i}} \vspace{1mm}\\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} j}} \vspace{1mm}\\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} inf}} \vspace{1mm}\\
-					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} NaN}} \vspace{1mm}\\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} pi}} \vspace{1mm}\\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} i}} \vspace{1mm}\\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} j}} \vspace{1mm}\\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} inf}} \vspace{1mm}\\
+					\item\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} NaN}} \vspace{1mm}\\
 				\end{itemize}
 				\end{multicols}	
 			
@@ -336,13 +341,13 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
-				\textbf{The Built in Help } \vspace{3mm}\\
+				\textbf{The Built in Help }vspace{3mm}\\
 				\begin{itemize}	
-					\item 	\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >> help fzero()}} \vspace{3mm}\\
-					\item use the help to get information about the built in functions  \vspace{3mm}\\
-					\item the full documentation is also available online  \vspace{3mm}\\
+					\item \scalebox{1.0}{{\fontfamily{qcr}\selectfont hspace{5mm} >> help fzero()}} \vspace{3mm}\\
+					\item use the help to get information about the built in functions vspace{3mm}\\
+					\item the full documentation is also available online vspace{3mm}\\
 				\end{itemize}	
 			
 				\btVFill 
@@ -353,15 +358,15 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIsubsectionIVtitle}
-				\bigskip
+				%\bigskip
 
-				This is the classic first exercise when learning a new programming language. \vspace{10mm}\\
+				This is the classic first exercise when learning a new programming language.vspace{10mm}\\
 
-				\scalebox{1.0}{{\fontfamily{qcr}\selectfont  \hspace{5mm} >> Hello World}} \vspace{3mm}\\
+				\scalebox{1.0}{{\fontfamily{qcr}\selectfont hspace{5mm} >> Hello World}} \vspace{3mm}\\
 
 				\btVFill 
 			\end{frame}
-		
+ 
 	% Section III
 	\section{\sectionIIItitle}\label{sectionIII}
 
@@ -370,9 +375,9 @@
 			\large \textbf{Topic 3 - \sectionIIItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperlink{sectionIIIsubsectionI}{\sectionIIIsubsectionItitle} \vspc %  section III subsection I
-				\item \hyperlink{sectionIIIsubsectionII}{\sectionIIIsubsectionIItitle} \vspc % section III subsection II
-				\item \hyperlink{sectionIIIsubsectionIII}{\sectionIIIsubsectionIIItitle} \vspc % section III subsection III
+				\item \hyperref[sectionIIIsubsectionI]{\sectionIIIsubsectionItitle} \vspc %  section III subsection I
+				\item \hyperref[sectionIIIsubsectionII]{\sectionIIIsubsectionIItitle} \vspc % section III subsection II
+				\item \hyperref[sectionIIIsubsectionIII]{\sectionIIIsubsectionIIItitle} \vspc % section III subsection III
 				%\item \hyperlink{sectionIIIsubsectionIV}{\sectionIIIsubsectionIVtitle} \vspc % section III subsection IV
 			\end{itemize}
 
@@ -383,12 +388,12 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionItitle}
-				\bigskip
+				%\bigskip
 
 				\begin{itemize}
 					\item This word has several defintions. \\
 
-					\item  In MATLAB a program is referred to as a {\it script}	
+					\item  In MATLAB a program is referred to as a {\itshape script}	
 				\end{itemize}
 					
 				\btVFill
@@ -407,15 +412,15 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIItitle}
-				\bigskip
+				%\bigskip
 
 				\begin{enumerate}
-					\item Open the {\bf MATLAB} application.
-					\item In the {\it Editor} window. Click on the {\bf new } Button. Go down to {\bf script}.
-					\item Write a proper {\bf header} at the top of your script. Make sure to include your {\it Name}, the {\it Date}, the {\it Course}, and a {\it Description} of this program.
-					\item In the {\it Editor} window. Click on the {\bf save} button. Now you will need to name your file and save it in your directory structure.
-					\item Now you are going to start {\bf writing} your first program. 
-					\item {\bf Run} your program and {\it watch the magic}!
+					\item Open the {\bfseries  MATLAB} application.
+					\item In the {\itshape Editor} window. Click on the {\bfseries  new } Button. Go down to {\bfseries  script}.
+					\item Write a proper {\bfseries  header} at the top of your script. Make sure to include your {\itshape Name}, the {\itshape Date}, the {\itshape Course}, and a {\itshape Description} of this program.
+					\item In the {\itshape Editor} window. Click on the {\bfseries  save} button. Now you will need to name your file and save it in your directory structure.
+					\item Now you are going to start {\bfseries  writing} your first program. 
+					\item {\bfseries  Run} your program and {\itshape  watch the magic}!
 				\end{enumerate}
 				
 				\btVFill
@@ -426,71 +431,56 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
-				\textbf{Step 1} - Open the {\bf MATLAB} application.
+				\textbf{Step 1} - Open the {\bfseries  MATLAB} application.
 				
 				\btVFill
 			\end{frame}
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
-
-				\textbf{Step 2} - In the {\it Editor} window. Click on the {\bf new } Button. \vspace{3mm}\\ \hspace*{12mm}Go down to {\bf script}
+				%\bigskip
+%
+				\textbf{Step 2} - In the {\itshape  Editor} window. Click on the {\bfseries  new } Button. \vspace{3mm}\\ \hspace*{12mm}Go down to {\bfseries  script}
 				
 				\btVFill
 			\end{frame}
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
-				\textbf{Step 3} - Write a proper {\bf header} at the top of your script. \vspace{3mm}\\ Make sure to include your {\it Name}, the {\it Date}, the {\it Course}, and a {\it Description} of this program.
+				\textbf{Step 3} - Write a proper {\bfseries  header} at the top of your script. \vspace{3mm}\\ Make sure to include your {\itshape  Name}, the {\itshape  Date}, the {\itshape  Course}, and a {\itshape  Description} of this program.
 				
 				\btVFill
 			\end{frame}
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
-				\textbf{Step 4} - In the {\it Editor} window. Click on the {\bf save} button. \vspace{3mm}\\ Now you will need to name your file and save it in your directory structure.
+				\textbf{Step 4} - In the {\itshape  Editor} window. Click on the {\bfseries  save} button. \vspace{3mm}\\ Now you will need to name your file and save it in your directory structure.
 				
 				\btVFill
 			\end{frame}
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
-				\textbf{Step 5} - Now you are going to start {\bf writing} your first program. \vspace{3mm}\\ Make sure you are in the {\it Editor} window.
+				\textbf{Step 5} - Now you are going to start {\bfseries  writing} your first program. \vspace{3mm}\\ Make sure you are in the {\itshape Editor} window.
 				
 				\btVFill
 			\end{frame}
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				\bigskip
+				%\bigskip
 
-				\textbf{Step 6} - {\bf Run} your program and {\it watch the magic}!
+				\textbf{Step 6} - {\bfseries Run} your program and {\itshape  watch the magic}!
 				
 				\btVFill
 			\end{frame}
-
-		% section III subsection IV
-		%\subsection{\sectionIIIsubsectionIVtitle}\label{sectionIIIsubsectionIV}	
-
-		%	\begin{frame}
-		%		\frametitle{\sectionIIIsubsectionIVtitle}
-		%		\bigskip
-				
-		%		\btVFill 
-		%	\end{frame}
 
 \end{document}
-
-
-
-
-

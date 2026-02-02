@@ -9,7 +9,16 @@
 % Topic 3 - The Bisection Method
 % Topic 4 - Mechanical Design Problem
 
-\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+\DocumentMetadata{
+    lang        = de,
+    pdfstandard = ua-2,
+    pdfstandard = a-4f, %or a-4
+    tagging=on,
+    tagging-setup={math/setup=mathml-SE},
+    tagging-setup={table/header-rows=1}
+}
+
+\documentclass[fleqn]{ltx-talk} % for presentation (has nav buttons at bottom)
 
 \usepackage{../analysis_lectures}
 
@@ -56,16 +65,21 @@
 
 	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 
-	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+	%\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+        \begin{frame}
+                  %\titlepage
+            \begin{framed}\Large\textbf{Module \MNUM - \moduletitle}\end{framed}
+        \end{frame}
+
 
 	% Module Outline
 	\begin{frame} 
 		\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
 
 		\begin{itemize}
-			\item Topic 1 - \hyperlink{sectionI}{\sectionItitle} \vspc % section I
-			\item Topic 2 - \hyperlink{sectionII}{\sectionIItitle} \vspc % section II
-			\item Topic 3 - \hyperlink{sectionIII}{\sectionIIItitle} \vspc % section III
+			\item Topic 1 - \hyperref[sectionI]{\sectionItitle} \vspc % section I
+			\item Topic 2 - \hyperref[sectionII]{\sectionIItitle} \vspc % section II
+			\item Topic 3 - \hyperref[sectionIII]{\sectionIIItitle} \vspc % section III
 		\end{itemize}
 
 	\end{frame}
@@ -78,10 +92,10 @@
 			\large \textbf{Topic 1 - \sectionItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperlink{sectionIsubsectionI}{\sectionIsubsectionItitle} \vspc %  section I subsection I
-				\item \hyperlink{sectionIsubsectionII}{\sectionIsubsectionIItitle} \vspc % section I subsection II
-				\item \hyperlink{sectionIsubsectionIII}{\sectionIsubsectionIIItitle} \vspc % section I subsection III
-				\item \hyperlink{sectionIsubsectionIV}{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
+				\item \hyperref[sectionIsubsectionI]{\sectionIsubsectionItitle} \vspc %  section I subsection I
+				\item \hyperref[sectionIsubsectionII]{\sectionIsubsectionIItitle} \vspc % section I subsection II
+				\item \hyperref[sectionIsubsectionIII]{\sectionIsubsectionIIItitle} \vspc % section I subsection III
+				\item \hyperref[sectionIsubsectionIV]{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
 			\end{itemize}
 		\end{frame}
 		
@@ -128,7 +142,7 @@
 
 					\hspace{2mm}\scalebox{1.0}{$y = x^2 + 2x - 10$}	 \vspace{2mm}
 
-					\hspace*{-1cm}\includegraphics[scale=.45]{images/lecture1_fig1.png}  
+					\hspace*{-1cm}\includegraphics[scale=.45, alt={a graph of a quadratic polynomial}]{images/lecture1_fig1.png}  
 
 				\btVFill
 			\end{frame}
@@ -156,14 +170,14 @@
 
 				\textbf{Analytical}
 				\begin{itemize}
-					\item solution to a problem that can be written in {\bf closed form} 
+					\item solution to a problem that can be written in {\bfseries closed form} 
 					\item solution in terms of known functions, constants, etc.  
-					\item gives an {\bf exact answer}  \vspcc
+					\item gives an {\bfseries exact answer}  \vspcc
 				\end{itemize}
 
 				\textbf{Numerical}
 				\begin{itemize}
-					\item an {\bf approximation} to the solution of a mathematical equation
+					\item an {\bfseries  approximation} to the solution of a mathematical equation
 					\item iterative procedure or algorithm
 					\item 
 				\end{itemize}
@@ -183,7 +197,7 @@
 				\begin{multicols}{2}
 				\scalebox{1.0}{$y = x^2 + 2x - 10$} \vspace{3mm}\\
 
-				\hspace*{-1cm}\includegraphics[scale=.4]{images/lecture1_fig3.png}
+				\hspace*{-1cm}\includegraphics[scale=.4, alt={a zoomed in graph of a quadratic polynomial}]{images/lecture1_fig3.png}
 				\end{multicols}
 
 				\btVFill
@@ -197,12 +211,12 @@
 			\large \textbf{Topic 2 - \sectionIItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperlink{sectionIIsubsectionI}{\sectionIIsubsectionItitle} \vspc %  section II subsection I
-				\item \hyperlink{sectionIIsubsectionII}{\sectionIIsubsectionIItitle} \vspc % section II subsection II
-				\item \hyperlink{sectionIIsubsectionIII}{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
-				\item \hyperlink{sectionIIsubsectionIV}{\sectionIIsubsectionIVtitle} \vspc % section II subsection IV
-				\item \hyperlink{sectionIIsubsectionV}{\sectionIIsubsectionVtitle} \vspc % section II subsection V
-				\item \hyperlink{sectionIIsubsectionVI}{\sectionIIsubsectionVItitle} \vspc % section II subsection VI
+				\item \hyperref[sectionIIsubsectionI]{\sectionIIsubsectionItitle} \vspc %  section II subsection I
+				\item \hyperref[sectionIIsubsectionII]{\sectionIIsubsectionIItitle} \vspc % section II subsection II
+				\item \hyperref[sectionIIsubsectionIII]{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
+				\item \hyperref[sectionIIsubsectionIV]{\sectionIIsubsectionIVtitle} \vspc % section II subsection IV
+				\item \hyperref[sectionIIsubsectionV]{\sectionIIsubsectionVtitle} \vspc % section II subsection V
+				\item \hyperref[sectionIIsubsectionVI]{\sectionIIsubsectionVItitle} \vspc % section II subsection VI
 			\end{itemize}
 
 		\end{frame}
@@ -210,7 +224,8 @@
 		% section II subsection I
 		\subsection{\sectionIIsubsectionItitle}\label{sectionIIsubsectionI}
 
-			\begin{frame}[label=sectionIIsubsectionI]
+			%\begin{frame}[label=sectionIIsubsectionI]
+			\begin{frame}
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip
 
@@ -218,19 +233,20 @@
 				\textbf{ Theoretical/Analytical Solution Techniques }
 				\begin{itemize}
 					\item solving the equation using exact mathematics \\
-					\item leads to an exact or {\it analytical} solution \\ 	\vspace{10mm}
+					\item leads to an exact or {\itshape analytical} solution \\ 	\vspace{10mm}
 				\end{itemize}
 				\textbf{ Numerical Solution Techniques }		
 				\begin{itemize}
-					\item  approximating the solution to the equation using varying methods, or {\it algorithms}  \\
+					\item  approximating the solution to the equation using varying methods, or {\itshape algorithms}  \\
 					\item leads to a approximate solution \\ 
-					\item a.k.a. {\it Numerical Method}\vspace{20mm}
+					\item a.k.a. {\itshape Numerical Method}\vspace{20mm}
 				\end{itemize}
 
 				\btVFill
 			\end{frame}
 
-			\begin{frame}[label=sectionIIsubsectionI]
+			%\begin{frame}[label=sectionIIsubsectionI]
+			\begin{frame}
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip
 
@@ -242,20 +258,21 @@
 					\item Brook Taylor, mathematician, 1685-1731 \\
 				\end{itemize}
 
-				\includegraphics[scale=.17]{images/newton_portrait.jpg}
+				\includegraphics[scale=.17, alt={a portrait of Isaac Newton}]{images/newton_portrait.jpg}
 				%\hspace{10mm}\includegraphics[scale=.30]{images/raphson_book.jpg}
-				\hspace{10mm}\includegraphics[scale=.40]{images/Joseph-Raphson-1648-1715.png}
-				\hspace{10mm}\includegraphics[scale=.30]{images/BTaylor.jpg}
+				\hspace{10mm}\includegraphics[scale=.40, alt={a portrait of Joseph Raphson}]{images/Joseph-Raphson-1648-1715.png}
+				\hspace{10mm}\includegraphics[scale=.30, alt={a portrait of Brook Taylor}]{images/BTaylor.jpg}
 				\btVFill
 			\end{frame}	
 
-			\begin{frame}[label=sectionIIsubsectionI]
+			%\begin{frame}[label=sectionIIsubsectionI]
+			\begin{frame}
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip\small
 
 				The Newton-Raphson method uses the slope at a point to approximate the solution. The process is repeated until the approximate solution meets a given tolerance. \vspace{5mm}
 
-				\includegraphics[scale=.35]{images/topic3_fig1.png}
+				\includegraphics[scale=.35, alt={an orthogonal axes set}]{images/topic3_fig1.png}
 				
 				\btVFill
 			\end{frame}
@@ -281,7 +298,7 @@
 				The 4 possible sign (+/-) cases are handled by the algorithm. \vspace{3mm}\\
 
 			%	Now you have much better hammer. However, must be used properly... \vspace{3mm}\\
-				\includegraphics[scale=.35]{images/topic3_fig2.png}
+				\includegraphics[scale=.35, alt={four orthogonal axes sets}]{images/topic3_fig2.png}
 
 				\btVFill
 			\end{frame}		
@@ -338,7 +355,7 @@
 					variants. 
 					\item With careful equation setup, all cases can be solved with the same systematic routine. 	
 				\end{itemize}	
-				\includegraphics[scale=.3]{images/topic3_fig2.png}			
+				\includegraphics[scale=.3, alt={four orthogonal axes sets}]{images/topic3_fig2.png}			
 			
 				\btVFill 
 			\end{frame}
@@ -373,7 +390,7 @@
 				\end{itemize}
 				\textbf{How can we avoid this issue?} \vspace{10mm}\\
 
-				\textbf{{\it Hint:} Think about the title \PR{secant} \BK ...} \vspace{10mm}\\
+				\textbf{{\itshape Hint:} Think about the title \PR{secant} \BK ...} \vspace{10mm}\\
 
 				\btVFill 
 			\end{frame}
@@ -382,21 +399,21 @@
 				\frametitle{\sectionIIsubsectionIVtitle}
 				\bigskip
 
-				This idea or technique is the foundation of a family of methods known as the {\it \PN Finite Difference Methods}.
+				This idea or technique is the foundation of a family of methods known as the {\itshape \PR Finite Difference Methods}.
 
 				\begin{multicols}{3}
 
 					Forward\\
 					Difference\\
-					\includegraphics[scale=.14]{images/lecture4_fig1.png}\\
+					\includegraphics[scale=.14, alt={an orthogonal axes set}]{images/lecture4_fig1.png}\\
 
 					Backwards\\
 					Difference\\
-					\includegraphics[scale=.14]{images/lecture4_fig1.png}\\
+					\includegraphics[scale=.14, alt={an orthogonal axes set}]{images/lecture4_fig1.png}\\
 
 					Central\\
 					Difference\\
-					\includegraphics[scale=.14]{images/lecture4_fig1.png}\\
+					\includegraphics[scale=.14, alt={an orthogonal axes set}]{images/lecture4_fig1.png}\\
 				
 				\end{multicols}
 
@@ -414,9 +431,9 @@
 
 				\begin{multicols}{2}
 				Newton-Raphson
-				\includegraphics[scale=.22]{images/lecture4_fig1.png} 
+				\includegraphics[scale=.22, alt={an orthogonal axes set}]{images/lecture4_fig1.png} 
 				Secant
-				\includegraphics[scale=.22]{images/lecture4_fig1.png}
+				\includegraphics[scale=.22, alt={an orthogonal axes set}]{images/lecture4_fig1.png}
 				\end{multicols}
 
 			
@@ -468,10 +485,9 @@
 			\large \textbf{Topic 3 - \sectionIIItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperlink{sectionIIIsubsectionI}{\sectionIIIsubsectionItitle} \vspc %  section III subsection I
-				\item \hyperlink{sectionIIIsubsectionII}{\sectionIIIsubsectionIItitle} \vspc % section III subsection II
-				\item \hyperlink{sectionIIIsubsectionIII}{\sectionIIIsubsectionIIItitle} \vspc % section III subsection III
-				%\item \hyperlink{sectionIIIsubsectionIV}{\sectionIIIsubsectionIVtitle} \vspc % section III subsection IV
+				\item \hyperref[sectionIIIsubsectionI]{\sectionIIIsubsectionItitle} \vspc %  section III subsection I
+				\item \hyperref[sectionIIIsubsectionII]{\sectionIIIsubsectionIItitle} \vspc % section III subsection II
+				\item \hyperref[sectionIIIsubsectionIII]{\sectionIIIsubsectionIIItitle} \vspc % section III subsection III
 			\end{itemize}
 
 		\end{frame}
@@ -487,13 +503,13 @@
 				\textbf{ Theoretical/Analytical Solution Techniques }
 				\begin{itemize}
 					\item solving the equation using exact mathematics \\
-					\item leads to an exact or {\it analytical} solution \\ 	\vspace{10mm}
+					\item leads to an exact or {\itshape analytical} solution \\ 	\vspace{10mm}
 				\end{itemize}
 				\textbf{ Numerical Solution Techniques }		
 				\begin{itemize}
-					\item  approximating the solution to the equation using varying methods, or {\it algorithms}  \\
+					\item  approximating the solution to the equation using varying methods, or {\itshape algorithms}  \\
 					\item leads to a approximate solution \\ 
-					\item a.k.a. {\it Numerical Method}\vspace{20mm}
+					\item a.k.a. {\itshape Numerical Method}\vspace{20mm}
 				\end{itemize}
 					
 				\btVFill
@@ -513,8 +529,8 @@
 				\frametitle{\sectionIIIsubsectionIItitle}
 				\bigskip
 
-				The Bisection method is a {\it bracketing method}. \vspace{5mm}
-				\includegraphics[scale=.40]{images/topic3_fig1.png}
+				The Bisection method is a {\itshape bracketing method}. \vspace{5mm}
+				\includegraphics[scale=.40, alt={an orthogonal axes set}]{images/topic3_fig1.png}
 
 				\btVFill
 			\end{frame}
@@ -523,7 +539,7 @@
 				\frametitle{\sectionIIIsubsectionIItitle}
 				\bigskip
 				
-				\includegraphics[scale=.40]{images/topic3_fig1.png}
+				\includegraphics[scale=.40, alt={an orthogonal axes set}]{images/topic3_fig1.png}
 
 				\btVFill
 			\end{frame}
@@ -532,7 +548,7 @@
 				\frametitle{\sectionIIIsubsectionIItitle}
 				\bigskip
 					
-				\includegraphics[scale=.40]{images/topic3_fig1.png}
+				\includegraphics[scale=.40, alt={an orthogonal axes set}]{images/topic3_fig1.png}
 				
 				\btVFill
 			\end{frame}
@@ -595,10 +611,10 @@
 			\large \textbf{Topic 3 - \sectionIVtitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperlink{sectionIVsubsectionI}{\sectionIVsubsectionItitle} \vspc %  section IV subsection I
-				\item \hyperlink{sectionIVsubsectionII}{\sectionIVsubsectionIItitle} \vspc % section IV subsection II
-				\item \hyperlink{sectionIVsubsectionIII}{\sectionIVsubsectionIIItitle} \vspc % section IV subsection III
-				\item \hyperlink{sectionIVsubsectionIV}{\sectionIVsubsectionIVtitle} \vspc % section IV subsection IV
+				\item \hyperref[sectionIVsubsectionI]{\sectionIVsubsectionItitle} \vspc %  section IV subsection I
+				\item \hyperref[sectionIVsubsectionII]{\sectionIVsubsectionIItitle} \vspc % section IV subsection II
+				\item \hyperref[sectionIVsubsectionIII]{\sectionIVsubsectionIIItitle} \vspc % section IV subsection III
+				\item \hyperref[sectionIVsubsectionIV]{\sectionIVsubsectionIVtitle} \vspc % section IV subsection IV
 			\end{itemize}
 
 		\end{frame}
@@ -625,7 +641,7 @@
 				\frametitle{\sectionIVsubsectionItitle}
 				\bigskip
 
-				What is the {\it mathematical model} of the cone?  
+				What is the {\itshape  mathematical model} of the cone?  
 
 				\includegraphics[scale=.35]{images/lecture3_fig1.png}\\
 				\scalebox{1.2}{surface area, $s=\pi r l = \pi r \sqrt{h^2+r^2}$} \\
@@ -651,8 +667,8 @@
 				\frametitle{\sectionIVsubsectionItitle}
 				\bigskip
 
-				How are \underline{you} going to {\it design} the cone? \vspace{5mm}\\
-				\includegraphics[scale=.35]{images/lecture3_fig1.png}\\
+				How are \underline{you} going to {\itshape design} the cone? \vspace{5mm}\\
+				\includegraphics[scale=.35, alt={a schematic of a cone with dimension symbols}]{images/lecture3_fig1.png}\\
 
 				\btVFill
 			\end{frame}	
