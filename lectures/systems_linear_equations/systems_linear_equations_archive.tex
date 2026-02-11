@@ -9,16 +9,7 @@
 % Topic 3 - Existence of Solutions
 % Topic 4 - Gaussian Elimination
 
-\DocumentMetadata{
-    lang        = de,
-    pdfstandard = ua-2,
-    pdfstandard = a-4f, %or a-4
-    tagging=on,
-    tagging-setup={math/setup=mathml-SE},
-    tagging-setup={table/header-rows=1}
-}
-
-\documentclass[fleqn]{ltx-talk} % for presentation (has nav buttons at bottom)
+\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
 
 \usepackage{../analysis_lectures} % sty in the parent directory
 
@@ -63,16 +54,16 @@
 
 	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 
-%	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
 
 	% Module Outline
 	\begin{frame} 
 		\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
 
 		\begin{itemize}
-			\item Topic 1 - \hyperref[sectionI]{\sectionItitle} \vspc % section I
-			\item Topic 2 - \hyperref[sectionII]{\sectionIItitle} \vspc % section II
-			\item Topic 3 - \hyperref[sectionIII]{\sectionIIItitle} \vspc % section III
+			\item Topic 1 - \hyperlink{sectionI}{\sectionItitle} \vspc % section I
+			\item Topic 2 - \hyperlink{sectionII}{\sectionIItitle} \vspc % section II
+			\item Topic 3 - \hyperlink{sectionIII}{\sectionIIItitle} \vspc % section III
 		\end{itemize}
 
 	\end{frame}
@@ -85,10 +76,10 @@
 			\large \textbf{Topic 1 - \sectionItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperref[sectionIsubsectionI]{\sectionIsubsectionItitle} \vspc %  section I subsection I
-				\item \hyperref[sectionIsubsectionII]{\sectionIsubsectionIItitle} \vspc % section I subsection II
-				\item \hyperref[sectionIsubsectionIII]{\sectionIsubsectionIIItitle} \vspc % section I subsection III
-				\item \hyperref[sectionIsubsectionIV]{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
+				\item \hyperlink{sectionIsubsectionI}{\sectionIsubsectionItitle} \vspc %  section I subsection I
+				\item \hyperlink{sectionIsubsectionII}{\sectionIsubsectionIItitle} \vspc % section I subsection II
+				\item \hyperlink{sectionIsubsectionIII}{\sectionIsubsectionIIItitle} \vspc % section I subsection III
+				\item \hyperlink{sectionIsubsectionIV}{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
 			\end{itemize}
 		\end{frame}
 		
@@ -290,10 +281,10 @@
 			\large \textbf{Topic 2 - \sectionIItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperref[sectionIIsubsectionI]{\sectionIIsubsectionItitle} \vspc %  section II subsection I
-				\item \hyperref[sectionIIsubsectionII]{\sectionIIsubsectionIItitle} \vspc % section II subsection II
-				\item \hyperref[sectionIIsubsectionIII]{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
-				\item \hyperref[sectionIIsubsectionIV]{\sectionIIsubsectionIVtitle} \vspc % section II 
+				\item \hyperlink{sectionIIsubsectionI}{\sectionIIsubsectionItitle} \vspc %  section II subsection I
+				\item \hyperlink{sectionIIsubsectionII}{\sectionIIsubsectionIItitle} \vspc % section II subsection II
+				\item \hyperlink{sectionIIsubsectionIII}{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
+				\item \hyperlink{sectionIIsubsectionIV}{\sectionIIsubsectionIVtitle} \vspc % section II 
 			\end{itemize}
 
 		\end{frame}
@@ -301,7 +292,7 @@
 		% section II subsection I
 		\subsection{\sectionIIsubsectionItitle}\label{sectionIIsubsectionI}
 
-			\begin{frame}
+			\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip
 
@@ -316,7 +307,7 @@
 				\btVFill
 			\end{frame}
 
-			\begin{frame}
+			\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip
 
@@ -332,7 +323,7 @@
 				\btVFill
 			\end{frame}	
 
-			\begin{frame}
+			\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip
 
@@ -403,7 +394,7 @@
 				\begin{itemize}
 		
 					\item What does that equation above mean? \\
-					\item How can we write a {\itshape General Solution Technique} using the equation?
+					\item How can we write a {\it General Solution Technique} using the equation?
 			
 				\end{itemize}
 
@@ -450,10 +441,10 @@
 			\large \textbf{Topic 3 - \sectionIIItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperref[sectionIIIsubsectionI]{\sectionIIIsubsectionItitle} \vspc %  section III subsection I
-				\item \hyperref[sectionIIIsubsectionII]{\sectionIIIsubsectionIItitle} \vspc % section III subsection II
-				\item \hyperref[sectionIIIsubsectionIII]{\sectionIIIsubsectionIIItitle} \vspc % section III subsection III
-				\item \hyperref[sectionIIIsubsectionIV]{\sectionIIIsubsectionIVtitle} \vspc % section III subsection IV
+				\item \hyperlink{sectionIIIsubsectionI}{\sectionIIIsubsectionItitle} \vspc %  section III subsection I
+				\item \hyperlink{sectionIIIsubsectionII}{\sectionIIIsubsectionIItitle} \vspc % section III subsection II
+				\item \hyperlink{sectionIIIsubsectionIII}{\sectionIIIsubsectionIIItitle} \vspc % section III subsection III
+				\item \hyperlink{sectionIIIsubsectionIV}{\sectionIIIsubsectionIVtitle} \vspc % section III subsection IV
 			\end{itemize}
 
 		\end{frame}
@@ -515,9 +506,9 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				%\bigskip
+				\bigskip
 
-				{\bfseries Normal Case - 2 Equations - 2 Unknowns - 1 Solution} \\ \vspace{2mm}
+				{\bf Normal Case - 2 Equations - 2 Unknowns - 1 Solution} \\ \vspace{2mm}
 				\includegraphics[scale=.3]{images/lecture5_fig1.png} \\
 				\begin{fleqn}
 					\[3x_1+x_2=5\]
@@ -529,9 +520,9 @@
 
 			\begin{frame}
 				\frametitle{\sectionIIIsubsectionIIItitle}
-				%\bigskip
+				\bigskip
 
-				{\bfseries Abnormal Case - 2 Equations - 2 Unknowns - $\infty$ Solutions}  \\ \vspace{2mm}
+				{\bf Abnormal Case - 2 Equations - 2 Unknowns - $\infty$ Solutions}  \\ \vspace{2mm}
 				\includegraphics[scale=.3]{images/lecture5_fig2.png} \\
 				\begin{fleqn}
 					\[3x_1+x_2=5\]
@@ -545,7 +536,7 @@
 				\frametitle{\sectionIIIsubsectionIIItitle}
 				\bigskip
 
-				{\bfseries Abnormal Case - 2 Equations - 2 Unknowns - 0 Solutions} \\ \vspace{2mm}
+				{\bf Abnormal Case - 2 Equations - 2 Unknowns - 0 Solutions} \\ \vspace{2mm}
 				\includegraphics[scale=.3]{images/lecture5_fig3.png} \\
 				\begin{fleqn}
 					\[3x_1+x_2=5\]
@@ -559,7 +550,7 @@
 				\frametitle{\sectionIIIsubsectionIIItitle}
 				\bigskip
 
-				{\bfseries Abnormal Case - 3 Equations - 2 Unknowns - 0 Solutions} \\ \vspace{2mm}
+				{\bf Abnormal Case - 3 Equations - 2 Unknowns - 0 Solutions} \\ \vspace{2mm}
 				\includegraphics[scale=.3]{images/lecture5_fig4.png} \\
 				\begin{fleqn}
 				\[3x_1+x_2=5\]
@@ -574,7 +565,7 @@
 				\frametitle{\sectionIIIsubsectionIIItitle}
 				\bigskip
 
-				{\bfseries Abnormal Case - 3 Equations - 2 Unknowns - 1 Solution} \\ \vspace{2mm}
+				{\bf Abnormal Case - 3 Equations - 2 Unknowns - 1 Solution} \\ \vspace{2mm}
 				\includegraphics[scale=.3]{images/lecture5_fig5.png} \\
 				\begin{fleqn}
 				\[-x_1+x_2=0\]
@@ -667,10 +658,10 @@
 			\large \textbf{Topic 3 - \sectionIVtitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperref[sectionIVsubsectionI]{\sectionIVsubsectionItitle} \vspc %  section IV subsection I
-				\item \hyperref[sectionIVsubsectionII]{\sectionIVsubsectionIItitle} \vspc % section IV subsection II
-				\item \hyperref[sectionIVsubsectionIII]{\sectionIVsubsectionIIItitle} \vspc % section IV subsection III
-				%\item \hyperref[sectionIVsubsectionIV]{\sectionIVsubsectionIVtitle} \vspc % section IV subsection IV
+				\item \hyperlink{sectionIVsubsectionI}{\sectionIVsubsectionItitle} \vspc %  section IV subsection I
+				\item \hyperlink{sectionIVsubsectionII}{\sectionIVsubsectionIItitle} \vspc % section IV subsection II
+				\item \hyperlink{sectionIVsubsectionIII}{\sectionIVsubsectionIIItitle} \vspc % section IV subsection III
+				\item \hyperlink{sectionIVsubsectionIV}{\sectionIVsubsectionIVtitle} \vspc % section IV subsection IV
 			\end{itemize}
 
 		\end{frame}
@@ -680,7 +671,7 @@
 
 			\begin{frame}
 				\frametitle{\sectionIVsubsectionItitle}
-		    %\bigskip
+				\bigskip
 
 				The Gaussian Elimination method has many variations.  You may have used a different version in linear algebra, but that is fine. This method in generalized so that is can be automated easily with a computer program.   
 
@@ -720,7 +711,7 @@
 				\frametitle{\sectionIVsubsectionIItitle}
 				\bigskip
 
-				\underline{{\bfseries Step 1:} Forward Elimination of Unknowns}
+				\underline{{\bf Step 1:} Forward Elimination of Unknowns}
 		
 				\begin{itemize}
 					\item  Eliminate $x_1$ from equations $2$ to $n$
@@ -785,7 +776,7 @@
 				\frametitle{\sectionIVsubsectionIItitle}
 				\bigskip
 
-				 {\bfseries Step 2:} Backwards Subsitution
+				 {\bf Step 2:} Backwards Subsitution
 		%		\renewcommand\labelitemi{\textbullet}
 		% 		\renewcommand\labelitemii{\textendash}
 		% 		\renewcommand\labelitemiii{\textasteriskcentered}
@@ -815,43 +806,43 @@
 				\bigskip
 
 				\begin{multicols}{2}
-				\underline{{\bfseries Step 1:} Forward Elimination} \vspace{2mm}\\ 
+				\underline{{\bf Step 1:} Forward Elimination} \vspace{2mm}\\ 
 
-		{\itshape for} \color{mypurple}k \color{black} {\itshape from} 1 {\itshape to} \color{mygreen}n\color{black}-1 \vspace{1mm}
+		{\it for} \color{mypurple}k \color{black} {\it from} 1 {\it to} \color{mygreen}n\color{black}-1 \vspace{1mm}
 	
-		\hspace{3mm} {\itshape for} \color{blue}i \color{black} {\itshape from} \color{mypurple}k\color{black}+1 {\itshape to} \color{mygreen}n\color{black} \vspace{1mm}
+		\hspace{3mm} {\it for} \color{blue}i \color{black} {\it from} \color{mypurple}k\color{black}+1 {\it to} \color{mygreen}n\color{black} \vspace{1mm}
 		
 		\hspace{6mm} fact$=a_{\color{blue}i\color{black},\color{mypurple}k}/a_{\color{mypurple}k\color{black},\color{mypurple}k\color{black}}$ \vspace{1mm}
 
-		\hspace{9mm} {\itshape for} \color{red}j \color{black} {\itshape from} \color{mypurple} k \color{black}  {\itshape to} \color{mygreen}n\color{black} \vspace{1mm}
+		\hspace{9mm} {\it for} \color{red}j \color{black} {\it from} \color{mypurple} k \color{black}  {\it to} \color{mygreen}n\color{black} \vspace{1mm}
 
 		\hspace{12mm} $a_{\color{blue}i\color{black},\color{red}j}=a_{\color{blue}i\color{black},\color{red}j}-fact\times a_{\color{mypurple}k\color{black},\color{red}j}$ \vspace{1mm}
 		
-\hspace{10mm}{\itshape end} \vspace{1mm}
+\hspace{10mm}{\it end} \vspace{1mm}
 
 \hspace*{9mm}$b_{\color{blue}i\color{black}}=b_{\color{blue}i\color{black}}-fact\times b_{\color{mypurple}k\color{black}}$ \vspace{1mm}
 
-\hspace*{6mm}{\itshape end} \vspace{1mm}
+\hspace*{6mm}{\it end} \vspace{1mm}
 
-{\itshape end}\vspace{15mm}
+{\it end}\vspace{15mm}
 		%\hspace*{20mm} \scalebox{1.5}{\color{blue} end \color{black} }\\
 		%\hspace{0mm} \scalebox{1.5}{\color{blue} end \color{black}}\\ \\
 		%\hspace{0mm} \scalebox{1.5}{\color{blue} end \color{black}}\\
 		
-		\underline{{\bfseries Step 2:} Backwards Substitution} \vspace{2mm}
+		\underline{{\bf Step 2:} Backwards Substitution} \vspace{2mm}
 		
 				$x_{\color{mygreen}n\color{black}}=b_{\color{mygreen}n\color{black}}/a_{\color{mygreen}n\color{black},\color{mygreen}n\color{black}}$ \vspace{2mm}
 				
-		{\itshape for} \color{blue}i \color{black} {\itshape from} \color{mygreen}n\color{black}-1 {\itshape to} 1 \vspace{4mm}
+		{\it for} \color{blue}i \color{black} {\it from} \color{mygreen}n\color{black}-1 {\it to} 1 \vspace{4mm}
 	
 		\hspace*{10mm}$x_{\color{blue}i}=(b_{\color{blue}i}-\sum\limits^n_{\color{red}j\color{black}=\color{blue}i\color{black}+1}\left( a_{\color{blue}i\color{black},\color{red}j}x_{\color{red}j}\right)) /a_{\color{blue}i\color{black},\color{blue}i\color{black}}$	\vspace{2mm}
 		
-		{\itshape end} \vspace{2mm}
+		{\it end} \vspace{2mm}
 		
 				\end{multicols}
 
 				
-		%		\btVFill
+				\btVFill
 			\end{frame}	
 
 \end{document}
