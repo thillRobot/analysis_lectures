@@ -9,20 +9,9 @@
 % Topic 3 - Geometrical Interpretation (no slides, example in class)
 % Topic 4 - 
 
-\DocumentMetadata{
-    lang        = de,
-    pdfstandard = ua-2,
-    pdfstandard = a-4f, %or a-4
-    tagging=on,
-    tagging-setup={math/setup=mathml-SE},
-    tagging-setup={table/header-rows=1}
-}
-
-\documentclass[fleqn]{ltx-talk} % for presentation (has nav buttons at bottom)
+\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
 
 \usepackage{../analysis_lectures}
-\usepackage{amsmath}
-\usepackage{bm}
 
 \author{ME3001 - Mechanical Engineering Analysis}
 
@@ -66,18 +55,16 @@
 
 	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
 
-	\begin{frame}
-    \begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} 
-  \end{frame}
+	\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
 
 	% Module Outline
 	\begin{frame} 
 		\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
 
 		\begin{itemize}
-			\item Topic 1 - \hyperref[sectionI]{\sectionItitle} \vspc % section I
-			\item Topic 2 - \hyperref[sectionII]{\sectionIItitle} \vspc % section II
-			\item Topic 3 - \hyperref[sectionIII]{\sectionIIItitle} \vspc % section III
+			\item Topic 1 - \hyperlink{sectionI}{\sectionItitle} \vspc % section I
+			\item Topic 2 - \hyperlink{sectionII}{\sectionIItitle} \vspc % section II
+			\item Topic 3 - \hyperlink{sectionIII}{\sectionIIItitle} \vspc % section III
 		\end{itemize}
 
 	\end{frame}
@@ -90,10 +77,10 @@
 			\large \textbf{Topic 1 - \sectionItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperref[sectionIsubsectionI]{\sectionIsubsectionItitle} \vspc %  section I subsection I
-				\item \hyperref[sectionIsubsectionII]{\sectionIsubsectionIItitle} \vspc % section I subsection II
-				\item \hyperref[sectionIsubsectionIII]{\sectionIsubsectionIIItitle} \vspc % section I subsection III
-				\item \hyperref[sectionIsubsectionIV]{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
+				\item \hyperlink{sectionIsubsectionI}{\sectionIsubsectionItitle} \vspc %  section I subsection I
+				\item \hyperlink{sectionIsubsectionII}{\sectionIsubsectionIItitle} \vspc % section I subsection II
+				\item \hyperlink{sectionIsubsectionIII}{\sectionIsubsectionIIItitle} \vspc % section I subsection III
+				\item \hyperlink{sectionIsubsectionIV}{\sectionIsubsectionIVtitle} \vspc % section I subsection IV
 			\end{itemize}
 		\end{frame}
 		
@@ -108,7 +95,7 @@
 
 				In linear algebra, an eigenvector or characteristic vector of a linear transformation is a non-zero vector whose direction does not change when that linear transformation is applied to it. More formally, if $T$ is a linear transformation from a vector space $V$ over a field $F$ into itself and $v$ is a vector in $V$ that is not the zero vector, then $v$ is an eigenvector of $T$ if $T(v)$ is a scalar multiple of $v$. This condition can be written as the equation\\
 
-				\[ T(\bm{v})=\lambda \bm{v} \]
+				\[ T({\bf v})=\lambda{\bf v} \]
 
 
 				\btVFill
@@ -122,7 +109,7 @@
 
 				If the vector space $V$ is finite-dimensional, then the linear transformation $T$ can be represented as a square matrix $A$, and the vector $v$ by a column vector, rendering the above mapping as a matrix multiplication on the left hand side and a scaling of the column vector on the right hand side in the equation.\\
 
-				\[ [A]\bm{v}=\lambda \bm{v} \]
+				\[ [A]{\bf v}=\lambda{\bf v} \]
 
 				\btVFill
 			\end{frame}
@@ -227,8 +214,8 @@
 
 				\[ ([A]-\lambda[I])\{x\}=\{0\} \]
 
-				First we need to realize that this matrix system is {\itshape Homogeneous}. This follows a different rule regarding the existence of a solution.\\
-				 A {\itshape Homogeneous} system has a non-trivial solution if and only if the determinant of the coefficient matrix is zero.\\
+				First we need to realize that this matrix system is {\it Homogeneous}. This follows a different rule regarding the existence of a solution.\\
+				 A {\it Homogeneous} system has a non-trivial solution if and only if the determinant of the coefficient matrix is zero.\\
 
 				\[ |[A]|=0 \]
 
@@ -286,10 +273,10 @@
 			\large \textbf{Topic 2 - \sectionIItitle} \vspace{3mm}\\
 
 			\begin{itemize}
-				\item \hyperref[sectionIIsubsectionI]{\sectionIIsubsectionItitle} \vspc %  section II subsection I
-				\item \hyperref[sectionIIsubsectionII]{\sectionIIsubsectionIItitle} \vspc % section II subsection II
-				\item \hyperref[sectionIIsubsectionIII]{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
-				\item \hyperref[sectionIIsubsectionIV]{\sectionIIsubsectionIVtitle} \vspc % section II 
+				\item \hyperlink{sectionIIsubsectionI}{\sectionIIsubsectionItitle} \vspc %  section II subsection I
+				\item \hyperlink{sectionIIsubsectionII}{\sectionIIsubsectionIItitle} \vspc % section II subsection II
+				\item \hyperlink{sectionIIsubsectionIII}{\sectionIIsubsectionIIItitle} \vspc % section II subsection III
+				\item \hyperlink{sectionIIsubsectionIV}{\sectionIIsubsectionIVtitle} \vspc % section II 
 			\end{itemize}
 
 			This section was written by Mike Renfro and/or others.
@@ -299,7 +286,7 @@
 		% section II subsection I
 		\subsection{\sectionIIsubsectionItitle}\label{sectionIIsubsectionI}
 
-			\begin{frame}
+			\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle} \small
 				\bigskip
 
@@ -319,7 +306,7 @@
 				\btVFill
 			\end{frame}
 
-			\begin{frame}
+			\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle} \small
 				\bigskip
 
@@ -352,7 +339,7 @@
 				\btVFill
 			\end{frame}	
 
-			\begin{frame}
+			\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle} \small
 				\bigskip
 
@@ -391,7 +378,7 @@
 				\btVFill
 			\end{frame}
 
-		\begin{frame}
+		\begin{frame}[label=sectionIIsubsectionI]
 				\frametitle{\sectionIIsubsectionItitle}
 				\bigskip
 
@@ -502,8 +489,7 @@
 						by $k_2$ and $k_1$, respectively.
 					\end{column}
 					\begin{column}{0.5\textwidth}
-						%\pgfimage[width=0.9\textwidth]{images/fig41a}
-						\includegraphics[width=0.9\textwidth, alt={a forging hammer mass spring system}]{images/fig41a}
+						\pgfimage[width=0.9\textwidth]{images/fig41a}
 					\end{column}
 				\end{columns}
 
@@ -534,8 +520,7 @@
 				      \end{displaymath}
 				    \end{column}
 				    \begin{column}{0.5\textwidth}
-				      %\pgfimage[width=0.9\textwidth]{images/fig41a}
-						  \includegraphics[width=0.9\textwidth, alt={a forging hammer mass spring system}]{images/fig41a}
+				      \pgfimage[width=0.9\textwidth]{images/fig41a}
 				    \end{column}
 				  \end{columns}
 
@@ -565,8 +550,7 @@
 				      \end{itemize}
 				    \end{column}
 				    \begin{column}{0.3\textwidth}
-				      %\pgfimage[width=0.9\textwidth]{images/fig41b}
-				      \includegraphics[width=0.9\textwidth, alt={a 2DOF mass spring system}]{images/fig41b}
+				      \pgfimage[width=0.9\textwidth]{images/fig41b}
 				    \end{column}
 				  \end{columns}
 
@@ -591,8 +575,7 @@
 				      \end{align*}
 				    \end{column}
 				    \begin{column}{0.3\textwidth}
-				      %\pgfimage[width=0.9\textwidth]{images/fig41b}
-				      \includegraphics[width=0.9\textwidth, alt={a 2DOF mass spring system}]{images/fig41b}
+				      \pgfimage[width=0.9\textwidth]{images/fig41b}
 				    \end{column}
 				  \end{columns}
 
@@ -613,8 +596,7 @@
 				      \end{align*}
 				    \end{column}
 				    \begin{column}{0.3\textwidth}
-				      %\pgfimage[width=0.9\textwidth]{images/fig41b}
-				      \includegraphics[width=0.9\textwidth, alt={a 2DOF mass spring system}]{images/fig41b}
+				      \pgfimage[width=0.9\textwidth]{images/fig41b}
 				    \end{column}
 				  \end{columns}
 
@@ -727,20 +709,19 @@
 				      \end{displaymath}
 				    \end{column}
 				    \begin{column}{0.3\textwidth}
-				      %\pgfimage[width=0.9\textwidth]{images/fig413}
-				      \includegraphics[width=0.9\textwidth, alt={a 3D stress element}]{images/fig413}
+				      \pgfimage[width=0.9\textwidth]{images/fig413}
 				    \end{column}
 				  \end{columns}
 
 				\btVFill 
 			\end{frame}
 		
-			\begin{frame*}
+			\begin{frame}[fragile]
 				\frametitle{\sectionIIsubsectionIVtitle}
 				\bigskip
 
 				 \frametitle{MATLAB Solution}
-				  \begin{verbatim}
+				  \begin{lstlisting}
 				clear all
 				sigma=[10  4 -6
 				        4 -6  8
@@ -750,17 +731,17 @@
 				% [A] matrix along the diagonal
 				principalStressList=diag(stresses)
 				principalDirs=dirs
-				  \end{verbatim}
+				  \end{lstlisting}
 
 				\btVFill 
-			\end{frame*}
+			\end{frame}
 
-			\begin{frame*}
+			\begin{frame}[fragile]
 				\frametitle{\sectionIIsubsectionIVtitle}
 				\bigskip
 
 				  \frametitle{MATLAB Solution}
-			  \begin{verbatim}
+			  \begin{lstlisting}
 			>> rao_p431
 			principalStressList =
 			  -10.4828
@@ -770,11 +751,11 @@
 			   -0.2792    0.8343   -0.4754
 			    0.8905    0.4102    0.1970
 			   -0.3594    0.3683    0.8574
-			  \end{verbatim}
+			  \end{lstlisting}
 
 
 				\btVFill 
-			\end{frame*}
+			\end{frame}
 
 		
 		% section II subsection V 
@@ -796,8 +777,7 @@
 			      \end{itemize}
 			    \end{column}
 			    \begin{column}{0.5\textwidth}
-			      %\pgfimage[width=0.9\textwidth]{images/fig41a}
-						\includegraphics[width=0.9\textwidth, alt={a forging hammer mass spring system}]{images/fig41a}
+			      \pgfimage[width=0.9\textwidth]{images/fig41a}
 			    \end{column}
 			  \end{columns}
 
@@ -821,13 +801,13 @@
 
 
 
-			\begin{frame*}
+			\begin{frame}[fragile]
 				\frametitle{\sectionIIsubsectionVtitle}
 				\bigskip
 
 				  \frametitle{MATLAB Solution (Part 1)}
 
-				  \begin{verbatim}
+				  \begin{lstlisting}
 				clear all;
 				% Define spring constants and masses
 				% for hammer and foundation block
@@ -842,21 +822,21 @@
 				% Define system mass matrix
 				M=[m1  0
 				    0 m2];
-				  \end{verbatim}
+				  \end{lstlisting}
 
 
 				\btVFill 
-			\end{frame*}
+			\end{frame}
 
 
 
-			\begin{frame*}
+			\begin{frame}[fragile]
 				\frametitle{\sectionIIsubsectionVtitle}
 				\bigskip
 
 				  \frametitle{MATLAB Solution (Part 2)}
 
-			  \begin{verbatim}
+			  \begin{lstlisting}
 			% Solve general eigenvalue problem
 			[X,Omega2]=eig(K,M);
 			% diag(A) extracts the elements of the
@@ -871,20 +851,20 @@
 
 			Omega
 			X
-			  \end{verbatim}
+			  \end{lstlisting}
 
 
 				\btVFill 
-			\end{frame*}
+			\end{frame}
 
 
-			\begin{frame*}
+			\begin{frame}[fragile]
 				\frametitle{\sectionIIsubsectionVtitle}
 				\bigskip
 
 				  \frametitle{MATLAB Solution (Part 2)}
 
-			  \begin{verbatim}
+			  \begin{lstlisting}
 			% Solve general eigenvalue problem
 			[X,Omega2]=eig(K,M);
 			% diag(A) extracts the elements of the
@@ -899,19 +879,20 @@
 
 			Omega
 			X
-			  \end{verbatim}
+			  \end{lstlisting}
+
 
 				\btVFill 
-			\end{frame*}
+			\end{frame}
 
 
-			\begin{frame*}
+			\begin{frame}[fragile]
 				\frametitle{\sectionIIsubsectionVtitle}
 				\bigskip
 
 				  \frametitle{MATLAB Solution (Results)}
 
-				  \begin{verbatim}
+				  \begin{lstlisting}
 				>> rao_ex42
 				Omega =
 				   18.9634
@@ -919,11 +900,126 @@
 				X =
 				    1.0000    1.0000
 				    1.5616   -2.5616
-				  \end{verbatim}
+				  \end{lstlisting}
 
 				\btVFill 
-			\end{frame*}
+			\end{frame}
 
+
+	% section III and IV not used for now		
+	% Section III
+	% \section{\sectionIIItitle}\label{sectionIII}
+
+	% 	% section III Outline
+	% 	\begin{frame}
+	% 		\large \textbf{Topic 3 - \sectionIIItitle} \vspace{3mm}\\
+
+	% 		\begin{itemize}
+	% 			\item \hyperlink{sectionIIIsubsectionI}{\sectionIIIsubsectionItitle} \vspc %  section III subsection I
+	% 			\item \hyperlink{sectionIIIsubsectionII}{\sectionIIIsubsectionIItitle} \vspc % section III subsection II
+	% 			\item \hyperlink{sectionIIIsubsectionIII}{\sectionIIIsubsectionIIItitle} \vspc % section III subsection III
+	% 			\item \hyperlink{sectionIIIsubsectionIV}{\sectionIIIsubsectionIVtitle} \vspc % section III subsection IV
+	% 		\end{itemize}
+
+	% 	\end{frame}
+
+	% 	% section III subsection I
+	% 	\subsection{\sectionIIIsubsectionItitle}\label{sectionIIIsubsectionI}
+
+	% 		\begin{frame}
+	% 			\frametitle{\sectionIIIsubsectionItitle}
+	% 			\bigskip
+
+
+			  	
+	% 			\btVFill
+	% 		\end{frame}
+
+	% 	% section III subsection II
+	% 	\subsection{\sectionIIIsubsectionIItitle}\label{sectionIIIsubsectionII}	
+
+	% 		\begin{frame}
+	% 			\frametitle{\sectionIIIsubsectionIItitle}
+	% 			\bigskip
+
+				
+	% 			\btVFill
+	% 		\end{frame}
+
+	% 	% section III subsection III
+	% 	\subsection{\sectionIIIsubsectionIIItitle}\label{sectionIIIsubsectionIII}
+
+	% 		\begin{frame}
+	% 			\frametitle{\sectionIIIsubsectionIIItitle}
+	% 			\bigskip
+
+				
+
+	% 			\btVFill
+	% 		\end{frame}
+
+
+	% 	% section III subsection IV
+	% 	\subsection{\sectionIIIsubsectionIVtitle}\label{sectionIIIsubsectionIV}
+
+	% 		\begin{frame}
+	% 			\frametitle{\sectionIIIsubsectionIVtitle}
+	% 			\bigskip
+
+			
+
+	% 			\btVFill
+	% 		\end{frame}	
+
+
+	% % Section IV
+	% \section{\sectionIVtitle}\label{sectionIV}
+
+	% 	% section IV Outline
+	% 	\begin{frame}
+	% 		\large \textbf{Topic 3 - \sectionIVtitle} \vspace{3mm}\\
+
+	% 		\begin{itemize}
+	% 			\item \hyperlink{sectionIVsubsectionI}{\sectionIVsubsectionItitle} \vspc %  section IV subsection I
+	% 			\item \hyperlink{sectionIVsubsectionII}{\sectionIVsubsectionIItitle} \vspc % section IV subsection II
+	% 			\item \hyperlink{sectionIVsubsectionIII}{\sectionIVsubsectionIIItitle} \vspc % section IV subsection III
+	% 			\item \hyperlink{sectionIVsubsectionIV}{\sectionIVsubsectionIVtitle} \vspc % section IV subsection IV
+	% 		\end{itemize}
+
+	% 	\end{frame}
+
+	% 	% section IV subsection I
+	% 	\subsection{\sectionIVsubsectionItitle}\label{sectionIVsubsectionI}
+
+	% 		\begin{frame}
+	% 			\frametitle{\sectionIVsubsectionItitle}
+	% 			\bigskip
+
+	% 			\btVFill
+	% 		\end{frame}
+
+	% 	% section IV subsection II
+	% 	\subsection{\sectionIVsubsectionIItitle}\label{sectionIVsubsectionII}
+
+	% 		\begin{frame}
+	% 			\frametitle{\sectionIVsubsectionIItitle}
+	% 			\bigskip
+
+			
+
+	% 			\btVFill
+	% 		\end{frame}
+
+	% 	% section IV subsection III
+	% 	\subsection{\sectionIVsubsectionIIItitle}\label{sectionIVsubsectionIII}
+
+	% 		\begin{frame}
+	% 			\frametitle{\sectionIVsubsectionIIItitle}
+	% 			\bigskip
+
+	
+	% 			\btVFill
+	%		\end{frame}	
 
 \end{document}
 
