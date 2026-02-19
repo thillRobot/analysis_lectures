@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  11 FEB 2026 22:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  12 FEB 2026 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1659,12 +1659,7 @@ Package pdftex.def Info: images/lecture5_fig5.png  used on input line 586.
 
 ] [34
 
-]
-
-LaTeX Warning: Hyper reference `sectionIVsubsectionIII' on page 35 undefined on
- input line 676.
-
-[35
+] [35
 
 ] [36
 
@@ -1672,7 +1667,8 @@ LaTeX Warning: Hyper reference `sectionIVsubsectionIII' on page 35 undefined on
 
 ] [38
 
-] [39
+]
+[39
 
 ] [40
 
@@ -1683,29 +1679,26 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 855.
  [42
 
-] [43]<<latex-list-css.html>><<latex-align-css.html>> (./systems_linear_equatio
-ns.aux)
+]<<latex-list-css.html>><<latex-align-css.html>>
+(./systems_linear_equations.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
-LaTeX Warning: Temporary extra page added at the end. Rerun to get it removed.
-
-
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~886 structure objects
-(tagpdf)             with ~623 'MC' leaf nodes.
+(tagpdf)             Writing out ~880 structure objects
+(tagpdf)             with ~618 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 
 Package tagpdf Info: writing ParentTree
+
+Package tagpdf Warning: something is wrong with the mcid--rerun
+
 Package tagpdf Info: writing IDTree
 Package tagpdf Info: writing RoleMap
 Package tagpdf Info: writing ClassMap
@@ -1714,13 +1707,13 @@ Package tagpdf Info: writing StructElems
 Package tagpdf Info: writing Root
  ) 
 Here is how much of TeX's memory you used:
- 37488 strings out of 467533
- 821939 string characters out of 5419496
- 1604963 words of memory out of 5000000
- 65511 multiletter control sequences out of 15000+600000
- 689996 words of font info for 100 fonts, out of 8000000 for 9000
+ 37607 strings out of 467533
+ 826140 string characters out of 5419496
+ 1625758 words of memory out of 5000000
+ 65630 multiletter control sequences out of 15000+600000
+ 687225 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,10n,122p,572b,2034s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,10n,122p,572b,2180s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><
 /usr/local/texlive/2025/texmf-dist/fonts/type1/public/sansmathfonts/cmssex10.pf
@@ -1733,14 +1726,13 @@ mssmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/sansmathfonts
 nts/cmsssy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/sansmath
 fonts/cmsssy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lms
 s10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb></
-usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/t
-exlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2
-025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2025/texmf
--dist/fonts/type1/public/pdftex/pdftexspace.pfb>
-Output written on systems_linear_equations.pdf (43 pages, 330667 bytes).
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive
+/2025/texmf-dist/fonts/type1/public/pdftex/pdftexspace.pfb>
+Output written on systems_linear_equations.pdf (42 pages, 319991 bytes).
 PDF statistics:
- 1617 PDF objects out of 1728 (max. 8388607)
- 1505 compressed objects within 16 object streams
+ 1603 PDF objects out of 1728 (max. 8388607)
+ 1495 compressed objects within 15 object streams
  146 named destinations out of 1000 (max. 500000)
- 4029 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4009 words of extra memory for PDF output out of 10000 (max. 10000000)
 
