@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  19 FEB 2026 22:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.3)  19 FEB 2026 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1585,16 +1585,11 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 
 ]
 <images/lecture5_fig1.png, id=288, 415.5525pt x 129.48375pt>
-
-
-Package tagpdf Warning: Alternative text for graphic is missing.
-(tagpdf)                Using 'images/lecture5_fig1.png' instead.
-
 File: images/lecture5_fig1.png Graphic file (type png)
 <use images/lecture5_fig1.png>
 Package pdftex.def Info: images/lecture5_fig1.png  used on input line 251.
 (pdftex.def)             Requested size: 207.77574pt x 64.7417pt.
-[9
+ [9
 
  <./images/lecture5_fig1.png>] [10
 
@@ -1608,19 +1603,19 @@ Package pdftex.def Info: images/lecture5_fig1.png  used on input line 251.
 
 ] [15
 
-] [16
+]
+[16
 
 ] [17
 
-]
-[18
+] [18
 
 ] [19
 
 ] [20
 
 ]
-<images/fig41a.png, id=494, 491.8375pt x 587.19376pt>
+<images/fig41a.png, id=493, 491.8375pt x 587.19376pt>
 File: images/fig41a.png Graphic file (type png)
 <use images/fig41a.png>
 Package pdftex.def Info: images/fig41a.png  used on input line 511.
@@ -1643,7 +1638,7 @@ Overfull \vbox (15.86844pt too high) detected at line 543
 [22
 
 ]
-<images/fig41b.png, id=547, 316.18124pt x 397.485pt>
+<images/fig41b.png, id=546, 316.18124pt x 397.485pt>
 File: images/fig41b.png Graphic file (type png)
 <use images/fig41b.png>
 Package pdftex.def Info: images/fig41b.png  used on input line 574.
@@ -1669,7 +1664,7 @@ Package pdftex.def Info: images/fig41b.png  used on input line 622.
 ] [27
 
 ]
-<images/fig413.png, id=641, 417.56pt x 397.485pt>
+<images/fig413.png, id=640, 417.56pt x 397.485pt>
 File: images/fig413.png Graphic file (type png)
 <use images/fig413.png>
 Package pdftex.def Info: images/fig413.png  used on input line 736.
@@ -1718,18 +1713,12 @@ L3 programming layer <2026-01-19>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package tagpdf Info: Finalizing the tagging structure:
 (tagpdf)             Writing out ~516 structure objects
 (tagpdf)             with ~502 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 
 Package tagpdf Info: writing ParentTree
-
-Package tagpdf Warning: something is wrong with the mcid--rerun
-
 Package tagpdf Info: writing IDTree
 Package tagpdf Info: writing RoleMap
 Package tagpdf Info: writing ClassMap
@@ -1738,13 +1727,13 @@ Package tagpdf Info: writing StructElems
 Package tagpdf Info: writing Root
  ) 
 Here is how much of TeX's memory you used:
- 36271 strings out of 467533
- 793473 string characters out of 5419496
- 1554671 words of memory out of 5000000
- 64438 multiletter control sequences out of 15000+600000
+ 36203 strings out of 467533
+ 793198 string characters out of 5419496
+ 1555106 words of memory out of 5000000
+ 64370 multiletter control sequences out of 15000+600000
  693017 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 118i,14n,122p,704b,1738s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,14n,122p,704b,1760s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><
 /usr/local/texlive/2025/texmf-dist/fonts/type1/public/sansmathfonts/cmssex10.pf
@@ -1759,7 +1748,7 @@ r/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/
 texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2
 025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-
 dist/fonts/type1/public/pdftex/pdftexspace.pfb>
-Output written on eigenvalues_eigenvectors.pdf (36 pages, 336249 bytes).
+Output written on eigenvalues_eigenvectors.pdf (36 pages, 336735 bytes).
 PDF statistics:
  984 PDF objects out of 1000 (max. 8388607)
  890 compressed objects within 9 object streams
